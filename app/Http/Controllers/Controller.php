@@ -1,4 +1,4 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Bosspos\Http\Controllers;
 
 use Bosspos\Commanding\DefaultCommandBus;
 use Illuminate\Foundation\Bus\DispatchesCommands;

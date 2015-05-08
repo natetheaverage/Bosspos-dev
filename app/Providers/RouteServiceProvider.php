@@ -1,7 +1,7 @@
-<?php namespace App\Providers;
+<?php namespace Bosspos\Providers;
 
-use App\Repositories\Repo;
-use App\User;
+use Bosspos\Repositories\Repo;
+use Bosspos\User;
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
@@ -14,7 +14,7 @@ class RouteServiceProvider extends ServiceProvider {
 	 *
 	 * @var string
 	 */
-	protected $namespace = 'App\Http\Controllers';
+	protected $namespace = 'Bosspos\Http\Controllers';
 
 
 
@@ -30,8 +30,8 @@ class RouteServiceProvider extends ServiceProvider {
 		
 		parent::boot($router);
 
-        $router->model('interfaceObject', 'App\InterfaceObject');
-        $router->model('user', 'App\User');
+        $router->model('interfaceObject', 'Bosspos\InterfaceObject');
+        $router->model('user', 'Bosspos\User');
 		$router->bind('userProfile', function($userProfile)
 		{
 			$userProfile = Repo::find('user', $userProfile);

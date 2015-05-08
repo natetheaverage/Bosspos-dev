@@ -1,6 +1,6 @@
-<?php namespace App\Handlers\Commands;
+<?php namespace Bosspos\Handlers\Commands;
 
-use App\Services\WizardSteps;
+use Bosspos\Services\WizardSteps;
 use Bosspos\Employees\EmployeeRegistrar;
 use Bosspos\Commanding\CommandHandler;
 use Bosspos\Employees\Employee;

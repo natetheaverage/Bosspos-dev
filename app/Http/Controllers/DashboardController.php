@@ -1,4 +1,4 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Bosspos\Http\Controllers;
 
 use Illuminate\Support\Facades\Session;
 use Symfony\Component\HttpFoundation\Response;
@@ -31,7 +31,7 @@ class DashboardController extends Controller {
         flash()->error('This is a message!', 'hey!!', 'floating')->timer(5000);
 
 
-		dd(Session::get('currentUser'));
+		//dd(Session::get('currentUser'));
         return view ('dashboard');
     }
 

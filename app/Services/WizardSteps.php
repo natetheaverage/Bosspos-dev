@@ -1,4 +1,4 @@
-<?php namespace App\Services; 
+<?php namespace Bosspos\Services; 
 
 use Illuminate\Support\Facades\Session;
 

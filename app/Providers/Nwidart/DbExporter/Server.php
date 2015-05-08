@@ -1,4 +1,4 @@
-<?php namespace App\Providers\Nwidart\DbExporter;
+<?php namespace Bosspos\Providers\Nwidart\DbExporter;
 
 use Config, SSH;
 

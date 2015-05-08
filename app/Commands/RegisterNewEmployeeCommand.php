@@ -1,6 +1,6 @@
-<?php namespace App\Commands;
+<?php namespace Bosspos\Commands;
 
-use App\Lists;
+use Bosspos\Lists;
 
 class RegisterNewEmployeeCommand extends Command {
 

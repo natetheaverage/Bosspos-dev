@@ -1,6 +1,6 @@
 <?php namespace Bosspos\Employees;
 
-use App\Lists;
+use Bosspos\Lists;
 use Bosspos\Eventing\EventGenerator;
 use Illuminate\Database\Eloquent\Model;
 
@@ -28,22 +28,22 @@ class Employee extends Model {
 
 	public function user()
 	{
-		$this->belongsTo('App\User');
+		$this->belongsTo('Bosspos\User');
 	}
 
 	public function facility()
 	{
-		$this->belongsToMany('App\Facility', 'facility_id');
+		$this->belongsToMany('Bosspos\Facility', 'facility_id');
 	}
 
 	public function company()
 	{
-		$this->belongsTo('App\Company');
+		$this->belongsTo('Bosspos\Company');
 	}
 
 	public function messages()
 	{
-		$this->hasMany('App\Messages');
+		$this->hasMany('Bosspos\Messages');
 	}
 
 	/**

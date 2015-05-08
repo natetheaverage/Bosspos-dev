@@ -1,7 +1,7 @@
 <?php namespace Bosspos\Employees;
 
 use Validator;
-use App\Services\ValidationRules;
+use Bosspos\Services\ValidationRules;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 
 class EmployeeRegistrar implements RegistrarContract {

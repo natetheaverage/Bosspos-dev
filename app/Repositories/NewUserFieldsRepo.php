@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Repositories;
+namespace Bosspos\Repositories;
 /*
 * NewUserFieldsRepo.php for bosspos1.3
 * By: natetheaverage
 * created: 4/12/15
 */
 
-use App\InterfaceObject;
+use Bosspos\InterfaceObject;
 use Faker\Factory as Faker;
-use App\Interfaces\FieldsRepoInterface;
+use Bosspos\Interfaces\FieldsRepoInterface;
 
 class NewUserFieldsRepo implements FieldsRepoInterface {
 

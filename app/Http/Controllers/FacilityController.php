@@ -1,8 +1,8 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Bosspos\Http\Controllers;
 
-use App\Facility;
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use Bosspos\Facility;
+use Bosspos\Http\Requests;
+use Bosspos\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 

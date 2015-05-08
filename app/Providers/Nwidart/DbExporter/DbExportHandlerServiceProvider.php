@@ -1,4 +1,4 @@
-<?php namespace App\Providers\Nwidart\DbExporter;
+<?php namespace Bosspos\Providers\Nwidart\DbExporter;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Config;
@@ -138,7 +138,7 @@ class DbExportHandlerServiceProvider extends ServiceProvider
         $this->app->booting(function()
         {
             $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-            $loader->alias('DbExportHandler', 'App\Providers\Nwidart\DbExporter\Facades\DbExportHandler');
+            $loader->alias('DbExportHandler', 'Bosspos\Providers\Nwidart\DbExporter\Facades\DbExportHandler');
         });
     }
 

@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: App
-        psr4_prefix: App
+        namespace: Bosspos
+        psr4_prefix: Bosspos
         src_path: app

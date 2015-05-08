@@ -86,7 +86,7 @@ Route::get('icons',  function()
 //});
 
 
-Route::any('elementEditor/{interfaceObject}',  function(App\InterfaceObject $object, App\User $user, App\Lists $list)
+Route::any('elementEditor/{interfaceObject}',  function(Bosspos\InterfaceObject $object, Bosspos\User $user, Bosspos\Lists $list)
 {
 	//TODO get this out of routes
 	$bootstrapClasses = $list->whereTitle('bootstrapClasses')->get();

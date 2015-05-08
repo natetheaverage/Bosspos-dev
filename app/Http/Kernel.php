@@ -1,4 +1,4 @@
-<?php namespace App\Http;
+<?php namespace Bosspos\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -15,7 +15,7 @@ class Kernel extends HttpKernel {
 		'Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse',
 		'Illuminate\Session\Middleware\StartSession',
 		'Illuminate\View\Middleware\ShareErrorsFromSession',
-		'App\Http\Middleware\VerifyCsrfToken',
+		'Bosspos\Http\Middleware\VerifyCsrfToken',
 
 	];
 
@@ -25,10 +25,10 @@ class Kernel extends HttpKernel {
 	 * @var array
 	 */
 	protected $routeMiddleware = [
-		'auth' => 'App\Http\Middleware\Authenticate',
+		'auth' => 'Bosspos\Http\Middleware\Authenticate',
 		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
-		'guest' => 'App\Http\Middleware\RedirectIfAuthenticated',
-		'repo.user' => 'App\Http\Middleware\CurrentUserSessionControl',
+		'guest' => 'Bosspos\Http\Middleware\RedirectIfAuthenticated',
+		'repo.user' => 'Bosspos\Http\Middleware\CurrentUserSessionControl',
 	];
 
 }

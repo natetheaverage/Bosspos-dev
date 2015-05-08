@@ -1,4 +1,4 @@
-<?php namespace App;
+<?php namespace Bosspos;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -23,22 +23,22 @@ class Facility extends Model {
 
 	public function company()
 	{
-		return $this->belongsTo('App\Company');
+		return $this->belongsTo('Bosspos\Company');
 	}
 
 	public function employees()
 	{
-		return $this->hasMany('App\Employee', 'facility_id');
+		return $this->hasMany('Bosspos\Employee', 'facility_id');
 	}
 
 	public function users()
 	{
-		return $this->hasMany('App\User', 'facility_id');
+		return $this->hasMany('Bosspos\User', 'facility_id');
 	}
 
 	public function customers()
 	{
-		return $this->hasMany('App\Customers', 'facility_id');
+		return $this->hasMany('Bosspos\Customers', 'facility_id');
 	}
 
 

@@ -1,10 +1,10 @@
-<?php namespace App\Http\Middleware;
+<?php namespace Bosspos\Http\Middleware;
 
 use Closure;
-use App\Repositories\Repo;
+use Bosspos\Repositories\Repo;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Support\Facades\Session;
-use App\Services\UpdatedUserSession as Update;
+use Bosspos\Services\UpdatedUserSession as Update;
 
 class CurrentUserSessionControl {
 

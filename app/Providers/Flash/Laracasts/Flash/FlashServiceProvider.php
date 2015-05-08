@@ -1,4 +1,4 @@
-<?php namespace App\Providers\Flash\Laracasts\Flash;
+<?php namespace Bosspos\Providers\Flash\Laracasts\Flash;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -20,12 +20,12 @@ class FlashServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(
-            'App\Providers\Flash\Laracasts\Flash\SessionStore',
-            'App\Providers\Flash\Laracasts\Flash\LaravelSessionStore'
+            'Bosspos\Providers\Flash\Laracasts\Flash\SessionStore',
+            'Bosspos\Providers\Flash\Laracasts\Flash\LaravelSessionStore'
         );
 
         $this->app->bindShared('flash', function () {
-            return $this->app->make('App\Providers\Flash\Laracasts\Flash\FlashNotifier');
+            return $this->app->make('Bosspos\Providers\Flash\Laracasts\Flash\FlashNotifier');
         });
     }
 

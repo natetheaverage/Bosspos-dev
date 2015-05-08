@@ -1,4 +1,4 @@
-<?php namespace App\Providers\Flash\Laracasts\Flash;
+<?php namespace Bosspos\Providers\Flash\Laracasts\Flash;
 
 interface SessionStore {
 

@@ -1,6 +1,6 @@
-<?php namespace App;
+<?php namespace Bosspos;
 
-use App\Events\RecordsUserActivity;
+use Bosspos\Events\RecordsUserActivity;
 use Illuminate\Database\Eloquent\Model;
 
 class Lists extends Model {
@@ -9,12 +9,12 @@ class Lists extends Model {
 
 	public function userInterface()
 	{
-		return $this->hasMany('App\UserInterface');
+		return $this->hasMany('Bosspos\UserInterface');
 	}
 
 	public function interfaceObject()
 	{
-		return $this->belongsToMany('App\InterfaceObject');
+		return $this->belongsToMany('Bosspos\InterfaceObject');
 	}
 
 

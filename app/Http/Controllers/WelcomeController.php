@@ -1,4 +1,4 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Bosspos\Http\Controllers;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Session;

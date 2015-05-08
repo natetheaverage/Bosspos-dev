@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Bosspos;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -48,7 +48,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
 	public function customerInfo()
 	{
-		return $this->hasOne('App\Customer');
+		return $this->hasOne('Bosspos\Customer');
 	}
 
 	public function employeeInfo()
@@ -58,18 +58,18 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
 	public function membershipDetails()
 	{
-		return $this->hasOne('App\Membership');
+		return $this->hasOne('Bosspos\Membership');
 	}
 
 
 	public function userInterface()
 	{
-		return $this->hasMany('App\UserActivity');
+		return $this->hasMany('Bosspos\UserActivity');
 	}
 
 	public function interfaceObject()
 	{
-		return $this->hasMany('App\InterfaceObject', 'owner_id');
+		return $this->hasMany('Bosspos\InterfaceObject', 'owner_id');
 	}
 
 	public function registrationFields()

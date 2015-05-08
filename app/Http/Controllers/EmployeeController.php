@@ -1,23 +1,23 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Bosspos\Http\Controllers;
 
 use Bosspos\Commanding\ValidationCommandBus;
-use App\Commands\RegisterNewEmployeeCommand;
-use App\Customer;
+use Bosspos\Commands\RegisterNewEmployeeCommand;
+use Bosspos\Customer;
 use Bosspos\Employees\Employee;
-use App\Http\Requests;
-use App\Services\WizardSteps;
-use App\Membership;
+use Bosspos\Http\Requests;
+use Bosspos\Services\WizardSteps;
+use Bosspos\Membership;
 use Bosspos\Employees\RemoveEmployeeCommand;
 use Bosspos\Profiles\Profile;
-use App\Repositories\NewUserFieldsRepo as UserFields;
-use App\Repositories\Repo;
-use App\Services\RegisterNewCustomer;
+use Bosspos\Repositories\NewUserFieldsRepo as UserFields;
+use Bosspos\Repositories\Repo;
+use Bosspos\Services\RegisterNewCustomer;
 use Bosspos\Employees\EmployeeRegistrar;
-use App\Services\Registrar;
-use App\User;
+use Bosspos\Services\Registrar;
+use Bosspos\User;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Http\Request;
-use App\Services\RegisterNewProfile;
+use Bosspos\Services\RegisterNewProfile;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Session;
 

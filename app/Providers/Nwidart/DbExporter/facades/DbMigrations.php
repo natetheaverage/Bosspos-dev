@@ -1,4 +1,4 @@
-<?php namespace App\Providers\Nwidart\DbExporter\Facades;
+<?php namespace Bosspos\Providers\Nwidart\DbExporter\Facades;
 use Illuminate\Support\Facades\Facade;
 
 class DbMigrations extends Facade {

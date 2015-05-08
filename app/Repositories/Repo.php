@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories;
+namespace Bosspos\Repositories;
 /*
 * Repo.php for bosspos
 * By: natetheaverage
@@ -8,15 +8,15 @@ namespace App\Repositories;
 */
 
 
-use App\User;
-use App\InterfaceObject;
-use App\Interfaces\RepoInterface;
+use Bosspos\User;
+use Bosspos\InterfaceObject;
+use Bosspos\Interfaces\RepoInterface;
 use Illuminate\Support\Facades\Session;
 
 /**
  * Class Repo composites model databases in to one collection using Eloquent
  *
- * @package App\Services
+ * @package Bosspos\Services
  */
 class Repo implements RepoInterface{
 

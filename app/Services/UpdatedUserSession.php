@@ -1,20 +1,20 @@
 <?php 
 
-namespace App\Services;
+namespace Bosspos\Services;
     /*
     * UpdatedUserSession.php for bosspos1.5
     * By: natetheaverage
     * created: 4/28/15
     */
 
-use App\Repositories\Repo;
+use Bosspos\Repositories\Repo;
 use Illuminate\Support\Facades\Session;
 
 /**
  * Class UpdatedUserSession
  * Loads and removes current user from Session info.
  *
- * @package App\Services
+ * @package Bosspos\Services
  */
 class UpdatedUserSession {
 

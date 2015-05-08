@@ -1,9 +1,9 @@
 <?php
-namespace App\Http\Composers;
+namespace Bosspos\Http\Composers;
 
-use App\Events\Event;
-use App\User;
-use App\Repositories\Repo;
+use Bosspos\Events\Event;
+use Bosspos\User;
+use Bosspos\Repositories\Repo;
 use Illuminate\Auth\Guard;
 use Illuminate\Contracts\View\View;
 

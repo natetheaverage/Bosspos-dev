@@ -1,4 +1,4 @@
-<?php namespace App;
+<?php namespace Bosspos;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -18,12 +18,12 @@ class Membership extends Model {
 
 	public function user()
 	{
-		$this->belongsTo('App\User');
+		$this->belongsTo('Bosspos\User');
 	}
 
 	public function facilities()
 	{
-		$this->belongsToMany('App\Facility');
+		$this->belongsToMany('Bosspos\Facility');
 	}
 
 }

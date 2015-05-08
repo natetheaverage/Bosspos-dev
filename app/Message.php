@@ -1,4 +1,4 @@
-<?php namespace App;
+<?php namespace Bosspos;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -20,7 +20,7 @@ class Message extends Model {
 
 	public function user()
 	{
-		$this->belongsToMany('App\User');
+		$this->belongsToMany('Bosspos\User');
 	}
 
 

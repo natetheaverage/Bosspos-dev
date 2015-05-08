@@ -1,4 +1,4 @@
-<?php namespace App\Providers\Nwidart\DbExporter\Exceptions;
+<?php namespace Bosspos\Providers\Nwidart\DbExporter\Exceptions;
 
 use Exception;
 

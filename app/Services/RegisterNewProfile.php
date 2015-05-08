@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Services;
+namespace Bosspos\Services;
 /*
 * RegistrerNewProfile.php for bosspos1.3
 * By: natetheaverage
 * created: 4/11/15
 */
-use App\Profile;
+use Bosspos\Profile;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 

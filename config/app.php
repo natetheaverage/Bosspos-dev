@@ -140,25 +140,25 @@ return [
 		/*
 		 * Application Service Providers...
 		 */
-		'App\Providers\AppServiceProvider',
-		'App\Providers\BusServiceProvider',
-		'App\Providers\ConfigServiceProvider',
-		'App\Providers\EventServiceProvider',
-		'App\Providers\RouteServiceProvider',
+		'Bosspos\Providers\AppServiceProvider',
+		'Bosspos\Providers\BusServiceProvider',
+		'Bosspos\Providers\ConfigServiceProvider',
+		'Bosspos\Providers\EventServiceProvider',
+		'Bosspos\Providers\RouteServiceProvider',
 		'Intervention\Image\ImageServiceProvider',
 
         /*
 		 *  My Service Providers...
 		 */
-        'App\Providers\ViewComposerServiceProvider',
+        'Bosspos\Providers\ViewComposerServiceProvider',
 		'Bosspos\Eventing\EventingServiceProvider',
 
         /*
 		 * Imported Service Providers...
 		 */
         'Collective\Html\HtmlServiceProvider',
-        'App\Providers\Nwidart\DbExporter\DbExportHandlerServiceProvider',
-		'App\Providers\Flash\Laracasts\Flash\FlashServiceProvider'
+        'Bosspos\Providers\Nwidart\DbExporter\DbExportHandlerServiceProvider',
+		'Bosspos\Providers\Flash\Laracasts\Flash\FlashServiceProvider'
 
 	],
 
@@ -188,7 +188,7 @@ return [
 		'Eloquent'  => 'Illuminate\Database\Eloquent\Model',
 		'Event'     => 'Illuminate\Support\Facades\Event',
 		'File'      => 'Illuminate\Support\Facades\File',
-        'Flash'     => 'App\Providers\Flash\Laracasts\Flash\Flash',
+        'Flash'     => 'Bosspos\Providers\Flash\Laracasts\Flash\Flash',
 		'Hash'      => 'Illuminate\Support\Facades\Hash',
 		'Input'     => 'Illuminate\Support\Facades\Input',
 		'Inspiring' => 'Illuminate\Foundation\Inspiring',
@@ -211,7 +211,7 @@ return [
 
         'Form'              => 'Collective\Html\FormFacade',
         'Html'              => 'Collective\Html\HtmlFacade',
-        'DbExportHandler'   => 'App\Providers\Nwidart\DbExporter\DbExportHandler',
+        'DbExportHandler'   => 'Bosspos\Providers\Nwidart\DbExporter\DbExportHandler',
 		'Image' 			=> 'Intervention\Image\Facades\Image',
 
 	],

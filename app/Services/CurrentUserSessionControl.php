@@ -1,6 +1,6 @@
 <?php 
 
-namespace App\Services;
+namespace Bosspos\Services;
 
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Support\Facades\Session;
