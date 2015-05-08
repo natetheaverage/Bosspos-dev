@@ -86,7 +86,7 @@ class EmployeeController extends Controller {
 			$this->throwValidationException($input, $validator);
 		}
 		$this->wizardSteps->update(4);
-
+		//TODO make validator validate in stages for each type of user
 
 
 		$this->dispatch(new RegisterNewEmployeeCommand($input->all()));
