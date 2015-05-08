@@ -28,7 +28,7 @@ class DashboardController extends Controller {
 
 		//$savedClasses = InterfaceObject::find(3)->objectClasses;
 
-        //flash()->error('This is a message!', 'hey!!', 'floating')->timer(5000);
+        flash()->error('This is a message!', 'hey!!', 'floating')->timer(5000);
 
 
 		dd(Session::get('currentUser'));
