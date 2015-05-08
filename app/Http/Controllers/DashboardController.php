@@ -30,7 +30,7 @@ class DashboardController extends Controller {
 
         //flash()->error('This is a message!', 'hey!!', 'floating')->timer(5000);
 
-        return view('dashboard');
+        return view('pages.employee.directory');
     }
 
 
