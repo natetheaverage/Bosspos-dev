@@ -1,9 +1,8 @@
-<?php
-namespace Bosspos\Http\Composers;
+<?php namespace Boss\Http\Composers;
 
-use Bosspos\Http\Requests\Request;
-use Bosspos\User;
-use Bosspos\Repositories\Repo;
+use Boss\Http\Requests\Request;
+use Boss\Pos\Users\User;
+use Boss\Repositories\Repo;
 use Illuminate\Auth\Guard;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Session;

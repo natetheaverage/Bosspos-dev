@@ -1,4 +1,4 @@
-<?php namespace Bosspos;
+<?php namespace Boss;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -18,12 +18,12 @@ class Company extends Model {
 
 	public function facilities()
 	{
-		return $this->hasMany('Bosspos\Facility', 'company_id');
+		return $this->hasMany('Boss\Facility', 'company_id');
 	}
 
 	public function employees()
 	{
-		return $this->hasMany('Bosspos\Employee', 'company_id');
+		return $this->hasMany('Boss\Employee', 'company_id');
 	}
 
 }

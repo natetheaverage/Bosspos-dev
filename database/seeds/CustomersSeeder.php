@@ -1,10 +1,8 @@
 <?php
 
-use App\Customer;
+use Boss\Pos\Customers\Customer;
 use Faker\Factory as Faker;
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Eloquent\Model;
-
 
 /**
  * Class UserSeeder

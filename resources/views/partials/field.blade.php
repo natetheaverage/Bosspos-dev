@@ -33,7 +33,7 @@
 		@endif
 		{!! Form::label( $object->name, $object->label, ['class'=>'col-md-3 control-label']) !!}
 		<div class="col-md-6">
-			{!! Form::text($object->name, $fakeInfo[$section][$object->name], ['class'=>'form-control', 'id'=>$object->hook, $object->disabled]) !!}
+			{!! Form::text($object->name, $fakeInfo[$category[$section]][$object->name], ['class'=>'form-control', 'id'=>$object->hook, $object->disabled]) !!}
 		</div>
 	</div>
 
@@ -50,14 +50,14 @@
 		@endif
 		{!! Form::label( $object->name, $object->label, ['class'=>'col-md-3  control-label']) !!}
 		<div class="col-md-6">
-			{!! Form::email($object->name, $fakeInfo[$section][$object->name], ['class'=>'form-control', 'id'=>$object->hook, $object->disabled]) !!}
+			{!! Form::email($object->name, $fakeInfo[$category[$section]][$object->name], ['class'=>'form-control', 'id'=>$object->hook, $object->disabled]) !!}
 		</div>
 	</div>
 
 
 	{{--
-	----  TODO:
-	----   NOT DOTTING FIX
+	--
+	--
 	--}}
 @elseif($object->type == 'password')
 
@@ -69,13 +69,13 @@
 		@endif
 		{!! Form::label( $object->name, $object->label, ['class'=>'col-md-3  control-label']) !!}
 		<div class="col-md-4">
-			{!! Form::password($object->name,  [
-			'value' => '123456',
-			'class'=>'form-control',
-			$object->disabled,
-			'maxlength'=>'40',
-			'minlength'=>'6',
-			'data-fv-stringlength-message'=>'The full name must be more than 10 and less than 40 characters'
+			{!! Form::input('password', $object->name, Input::old($object->name),
+			['value' => $fakeInfo[$category[$section]][$object->name],
+			 'class'=>'form-control',
+			  $object->disabled,
+			  'maxlength'=>'40',
+			  'minlength'=>'6',
+			  'data-fv-stringlength-message'=>'The full name must be more than 10 and less than 40 characters'
 			]) !!}
 		</div>
 	</div>

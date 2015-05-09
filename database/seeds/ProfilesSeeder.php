@@ -1,13 +1,12 @@
 <?php
 
-use Bosspos\Profiles\Profile;
+use Boss\Pos\Profiles\Profile;
 use Faker\Factory as Faker;
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Eloquent\Model;
 
 
 /**
- * Class UserSeeder
+ * Class ProfileSeeder
  */
 class ProfilesSeeder extends Seeder {
 

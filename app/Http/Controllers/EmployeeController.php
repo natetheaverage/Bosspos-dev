@@ -1,49 +1,41 @@
-<?php namespace Bosspos\Http\Controllers;
+<?php namespace Boss\Http\Controllers;
 
-use Bosspos\Commanding\ValidationCommandBus;
-use Bosspos\Commands\RegisterNewEmployeeCommand;
-use Bosspos\Customer;
-use Bosspos\Employees\Employee;
-use Bosspos\Http\Requests;
-use Bosspos\Services\WizardSteps;
-use Bosspos\Membership;
-use Bosspos\Employees\RemoveEmployeeCommand;
-use Bosspos\Profiles\Profile;
-use Bosspos\Repositories\NewUserFieldsRepo as UserFields;
-use Bosspos\Repositories\Repo;
-use Bosspos\Services\RegisterNewCustomer;
-use Bosspos\Employees\EmployeeRegistrar;
-use Bosspos\Services\Registrar;
-use Bosspos\User;
+use Boss\Commands\RegisterNewEmployeeCommand;
+use Boss\Http\Requests;
+use Boss\Services\WizardSteps;
+use Boss\Pos\Employees\RemoveEmployeeCommand;
+use Boss\Repositories\NewUserFieldsRepo as UserFields;
+use Boss\Repositories\Repo;
+use Boss\Pos\Employees\EmployeeRegistrar;
+use Boss\Services\Registrar;
+use Boss\Pos\Users\User;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Http\Request;
-use Bosspos\Services\RegisterNewProfile;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Session;
 
 class EmployeeController extends Controller {
-
-	protected $commandBus;
 
 	public $fakeInfo;
 
 	public $sections;
 
 	public $fields;
-	/**
-	 * @var WizardSteps
-	 */
+
 	private $wizardSteps;
 
 	use AuthenticatesAndRegistersUsers;
 
-	public function __construct(ValidationCommandBus $commandBus, Registrar $registrar, WizardSteps $wizardSteps)
+	public function __construct(Registrar $registrar, WizardSteps $wizardSteps)
 	{
 		$this->middleware('auth');
+
 		$this->middleware('repo.user');
+
 		$this->registrar = $registrar;
-		$this->commandBus = $commandBus;
+
 		$this->wizardSteps = $wizardSteps;
+
 	}
 
 
@@ -54,6 +46,7 @@ class EmployeeController extends Controller {
 	 */
 	public function index(User $users)
 	{
+
 		$users = $users->with('employeeInfo')->get();
 		return view('pages.employee.directory', compact('users', 'profilePic'));
 	}
@@ -65,28 +58,54 @@ class EmployeeController extends Controller {
 	 */
 	public function create(UserFields $userFields)
 	{
-		$stage = Session::pull('employee-registration-stage');
+
+		$stage = $this->wizardSteps->pull();
+
+		//dd($stage);
+
 		$fields = $userFields->createFields('registrationFields');
 		$fakeInfo = $fields->fetch('fakeInfo')->first();
 		$sections = $fields->fetch('sectionCount')->first();
+
+		// TODO Automate this list organiser
+		$category = [
+			1 => 'employee',
+			2 => 'profile',
+			3 => 'customer',
+			4 => 'login'
+		];
+		// TODO Automate this icon placement
+		$wizardIcons = [
+			1 => 'fa-briefcase',
+			2 => 'fa-user',
+			3 => 'fa-dollar',
+			4 => 'fa-desktop'
+		];
 		$formUrl = 'employee';
-		return view('new.employee', compact('fields', 'sections', 'fakeInfo', 'formUrl', 'stage'));
+		return view('new.employee', compact('fields', 'sections', 'fakeInfo', 'formUrl', 'stage', 'category', 'wizardIcons'));
 	}
 
+
 	/**
-	 * Store a newly created resource in storage.
+	 * Validate Request -> Dispatch RegisterNewEmployeeCommand object
 	 *
-	 * @return Response
+	 * @param EmployeeRegistrar $employee
+	 * @param Request $input
+	 * @return \Illuminate\View\View
 	 */
-	public function store(RegisterNewProfile $newProfile, EmployeeRegistrar $employee, RegisterNewCustomer $newCustomer, Request $input, Employee $employeeInput, User $userInput, Profile $profileInput, Customer $customerInput, Membership $memberInput )
+	public function store(EmployeeRegistrar $employee, Request $input )
 	{
+
 		$validator = $employee->validator($input->all());
+
 		if ($validator->fails())
 		{
+			$input->stage = $this->wizardSteps->get();
+
 			$this->throwValidationException($input, $validator);
 		}
-		$this->wizardSteps->update(4);
-		//TODO make validator validate in stages for each type of user
+
+		$this->wizardSteps->remove();
 
 
 		$this->dispatch(new RegisterNewEmployeeCommand($input->all()));
@@ -160,6 +179,7 @@ class EmployeeController extends Controller {
 	 */
 	public function show($employeeId, Repo $repo)
 	{
+
 		$userProfile = $repo->find('userProfile', $employeeId);
 
 		return view('pages.user.profile',  compact('userProfile'));
@@ -200,18 +220,6 @@ class EmployeeController extends Controller {
 		$this->commandBus->execute($command);
 
 		return view('/dashboard');
-	}
-
-	/**
-	 * List of all employees.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function all(User $users)
-	{
-		//$profilePic = 'img/users/'.studly_case($user->profile->last_name[0]).'/'.studly_case($user->profile->last_name).studly_case($user->profile->first_name).'/'.$user->profile->profile_picture;
-
 	}
 
 

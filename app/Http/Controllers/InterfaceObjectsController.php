@@ -1,12 +1,12 @@
-<?php namespace Bosspos\Http\Controllers;
+<?php namespace Boss\Http\Controllers;
 
-use Bosspos\Lists;
-use Bosspos\ObjectClasses;
-use Bosspos\InterfaceObject;
+use Boss\Lists;
+use Boss\ObjectClasses;
+use Boss\InterfaceObject;
 use Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Model;
-use Bosspos\Services\UpdatedUserSession as Update;
+use Boss\Services\UpdatedUserSession as Update;
 
 class InterfaceObjectsController extends Controller {
 

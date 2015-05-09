@@ -1,6 +1,6 @@
-<?php namespace Bosspos\Http\Controllers;
+<?php namespace Boss\Http\Controllers;
 
-use Bosspos\Commanding\DefaultCommandBus;
+use Boss\Commanding\DefaultCommandBus;
 use Illuminate\Foundation\Bus\DispatchesCommands;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;

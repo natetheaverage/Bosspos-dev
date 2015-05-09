@@ -1,6 +1,6 @@
-<?php namespace Bosspos\Providers;
+<?php namespace Boss\Providers;
 
-use Bosspos\Profile;
+use Boss\Profile;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Support\ServiceProvider;
 
@@ -9,7 +9,7 @@ use Illuminate\Support\ServiceProvider;
  *
  * Pass variables constantly
  *
- * @package Bosspos\Providers
+ * @package Boss\Providers
  */
 class ViewComposerServiceProvider extends ServiceProvider {
 
@@ -22,7 +22,7 @@ class ViewComposerServiceProvider extends ServiceProvider {
 	{
 		$this->composeUserDetails('*', 'repoUserAndNav');
 
-		view()->creator('*', "\Bosspos\Http\Composers\AppDetailsComposer@repo");
+		view()->creator('*', "\Boss\Http\Composers\AppDetailsComposer@repo");
     }
 
 	/**
@@ -44,7 +44,7 @@ class ViewComposerServiceProvider extends ServiceProvider {
     public function composeUserDetails($view, $compose)
     {
 
-            view()->creator($view, "\Bosspos\Http\Composers\UserDetailsComposer@$compose");
+            view()->creator($view, "\Boss\Http\Composers\UserDetailsComposer@$compose");
 
     }
 

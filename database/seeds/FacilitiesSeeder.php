@@ -1,9 +1,9 @@
 <?php
 
-use App\Facility;
-use App\Mc;
-use App\Mip;
-use App\Opc;
+use Boss\Facility;
+use Boss\Mc;
+use Boss\Mip;
+use Boss\Opc;
 use Faker\Factory as Faker;
 use Illuminate\Database\Seeder;
 

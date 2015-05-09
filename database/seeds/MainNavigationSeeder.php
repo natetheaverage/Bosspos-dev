@@ -1,13 +1,6 @@
 <?php 
 
-    /*
-    * MainNavigation.php for bosspos1.5
-    * By: natetheaverage
-    * created: 5/1/15
-    */
-
-
-use App\InterfaceObject;
+use Boss\InterfaceObject;
 use Illuminate\Database\Seeder;
 
 class MainNavigationSeeder extends Seeder  {

@@ -1,6 +1,6 @@
 <?php
 
-use App\Company;
+use Boss\Company;
 use Illuminate\Database\Seeder;
 
 

@@ -1,8 +1,8 @@
-<?php namespace Bosspos\Providers\Nwidart\DbExporter\Commands;
+<?php namespace Boss\Providers\Nwidart\DbExporter\Commands;
 
 
-use Bosspos\Providers\Nwidart\DbExporter\DbExporter;
-use Bosspos\Providers\Nwidart\DbExporter\DbExportHandler;
+use Boss\Providers\Nwidart\DbExporter\DbExporter;
+use Boss\Providers\Nwidart\DbExporter\DbExportHandler;
 use Symfony\Component\Console\Input\InputOption;
 use Config, Illuminate\Support\Str;
 

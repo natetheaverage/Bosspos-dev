@@ -1,4 +1,4 @@
-<?php namespace Bosspos\Http\Requests;
+<?php namespace Boss\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

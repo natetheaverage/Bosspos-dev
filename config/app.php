@@ -140,25 +140,26 @@ return [
 		/*
 		 * Application Service Providers...
 		 */
-		'Bosspos\Providers\AppServiceProvider',
-		'Bosspos\Providers\BusServiceProvider',
-		'Bosspos\Providers\ConfigServiceProvider',
-		'Bosspos\Providers\EventServiceProvider',
-		'Bosspos\Providers\RouteServiceProvider',
+		'Boss\Providers\AppServiceProvider',
+		'Boss\Providers\BusServiceProvider',
+		'Boss\Providers\ConfigServiceProvider',
+		'Boss\Providers\EventServiceProvider',
+		'Boss\Providers\RouteServiceProvider',
 		'Intervention\Image\ImageServiceProvider',
 
         /*
 		 *  My Service Providers...
 		 */
-        'Bosspos\Providers\ViewComposerServiceProvider',
-		'Bosspos\Eventing\EventingServiceProvider',
+        'Boss\Providers\ViewComposerServiceProvider',
+
+		//'Bosspos\Eventing\EventingServiceProvider',
 
         /*
 		 * Imported Service Providers...
 		 */
         'Collective\Html\HtmlServiceProvider',
-        'Bosspos\Providers\Nwidart\DbExporter\DbExportHandlerServiceProvider',
-		'Bosspos\Providers\Flash\Laracasts\Flash\FlashServiceProvider'
+        'Boss\Providers\Nwidart\DbExporter\DbExportHandlerServiceProvider',
+		'Boss\Providers\Flash\Laracasts\Flash\FlashServiceProvider'
 
 	],
 
@@ -188,7 +189,7 @@ return [
 		'Eloquent'  => 'Illuminate\Database\Eloquent\Model',
 		'Event'     => 'Illuminate\Support\Facades\Event',
 		'File'      => 'Illuminate\Support\Facades\File',
-        'Flash'     => 'Bosspos\Providers\Flash\Laracasts\Flash\Flash',
+        'Flash'     => 'Boss\Providers\Flash\Laracasts\Flash\Flash',
 		'Hash'      => 'Illuminate\Support\Facades\Hash',
 		'Input'     => 'Illuminate\Support\Facades\Input',
 		'Inspiring' => 'Illuminate\Foundation\Inspiring',
@@ -211,7 +212,7 @@ return [
 
         'Form'              => 'Collective\Html\FormFacade',
         'Html'              => 'Collective\Html\HtmlFacade',
-        'DbExportHandler'   => 'Bosspos\Providers\Nwidart\DbExporter\DbExportHandler',
+        'DbExportHandler'   => 'Boss\Providers\Nwidart\DbExporter\DbExportHandler',
 		'Image' 			=> 'Intervention\Image\Facades\Image',
 
 	],

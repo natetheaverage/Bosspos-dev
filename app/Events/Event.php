@@ -1,4 +1,4 @@
-<?php namespace Bosspos\Events;
+<?php namespace Boss\Events;
 
 abstract class Event {
 

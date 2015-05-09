@@ -1,16 +1,22 @@
-<?php namespace Bosspos\Services;
+<?php namespace Boss\Services;
 
-use Bosspos\User;
-use Validator;
+use Boss\Pos\Users\User;
+use Illuminate\Validation\Factory as Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 
 class Registrar implements RegistrarContract {
 
 	private $rules;
 
-	function __construct(ValidationRules $rules)
+	private $validator;
+
+	private $wizardSteps;
+
+	function __construct(Validator $validator, ValidationRules $rules, WizardSteps $wizardSteps)
 	{
 		$this->rules = $rules;
+		$this->validator = $validator;
+		$this->wizardSteps = $wizardSteps;
 	}
 
 
@@ -22,8 +28,12 @@ class Registrar implements RegistrarContract {
 	 */
 	public function validator(array $data)
 	{
-		//dd($this->rules->get('user'));
-		return Validator::make($data, $this->rules->get('user'));
+		$validator = $this->validator->make($data, $this->rules->get('user'));
+		if ($validator->fails()){return $validator;}
+
+		$this->wizardSteps->update();
+
+		return $validator;
 	}
 
 	/**

@@ -41,26 +41,13 @@
 
 		        <!--Nav-->
 		        <ul class="wz-nav-off wz-icon-inline">
+			        @foreach($category as $order => $categoryName)
 			        <li class="col-md-3 bg-mint">
-				        <a id="wiz-tab1" data-toggle="tab" href="#employee-registration-tab1">
-					        <span class="icon-wrap icon-wrap-xs bg-trans-dark"><i class="fa fa-info"></i></span> {!! $stage !!}
+				        <a id="wiz-tab{!! $order !!}" data-toggle="tab" href="#employee-registration-tab{!! $order !!}">
+					        <span class="icon-wrap icon-wrap-xs bg-trans-dark"><i class="fa {!! $wizardIcons[$order] !!}"></i></span> {!! studly_case($categoryName) !!}
 				        </a>
 			        </li>
-			        <li class="col-md-3 bg-mint">
-				        <a id="wiz-tab2" data-toggle="tab" href="#employee-registration-tab2">
-					        <span class="icon-wrap icon-wrap-xs bg-trans-dark"><i class="fa fa-user"></i></span> Profile
-				        </a>
-			        </li>
-			        <li class="col-md-3 bg-mint">
-				        <a id="wiz-tab3" data-toggle="tab" href="#employee-registration-tab3">
-					        <span class="icon-wrap icon-wrap-xs bg-trans-dark"><i class="fa fa-home"></i></span> Address
-				        </a>
-			        </li>
-			        <li class="col-md-3 bg-mint">
-				        <a id="wiz-tab4" data-toggle="tab" href="#employee-registration-tab4">
-					        <span class="icon-wrap icon-wrap-xs bg-trans-dark"><i class="fa fa-heart"></i></span> Finish
-				        </a>
-			        </li>
+					@endforeach
 		        </ul>
 
 		        <!--Progress bar-->
@@ -79,7 +66,7 @@
 
 				        <div id="employee-registration-tab{!! $section !!}" class="tab-pane @if($section == 2)fade @endif @if($section == 5)mar-btm @endif" >
 
-				        @foreach($fields->where('menu_id', $section) as $object)
+				        @foreach($fields->where('extra1', $category[$section]) as $object)
 
 					        @include('partials.all')
 

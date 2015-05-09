@@ -1,8 +1,8 @@
 <?php
 
-namespace Bosspos;
+namespace Boss;
 
-use Bosspos\Events\RecordsUserActivity;
+use Boss\Events\RecordsUserActivity;
 use Illuminate\Database\Eloquent\Model;
 
 class InterfaceObject extends Model {
@@ -11,17 +11,17 @@ class InterfaceObject extends Model {
 
 	public function user()
 	{
-		return $this->belongsToMany('Bosspos\User');
+		return $this->belongsToMany('Boss\User');
 	}
 
 	public function  lists()
 	{
-		return $this->hasMany('Bosspos\Lists', 'owner_id');
+		return $this->hasMany('Boss\Lists', 'owner_id');
 	}
 
 	public function  objectClasses()
 	{
-		return $this->hasMany('Bosspos\ObjectClasses', 'object_id');
+		return $this->hasMany('Boss\ObjectClasses', 'object_id');
 	}
 
 	/**

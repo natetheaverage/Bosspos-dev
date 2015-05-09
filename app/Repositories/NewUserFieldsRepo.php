@@ -1,21 +1,18 @@
-<?php
+<?php namespace Boss\Repositories;
 
-namespace Bosspos\Repositories;
-/*
-* NewUserFieldsRepo.php for bosspos1.3
-* By: natetheaverage
-* created: 4/12/15
-*/
-
-use Bosspos\InterfaceObject;
+use Boss\InterfaceObject;
 use Faker\Factory as Faker;
-use Bosspos\Interfaces\FieldsRepoInterface;
+use Boss\Interfaces\FieldsRepoInterface;
 
+/**
+ * Class NewUserFieldsRepo
+ * @package Boss\Repositories
+ */
 class NewUserFieldsRepo implements FieldsRepoInterface {
 
-    public $fields;
+	public $fields;
 
-    public $fillerInfo;
+	public $fillerInfo;
 
 	/**
 	 * Put together a collection for building forms
@@ -25,11 +22,9 @@ class NewUserFieldsRepo implements FieldsRepoInterface {
 	 */
 	public function createFields($menu_name)
     {
-
 		$fields = InterfaceObject::where('menu_name', $menu_name)->get();
 		$fields->push($this->sectionCount($fields));
 		$fields->push($this->fillerInfo($menu_name));
-
 
         return $fields;
     }
@@ -46,13 +41,13 @@ class NewUserFieldsRepo implements FieldsRepoInterface {
         if (env('APP_TEST') and $menu_name == 'registrationFields')
         {
             $fillerInfo = [
-                1=>[
+                'login' =>[
                     'username' => $faker->userName,
                     'email' => $faker->safeEmail,
                     'password' => 'password',
                     'password_confirmation' => 'password',
                 ],
-                2=>[
+                'profile' =>[
                     'first_name' => $faker->firstName,
                     'last_name' => $faker->lastName,
                     'phone' => $faker->phoneNumber,
@@ -61,7 +56,7 @@ class NewUserFieldsRepo implements FieldsRepoInterface {
                     'address_zip' => $faker->numberBetween(11111, 99999),
                     'dob' => $faker->numberBetween(12341234, 98989876),
                 ],
-                3=>[
+                'employee' =>[
                     'title' => $faker->safeColorName,
                     'roles' => 'super',
                     'badge_number' => $faker->numberBetween(111111111111, 999999999999),
@@ -70,7 +65,7 @@ class NewUserFieldsRepo implements FieldsRepoInterface {
                     'wage' => $faker->numberBetween(10, 30),
                     'location_id' => $faker->numberBetween(1111, 9999),
                 ],
-                4=>[
+                'customer' =>[
 
                     'promotion_approval' => $faker->boolean(),
                     'point_member_id' => $faker->numberBetween(111111111111, 999999999999),
@@ -104,9 +99,9 @@ class NewUserFieldsRepo implements FieldsRepoInterface {
 		$sections = [];
 		foreach ($fields as $field)
 		{
-			array_push($sections, [$field->menu_id]);
+			array_push($sections, [$field->extra1]);
 		}
-
+		//dd($sections);
 		return ['sectionCount' => count(array_unique($sections, 0))];
 	}
 

@@ -5,9 +5,9 @@
  * Time: 3:36 AM
  */
 
-namespace Bosspos\Events;
+namespace Boss\Events;
 
-use Bosspos\UserActivity;
+use Boss\UserActivity;
 trait RecordsUserActivity {
 
 	protected static function bootRecordsUserInterface()

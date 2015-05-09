@@ -1,6 +1,6 @@
-<?php namespace Bosspos\Providers\Nwidart\DbExporter\Commands;
+<?php namespace Boss\Providers\Nwidart\DbExporter\Commands;
 
-use Bosspos\Providers\Nwidart\DbExporter\Server;
+use Boss\Providers\Nwidart\DbExporter\Server;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 use SSH;

@@ -1,4 +1,4 @@
-<?php namespace Bosspos\Exceptions;
+<?php namespace Boss\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

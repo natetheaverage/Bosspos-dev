@@ -1,4 +1,4 @@
-<?php namespace Bosspos\Providers\Flash\Laracasts\Flash;
+<?php namespace Boss\Providers\Flash\Laracasts\Flash;
 
 use Illuminate\Session\Store;
 

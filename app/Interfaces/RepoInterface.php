@@ -6,14 +6,14 @@
  * Time: 6:28 PM
  */
 
-namespace Bosspos\Interfaces;
+namespace Boss\Interfaces;
 
 
 /**
  * Interface RepoInterface contracts repo's to collect models with relationships
  * Should return one object with relationships nested.
  *
- * @package Bosspos\Interfaces
+ * @package Boss\Interfaces
  */
 interface RepoInterface {
 

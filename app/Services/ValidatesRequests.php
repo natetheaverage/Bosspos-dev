@@ -1,4 +1,4 @@
-<?php namespace Bosspos\Services;
+<?php namespace Boss\Services;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;

@@ -1,7 +1,9 @@
 <?php
 
+use Boss\Lists;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+
 /**
  * Class OptionListsSeeder
  */
@@ -14,11 +16,10 @@ class ListsSeeder extends Seeder {
 	 */
 	public function run()
 	{
-		Model::unguard();
 
-		\App\Lists::truncate();
+		Lists::truncate();
 
-		// Multi select lists go first
+		// Multi select lists need to go first
 		$this->bootstrapCssClasses();
 
 		$this->statesList();
@@ -228,18 +229,18 @@ class ListsSeeder extends Seeder {
 		$belongsToType = 'Lists';
 
 		$list = [
-			'' => 'textBox',
-			'' => 'textField',
-			'' => 'dropDown',
-			'' => 'dateMask',
-			'' => 'dateRangePicker',
-			'' => 'dateAndTimeRangePicker',
-			'' => 'dateRangeButton',
-			'' => 'phoneMask',
-			'' => 'password',
-			'' => 'checkBox',
-			'' => 'radio',
-			'' => 'timePicker',
+			1 => 'textBox',
+			2 => 'textField',
+			3 => 'dropDown',
+			4 => 'dateMask',
+			5 => 'dateRangePicker',
+			6 => 'dateAndTimeRangePicker',
+			7 => 'dateRangeButton',
+			8 => 'phoneMask',
+			9 => 'password',
+			11 => 'checkBox',
+			13 => 'radio',
+			14 => 'timePicker',
 		];
 		$this->save($list, $listTitle, $type, $action, $default, $belongsToID, $belongsToType);
 	}
@@ -944,7 +945,7 @@ class ListsSeeder extends Seeder {
 			 *TODO: Make this creator more dynamic!
 			 *
 			 *//////////////////////////////////
-			$Objects = \App\Lists::create([
+			$Objects = Lists::create([
 				'title' => $listTitle,
 				'item' => $key,
 				'name' => $value,

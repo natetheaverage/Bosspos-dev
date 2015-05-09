@@ -1,10 +1,8 @@
 <?php
 
-use Bosspos\Employees\Employee;
+use Boss\Pos\Employees\Employee;
 use Faker\Factory as Faker;
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Eloquent\Model;
-
 
 /**
  * Class UserSeeder

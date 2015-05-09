@@ -1,4 +1,4 @@
-<?php namespace Bosspos\Http\Middleware;
+<?php namespace Boss\Http\Middleware;
 
 use Closure;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as BaseVerifier;

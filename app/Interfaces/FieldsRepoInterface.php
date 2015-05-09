@@ -5,7 +5,7 @@
  * Time: 2:32 AM
  */
 
-namespace Bosspos\Interfaces;
+namespace Boss\Interfaces;
 
 
 interface FieldsRepoInterface {

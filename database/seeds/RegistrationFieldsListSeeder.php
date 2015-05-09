@@ -1,13 +1,6 @@
 <?php
 
-    /*
-    * RegistrationFieldsList.php for bosspos1.5
-    * By: natetheaverage
-    * created: 5/1/15
-    */
-
-
-use App\InterfaceObject;
+use Boss\InterfaceObject;
 use Illuminate\Database\Seeder;
 
 class RegistrationFieldsListSeeder extends Seeder{
@@ -15,7 +8,8 @@ class RegistrationFieldsListSeeder extends Seeder{
 	public function run()
 	{
 		$listTitle = 'registrationFields';
-		$listId = 1;
+		$listId = 4;
+		$category = 'login';
 
 		$list = [
 			'errorBox' => [ //name
@@ -100,25 +94,27 @@ class RegistrationFieldsListSeeder extends Seeder{
 			],
 		];
 
-		$this->save($list, $listTitle, $listId);
+		$this->save($list, $listTitle, $listId, $category);
 	}
 
-	public function save($list, $listTitle, $listId)
+	public function save($list, $listTitle, $listId, $category)
 	{
 		$i = 0;
 		foreach ($list as $key => $value)
 		{
+			//TODO extra1 is a horrible place to store this variable for organising lists
 			$Objects = InterfaceObject::create([
-				'menu_id'              	=> $listId,
-				'menu_name'            	=> $listTitle,
-				'menu_order'           	=> $i,
-				'name'                 	=> $key,
-				'family'               	=> $value[2],
-				'type'                 	=> $value[3],
-				'label'       			=> $value[4],
-				'value' 		        => $value[5],
-				'owner_id'          	=> $value[6],
-				'owner_type'        	=> $value[7],
+				'menu_id'    => $listId,
+				'menu_name'  => $listTitle,
+				'menu_order' => $i,
+				'name'       => $key,
+				'family'     => $value[2],
+				'type'       => $value[3],
+				'label'      => $value[4],
+				'value'      => $value[5],
+				'owner_id'   => $value[6],
+				'owner_type' => $value[7],
+				'extra1'     => $category,
 			]);
 			$i++;
 		}

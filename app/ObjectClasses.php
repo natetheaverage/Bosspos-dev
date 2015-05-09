@@ -1,4 +1,4 @@
-<?php namespace Bosspos;
+<?php namespace Boss;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -6,7 +6,7 @@ class ObjectClasses extends Model {
 
 	public function interfaceObject()
 	{
-		return $this->belongsToMany('Bosspos\InterfaceObject');
+		return $this->belongsToMany('Boss\InterfaceObject');
 	}
 
 }

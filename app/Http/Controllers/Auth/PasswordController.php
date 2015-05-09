@@ -1,6 +1,6 @@
-<?php namespace Bosspos\Http\Controllers\Auth;
+<?php namespace Boss\Http\Controllers\Auth;
 
-use Bosspos\Http\Controllers\Controller;
+use Boss\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\PasswordBroker;
 use Illuminate\Foundation\Auth\ResetsPasswords;

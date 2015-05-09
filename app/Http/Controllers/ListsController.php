@@ -1,7 +1,7 @@
-<?php namespace Bosspos\Http\Controllers;
+<?php namespace Boss\Http\Controllers;
 
-use Bosspos\Http\Requests;
-use Bosspos\Http\Controllers\Controller;
+use Boss\Http\Requests;
+use Boss\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 

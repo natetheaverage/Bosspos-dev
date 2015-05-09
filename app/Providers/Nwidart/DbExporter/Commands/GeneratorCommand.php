@@ -1,4 +1,4 @@
-<?php namespace Bosspos\Providers\Nwidart\DbExporter\Commands;
+<?php namespace Boss\Providers\Nwidart\DbExporter\Commands;
 
 use Illuminate\Console\Command;
 use Config;

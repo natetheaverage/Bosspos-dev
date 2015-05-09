@@ -1,4 +1,4 @@
-<?php namespace Bosspos\Interfaces;
+<?php namespace Boss\Interfaces;
 /*
 * UIControl.php for BossPOS
 * By: natetheaverage

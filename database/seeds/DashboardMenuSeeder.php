@@ -1,13 +1,7 @@
-<?php 
+<?php
 
-    /*
-    * DashboardMenu.php for bosspos1.5
-    * By: natetheaverage
-    * created: 5/1/15
-    */
-
-use App\ObjectClasses;
-use App\InterfaceObject;
+use Boss\ObjectClasses;
+use Boss\InterfaceObject;
 use Illuminate\Database\Seeder;
 
 class DashboardMenuSeeder extends Seeder {

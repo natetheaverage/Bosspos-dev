@@ -2,17 +2,17 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
-use App\Customer;
-use Bosspos\Employees\Employee;
-use Bosspos\Profiles\Profile;
-use App\User;
-use App\InterfaceObject;
-use App\Company;
-use App\Facility;
-use App\Mc;
-use App\Mip;
-use App\Opc;
-use App\Lists;
+use Boss\Pos\Customers\Customer;
+use Boss\Pos\Employees\Employee;
+use Boss\Pos\Profiles\Profile;
+use Boss\Pos\Users\User;
+use Boss\InterfaceObject;
+use Boss\Company;
+use Boss\Facility;
+use Boss\Mc;
+use Boss\Mip;
+use Boss\Opc;
+use Boss\Lists;
 
 class DatabaseSeeder extends Seeder {
 

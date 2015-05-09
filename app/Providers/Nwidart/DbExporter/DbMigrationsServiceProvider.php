@@ -1,4 +1,4 @@
-<?php namespace Bosspos\Providers\Nwidart\DbExporter;
+<?php namespace Boss\Providers\Nwidart\DbExporter;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Config;

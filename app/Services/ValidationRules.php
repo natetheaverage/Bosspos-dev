@@ -1,4 +1,4 @@
-<?php namespace Bosspos\Services;
+<?php namespace Boss\Services;
 
 class ValidationRules {
 
@@ -13,10 +13,11 @@ class ValidationRules {
 					   'badge_type'   => 'required',
 					   'ss'           => 'required|max:11'
 		],
-		'profile'  => ['first_name' => 'required|max:55',
-					   'last_name'  => 'required|max:55',
-					   'phone'      => 'digits:10',
-					   'dob'        => 'required|before:-21 years'
+		'profile'  => ['first_name'  => 'required|max:55',
+					   'last_name'   => 'required|max:55',
+					   'phone'       => 'digits:10',
+					   'address_zip' => 'required|max:5',
+					   'dob'         => 'required|before:-21 years'
 		],
 		'customer' => ['red_card_number'        => 'required|max:55',
 					   'red_card_expires'       => 'required|max:20',
@@ -32,7 +33,7 @@ class ValidationRules {
 
 	public function get($model)
 	{
-		return $this->rules[$model];
+		return $this->rules[ $model ];
 	}
 
 }

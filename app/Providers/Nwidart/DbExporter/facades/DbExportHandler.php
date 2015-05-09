@@ -1,4 +1,4 @@
-<?php namespace Bosspos\Providers\Nwidart\DbExporter\Facades;
+<?php namespace Boss\Providers\Nwidart\DbExporter\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

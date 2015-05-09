@@ -1,11 +1,11 @@
-<?php namespace Bosspos\Http\Controllers;
+<?php namespace Boss\Http\Controllers;
 
-use Bosspos\Http\Requests;
-use Bosspos\Http\Controllers\Controller;
+use Boss\Http\Requests;
+use Boss\Http\Controllers\Controller;
 
-use Bosspos\InterfaceObjects;
-use Bosspos\Profile;
-use Bosspos\User;
+use Boss\InterfaceObjects;
+use Boss\Profile;
+use Boss\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;

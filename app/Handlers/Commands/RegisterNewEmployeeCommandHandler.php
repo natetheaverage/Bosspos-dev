@@ -1,10 +1,10 @@
-<?php namespace Bosspos\Handlers\Commands;
+<?php namespace Boss\Handlers\Commands;
 
-use Bosspos\Services\WizardSteps;
-use Bosspos\Employees\EmployeeRegistrar;
-use Bosspos\Commanding\CommandHandler;
-use Bosspos\Employees\Employee;
-use Bosspos\Eventing\EventDispatcher;
+use Boss\Services\WizardSteps;
+use Boss\Pos\Employees\EmployeeRegistrar;
+use Boss\Commanding\CommandHandler;
+use Boss\Pos\Employees\Employee;
+use Boss\Eventing\EventDispatcher;
 use Illuminate\Support\Facades\Session;
 
 class RegisterNewEmployeeCommandHandler implements CommandHandler{
@@ -31,7 +31,7 @@ class RegisterNewEmployeeCommandHandler implements CommandHandler{
 	{
 		$employeeArray = $this->createArrayWithAddedFields($command);
 		$this->employee->create($employeeArray);
-		$this->wizardSteps->update(4);
+		//$this->wizardSteps->update(4);
 		//$this->dispatcher->dispatch($employee);
 
 	}

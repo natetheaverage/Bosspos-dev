@@ -1,4 +1,4 @@
-<?php namespace Bosspos\Console\Commands;
+<?php namespace Boss\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

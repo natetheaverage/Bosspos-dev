@@ -1,4 +1,4 @@
-<?php namespace Bosspos\Providers;
+<?php namespace Boss\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

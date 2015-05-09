@@ -1,14 +1,14 @@
-<?php namespace Bosspos\Http\Controllers;
+<?php namespace Boss\Http\Controllers;
 
-use Bosspos\Customer;
-use Bosspos\Employee;
-use Bosspos\InterfaceObjects;
-use Bosspos\Lists;
-use Bosspos\Profile;
+use Boss\Customer;
+use Boss\Employee;
+use Boss\InterfaceObjects;
+use Boss\Lists;
+use Boss\Profile;
 use app\Services\Repo;
-use Bosspos\User;
-use Bosspos\Http\Requests;
-use Bosspos\Services\UserCreation;
+use Boss\User;
+use Boss\Http\Requests;
+use Boss\Services\UserCreation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Schema;

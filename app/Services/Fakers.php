@@ -1,4 +1,4 @@
-<?php namespace Bosspos\Services;
+<?php namespace Boss\Services;
 /*
 * Fakers.php for bosspos1.3
 * By: natetheaverage

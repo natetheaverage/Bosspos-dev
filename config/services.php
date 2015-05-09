@@ -30,7 +30,7 @@ return [
 	],
 
 	'stripe' => [
-		'model'  => 'Bosspos\User',
+		'model'  => 'Boss\User',
 		'key' => '',
 		'secret' => '',
 	],

@@ -30,17 +30,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
 	'Illuminate\Contracts\Http\Kernel',
-	'Bosspos\Http\Kernel'
+	'Boss\Http\Kernel'
 );
 
 $app->singleton(
 	'Illuminate\Contracts\Console\Kernel',
-	'Bosspos\Console\Kernel'
+	'Boss\Console\Kernel'
 );
 
 $app->singleton(
 	'Illuminate\Contracts\Debug\ExceptionHandler',
-	'Bosspos\Exceptions\Handler'
+	'Boss\Exceptions\Handler'
 );
 
 /*
