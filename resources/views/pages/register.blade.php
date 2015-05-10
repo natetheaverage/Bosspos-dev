@@ -37,14 +37,14 @@
 
 	        <!-- Form wizard with Validation -->
 	        <!--===================================================-->
-	        <div id="employee-registration-wizard">
+	        <div id="registration-wizard">
 
 		        <!--Nav-->
 		        <ul class="wz-nav-off wz-icon-inline">
-			        @foreach($category as $order => $categoryName)
+			        @foreach($categories as $order => $categoryInfo)
 			        <li class="col-md-3 bg-mint">
-				        <a id="wiz-tab{!! $order !!}" data-toggle="tab" href="#employee-registration-tab{!! $order !!}">
-					        <span class="icon-wrap icon-wrap-xs bg-trans-dark"><i class="fa {!! $wizardIcons[$order] !!}"></i></span> {!! studly_case($categoryName) !!}
+				        <a id="wiz-tab{!! $order !!}" data-toggle="tab" href="#registration-tab{!! $order !!}">
+					        <span class="icon-wrap icon-wrap-xs bg-trans-dark"><i class="fa {!! $categoryInfo[key($categoryInfo)] !!}"></i></span> {!! studly_case( key($categoryInfo) ) !!}
 				        </a>
 			        </li>
 					@endforeach
@@ -56,17 +56,16 @@
 		        </div>
 
 		        <!--Form-->
-		        {!! Form::model($fields, ['url' => $formUrl, 'id' => 'employee-registration-wizard-form', 'class' => 'form-horizontal']) !!}
+		        {!! Form::model($fields, ['url' => $formUrl, 'id' => 'registration-wizard-form', 'class' => 'form-horizontal']) !!}
 		        <input type="hidden" name="stage" id="wizard-stage" value="{!! $stage !!}">
-		        </input>
 		        <div class="panel-body">
 			        <div class="tab-content">
 
-			        @for($section = 1; $section <= $sections; $section++)
+			        @for($section=1; $section <= $sections; $section++)
 
-				        <div id="employee-registration-tab{!! $section !!}" class="tab-pane @if($section == 2)fade @endif @if($section == 5)mar-btm @endif" >
+				        <div id="registration-tab{!! $section !!}" class="tab-pane @if($section == 2)fade @endif @if($section == 5)mar-btm @endif" >
 
-				        @foreach($fields->where('extra1', $category[$section]) as $object)
+				        @foreach($fields->shift() as $object)
 
 					        @include('partials.all')
 
@@ -127,7 +126,7 @@
 
 
     <!--employee resistration Wizard [ MEI ]-->
-    <script src=" {!! asset('js/employee-registration.js') !!}"></script>
+    <script src=" {!! asset('js/registration.js') !!}"></script>
 
 
 	<!--Bootstrap Datepicker [ OPTIONAL ]-->

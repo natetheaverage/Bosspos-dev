@@ -1,6 +1,7 @@
 <?php namespace Boss\Repositories;
 
 use Boss\InterfaceObject;
+use Boss\Lists;
 use Faker\Factory as Faker;
 use Boss\Interfaces\FieldsRepoInterface;
 
@@ -14,16 +15,30 @@ class NewUserFieldsRepo implements FieldsRepoInterface {
 
 	public $fillerInfo;
 
+	public $fullCollection;
+
+	function __construct(InterfaceObject $fields)
+	{
+		$this->fields = $fields;
+	}
+
 	/**
 	 * Put together a collection for building forms
 	 *
 	 * @param $menu_name
 	 * @return mixed
 	 */
-	public function createFields($menu_name)
+	public function createFields($menu_name, $categories = [''])
     {
-		$fields = InterfaceObject::where('menu_name', $menu_name)->get();
-		$fields->push($this->sectionCount($fields));
+		$fields = $this->fields->whereMenu_nameAndExtra1($menu_name, $categories[1])->get();
+
+		foreach($categories as $category)
+		{
+			$fields->push($this->fields->whereMenu_nameAndExtra1($menu_name, key($category))->get());
+		}
+
+		$fields->push(['sectionCount' => count($categories)]);
+
 		$fields->push($this->fillerInfo($menu_name));
 
         return $fields;
@@ -94,6 +109,7 @@ class NewUserFieldsRepo implements FieldsRepoInterface {
 	 *
 	 * @param $fields
 	 */
+	// TODO Remove this when I am sure I don't need it
 	private function sectionCount($fields)
 	{
 		$sections = [];

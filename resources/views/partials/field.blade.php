@@ -33,7 +33,7 @@
 		@endif
 		{!! Form::label( $object->name, $object->label, ['class'=>'col-md-3 control-label']) !!}
 		<div class="col-md-6">
-			{!! Form::text($object->name, $fakeInfo[$category[$section]][$object->name], ['class'=>'form-control', 'id'=>$object->hook, $object->disabled]) !!}
+			{!! Form::text($object->name, $fakeInfo[key($categories[$section])][$object->name], ['class'=>'form-control', 'id'=>$object->hook, $object->disabled]) !!}
 		</div>
 	</div>
 
@@ -50,7 +50,7 @@
 		@endif
 		{!! Form::label( $object->name, $object->label, ['class'=>'col-md-3  control-label']) !!}
 		<div class="col-md-6">
-			{!! Form::email($object->name, $fakeInfo[$category[$section]][$object->name], ['class'=>'form-control', 'id'=>$object->hook, $object->disabled]) !!}
+			{!! Form::email($object->name, $fakeInfo[key($categories[$section])][$object->name], ['class'=>'form-control', 'id'=>$object->hook, $object->disabled]) !!}
 		</div>
 	</div>
 
@@ -70,7 +70,7 @@
 		{!! Form::label( $object->name, $object->label, ['class'=>'col-md-3  control-label']) !!}
 		<div class="col-md-4">
 			{!! Form::input('password', $object->name, Input::old($object->name),
-			['value' => $fakeInfo[$category[$section]][$object->name],
+			['value' => $fakeInfo[key($categories[$section])][$object->name],
 			 'class'=>'form-control',
 			  $object->disabled,
 			  'maxlength'=>'40',

@@ -1,10 +1,6 @@
 <?php namespace Boss\Pos\Employees;
 
-use Boss\Services\Registrar;
-use Boss\Services\WizardSteps;
 use Boss\Services\ValidationRules;
-use Boss\Pos\Profiles\RegisterNewProfile;
-use Boss\Pos\Customers\CustomerRegistrar;
 use Illuminate\Validation\Factory as Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 
@@ -14,27 +10,17 @@ class EmployeeRegistrar implements RegistrarContract {
 
 	private $rules;
 
-	private $wizardSteps;
-
-	private $login;
-
-	private $profile;
-
-	private $customer;
+	private $employee;
 
 	function __construct(
 		Validator $validator,
 		ValidationRules $rules,
-		WizardSteps $wizardSteps,
-		Registrar $login,
-		RegisterNewProfile $profile
-		)
+		Employee $employee
+	)
 	{
 		$this->validator 	= $validator;
 		$this->rules 		= $rules;
-		$this->wizardSteps 	= $wizardSteps;
-		$this->login 		= $login;
-		$this->profile 		= $profile;
+		$this->employee 	= $employee;
 	}
 
     /**
@@ -45,14 +31,7 @@ class EmployeeRegistrar implements RegistrarContract {
      */
     public function validator(array $data)
     {
-		$this->wizardSteps->set();
-
 		$validator = $this->validator->make($data, $this->rules->get('employee'));
-		if($validator->fails()){return $validator;}
-
-		$this->wizardSteps->update();
-
-		$validator = $this->profile->validator($data);
 		if($validator->fails()){return $validator;}
 
 		return $validator;

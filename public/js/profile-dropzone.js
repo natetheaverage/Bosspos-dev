@@ -1,5 +1,5 @@
 
-// employee-registration.js
+// registration.js
 // ====================================================================
 // Initialize Employee registration wizard
 //

@@ -74,7 +74,7 @@ class DashboardMenuSeeder extends Seeder {
 			'value'              => '',                   // Value can be different for each (eg checked, string = "JoeBlow"
 			'content'            => '',                 // Body message
 			'icon'               => 'fa-users',                    // icon from fa-
-			'href'               => '/employee',          // target for links
+			'href'               => '/employee/create',          // target for links
 			'disabled'           => null,              // is this disabled?
 			'owner_id'           => 1,                 // id if this object requires an owner
 			'owner_type'         => 'Average',       //-- owner type ( this doesn't need to be a user)

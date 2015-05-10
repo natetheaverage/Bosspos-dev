@@ -32,6 +32,8 @@ Route::resource('user','UsersController');
 
 Route::resource('employee', 'EmployeeController');
 
+Route::resource('customer', 'CustomerController');
+
 Route::resource('facility', 'FacilityController');
 
 

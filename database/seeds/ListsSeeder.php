@@ -22,6 +22,7 @@ class ListsSeeder extends Seeder {
 		// Multi select lists need to go first
 		$this->bootstrapCssClasses();
 
+
 		$this->statesList();
 		$this->formFieldsList();
 		$this->userTypeList();
@@ -30,6 +31,8 @@ class ListsSeeder extends Seeder {
 		$this->jobTitleList();
         $this->entityTypeList();
         $this->facilityTypeList();
+		$this->employeeWizardTabOrder();
+		$this->customerWizardTabOrder();
 	}
 
 	public function jobTitleList()
@@ -243,6 +246,68 @@ class ListsSeeder extends Seeder {
 			14 => 'timePicker',
 		];
 		$this->save($list, $listTitle, $type, $action, $default, $belongsToID, $belongsToType);
+	}
+
+	public function employeeWizardTabOrder()
+	{
+		$listTitle = 'employeeWizardTabOrder';
+		$type = '';
+		$action = '';
+		//$default = '';
+		$belongsToID = '';
+		$belongsToType = 'List';
+
+		$list = [
+			1 => ['employee', "fa-briefcase"],
+			2 => ['profile', "fa-user"],
+			3 => ['customer', "fa-dollar"],
+			4 => ['login', "fa-desktop"]
+
+		];
+
+		foreach ($list as $key => $value)
+		{
+			$Objects = Lists::create([
+				'title' => $listTitle,
+				'item' => $key,
+				'name' => $value[0],
+				'type' => $type,
+				'action' => $action,
+				'default' => $value[1],
+				'owner_id' => $belongsToID,
+				'owner_type' => $belongsToType
+			]);
+		}
+	}
+
+	public function customerWizardTabOrder()
+	{
+		$listTitle = 'customerWizardTabOrder';
+		$type = '';
+		$action = '';
+		//$default = '';
+		$belongsToID = '';
+		$belongsToType = 'List';
+
+		$list = [
+			1 => ['profile', "fa-user"],
+			2 => ['customer', "fa-dollar"],
+			3 => ['login', "fa-desktop"]
+		];
+
+		foreach ($list as $key => $value)
+		{
+			$Objects = Lists::create([
+				'title' => $listTitle,
+				'item' => $key,
+				'name' => $value[0],
+				'type' => $type,
+				'action' => $action,
+				'default' => $value[1],
+				'owner_id' => $belongsToID,
+				'owner_type' => $belongsToType
+			]);
+		}
 	}
 
     public function bootstrapCssClasses()

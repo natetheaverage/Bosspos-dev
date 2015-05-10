@@ -10,13 +10,10 @@ class Registrar implements RegistrarContract {
 
 	private $validator;
 
-	private $wizardSteps;
-
-	function __construct(Validator $validator, ValidationRules $rules, WizardSteps $wizardSteps)
+	function __construct(Validator $validator, ValidationRules $rules)
 	{
 		$this->rules = $rules;
 		$this->validator = $validator;
-		$this->wizardSteps = $wizardSteps;
 	}
 
 
@@ -31,8 +28,6 @@ class Registrar implements RegistrarContract {
 		$validator = $this->validator->make($data, $this->rules->get('user'));
 		if ($validator->fails()){return $validator;}
 
-		$this->wizardSteps->update();
-
 		return $validator;
 	}
 
@@ -44,14 +39,7 @@ class Registrar implements RegistrarContract {
 	 */
 	public function create(array $data)
 	{
-		return User::create([
-			'username' => $data['username'],
-			'email' => $data['email'],
-			'password' => bcrypt($data['password']),
-			'facility_id' => $data['facility_id'],
-			'preferences_id' => $data['preferences_id'],
-			'role_id' => $data['role_id'],
-		]);
+		return User::create($data);
 	}
 
 }

@@ -1,5 +1,5 @@
 
-// employee-registration.js
+// registration.js
 // ====================================================================
 // Initialize Employee registration wizard
 //
@@ -44,7 +44,7 @@ $(document).ready(function() {
 
 	// FORM WIZARD WITH VALIDATION
 	// =================================================================
-    $('#employee-registration-wizard').bootstrapWizard({
+    $('#registration-wizard').bootstrapWizard({
 		tabClass		: 'wz-classic',
 		nextSelector	: '.next',
 		previousSelector	: '.previous',
@@ -52,7 +52,7 @@ $(document).ready(function() {
 			return true;
 		},
 		onInit : function(){
-			$('#employee-registration-wizard').find('.finish').hide().prop('disabled', true);
+			$('#registration-wizard').find('.finish').hide().prop('disabled', true);
 		},
         onTabShow: function(tab, navigation, index) {
             var $total = navigation.find('li').length;
@@ -60,22 +60,22 @@ $(document).ready(function() {
             var $percent = ($current/$total) * 100;
             var wdt = 100/$total;
             var lft = wdt*index;
-            $('#employee-registration-wizard').find('.progress-bar').css({width:$percent+'%'});
+            $('#registration-wizard').find('.progress-bar').css({width:$percent+'%'});
 
 
             // If it's the last tab then hide the last button and show the finish instead
 			if($current >= $total) {
-				$('#employee-registration-wizard').find('.next').hide();
-				$('#employee-registration-wizard').find('.finish').show();
-				$('#employee-registration-wizard').find('.finish').prop('disabled', false);
+				$('#registration-wizard').find('.next').hide();
+				$('#registration-wizard').find('.finish').show();
+				$('#registration-wizard').find('.finish').prop('disabled', false);
 			} else {
-				$('#employee-registration-wizard').find('.next').show();
-				$('#employee-registration-wizard').find('.finish').hide().prop('disabled', true);
+				$('#registration-wizard').find('.next').show();
+				$('#registration-wizard').find('.finish').hide().prop('disabled', true);
 			}
 		},
 		onNext: function(){
 			isValid = null;
-			$('#employee-registration-wizard-form').bootstrapValidator('validate');
+			$('#registration-wizard-form').bootstrapValidator('validate');
 
 			if(isValid === false)return false;
 		}
@@ -97,7 +97,7 @@ $(document).ready(function() {
 	// http://bootstrapvalidator.com/
 	// =================================================================
 	var isValid;
-	$('#employee-registration-wizard-form').bootstrapValidator({
+	$('#registration-wizard-form').bootstrapValidator({
 		message: 'This value is not valid',
 		feedbackIcons: {
 		valid: 'fa fa-check-circle fa-lg text-success',

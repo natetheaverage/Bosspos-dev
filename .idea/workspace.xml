@@ -4,138 +4,26 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c21172f-3f02-491f-8342-87092cb6754d" name="Default" comment="Pipe lined the employee registration through the four register classes.&#10;Changed app name to boss. This still has fixes to be made. Including string replacements and placing my model groups in a pos working directory&#10;Next step is to  make sure I am firing off the command handler and my model is saving properly.&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Pos/Employees/EmployeeRegistrar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Pos/Listeners/ReportListeners.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2015_04_21_162155_create_bosspos_database.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Bosspos/Employees/EmployeeRegistrar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Bosspos/Listeners/ReportListeners.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bossposTableSeeder.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Commanding/CommandBus.php" afterPath="$PROJECT_DIR$/app/Pos/Commanding/CommandBus.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Commanding/CommandHandler.php" afterPath="$PROJECT_DIR$/app/Pos/Commanding/CommandHandler.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Commanding/CommandTranslator.php" afterPath="$PROJECT_DIR$/app/Pos/Commanding/CommandTranslator.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Commanding/DefaultCommandBus.php" afterPath="$PROJECT_DIR$/app/Pos/Commanding/DefaultCommandBus.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Commanding/ValidationCommandBus.php" afterPath="$PROJECT_DIR$/app/Pos/Commanding/ValidationCommandBus.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Employees/Employee.php" afterPath="$PROJECT_DIR$/app/Pos/Employees/Employee.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Employees/EmployeeWasRegistered.php" afterPath="$PROJECT_DIR$/app/Pos/Employees/EmployeeWasRegistered.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Employees/EmployeeWasRemoved.php" afterPath="$PROJECT_DIR$/app/Pos/Employees/EmployeeWasRemoved.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Employees/RegisterNewEmployeeValidator.php" afterPath="$PROJECT_DIR$/app/Pos/Employees/RegisterNewEmployeeValidator.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Employees/RemoveEmployeeCommand.php" afterPath="$PROJECT_DIR$/app/Pos/Employees/RemoveEmployeeCommand.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Employees/RemoveEmployeeCommandHandler.php" afterPath="$PROJECT_DIR$/app/Pos/Employees/RemoveEmployeeCommandHandler.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Eventing/EventDispatcher.php" afterPath="$PROJECT_DIR$/app/Pos/Eventing/EventDispatcher.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Eventing/EventGenerator.php" afterPath="$PROJECT_DIR$/app/Pos/Eventing/EventGenerator.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Eventing/EventListener.php" afterPath="$PROJECT_DIR$/app/Pos/Eventing/EventListener.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Eventing/EventingServiceProvider.php" afterPath="$PROJECT_DIR$/app/Pos/Eventing/EventingServiceProvider.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Listeners/EmailNotifier.php" afterPath="$PROJECT_DIR$/app/Pos/Listeners/EmailNotifier.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Profiles/Profile.php" afterPath="$PROJECT_DIR$/app/Pos/Profiles/Profile.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Profiles/RegisterNewProfileCommand.php" afterPath="$PROJECT_DIR$/app/Pos/Profiles/RegisterNewProfileCommand.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Bosspos/Profiles/RegisterNewProfileCommandHandler.php" afterPath="$PROJECT_DIR$/app/Pos/Profiles/RegisterNewProfileCommandHandler.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Customer.php" afterPath="$PROJECT_DIR$/app/Pos/Customers/Customer.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Services/RegisterNewCustomer.php" afterPath="$PROJECT_DIR$/app/Pos/Customers/CustomerRegistrar.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Services/RegisterNewProfile.php" afterPath="$PROJECT_DIR$/app/Pos/Profiles/RegisterNewProfile.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/Pos/Users/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Composers/AppDetailsComposer.php" afterPath="$PROJECT_DIR$/app/Http/Composers/AppDetailsComposer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/BusServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/BusServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Commands/Command.php" afterPath="$PROJECT_DIR$/app/Commands/Command.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/CompaniesSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/CompaniesSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Company.php" afterPath="$PROJECT_DIR$/app/Company.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/CompanyControllr.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompanyControllr.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/ConfigServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/ConfigServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/Commands/CopyToRemoteCommand.php" afterPath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/Commands/CopyToRemoteCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/CurrentUserSessionControl.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/CurrentUserSessionControl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/CurrentUserSessionControl.php" afterPath="$PROJECT_DIR$/app/Services/CurrentUserSessionControl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/CustomerFieldsListSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/CustomerFieldsListSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/CustomersSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/CustomersSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
+    <list default="true" id="0c21172f-3f02-491f-8342-87092cb6754d" name="Default" comment="Moved some files around&#10;added a wizardValidation class to handel the different user validation Process'&#10;Cleaned and commented registration process a bit there is more to do though">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Repositories/WizardTabOrderRepo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Services/WizardValidations.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/pages/customer/directory.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/pages/register.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/registration.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Pos/Profiles/RegisterNewProfile.php" afterPath="$PROJECT_DIR$/app/Pos/Profiles/ProfileRegistrar.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/js/employee-registration.js" afterPath="$PROJECT_DIR$/public/js/customer-registration.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/views/new/employee.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/register.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Pos/Customers/CustomerRegistrar.php" afterPath="$PROJECT_DIR$/app/Pos/Customers/CustomerRegistrar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DashboardMenuSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DashboardMenuSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/DbExportHandler.php" afterPath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/DbExportHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/facades/DbExportHandler.php" afterPath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/facades/DbExportHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/DbExportHandlerServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/DbExportHandlerServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/DbExporter.php" afterPath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/DbExporter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/DbMigrations.php" afterPath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/DbMigrations.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/facades/DbMigrations.php" afterPath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/facades/DbMigrations.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/DbMigrationsServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/DbMigrationsServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/DbSeeding.php" afterPath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/DbSeeding.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/EmployeeFieldsListSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/EmployeeFieldsListSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/EmployeesSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/EmployeesSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Events/Event.php" afterPath="$PROJECT_DIR$/app/Events/Event.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/FacilitiesSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/FacilitiesSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Facility.php" afterPath="$PROJECT_DIR$/app/Facility.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/FacilityController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/FacilityController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/Fakers.php" afterPath="$PROJECT_DIR$/app/Services/Fakers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Interfaces/FieldsRepoInterface.php" afterPath="$PROJECT_DIR$/app/Interfaces/FieldsRepoInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Flash/Laracasts/Flash/Flash.php" afterPath="$PROJECT_DIR$/app/Providers/Flash/Laracasts/Flash/Flash.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Flash/Laracasts/Flash/FlashNotifier.php" afterPath="$PROJECT_DIR$/app/Providers/Flash/Laracasts/Flash/FlashNotifier.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Flash/Laracasts/Flash/FlashServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/Flash/Laracasts/Flash/FlashServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/Commands/GeneratorCommand.php" afterPath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/Commands/GeneratorCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" afterPath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/InterfaceObject.php" afterPath="$PROJECT_DIR$/app/InterfaceObject.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/InterfaceObjectsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/InterfaceObjectsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/Exceptions/InvalidDatabaseException.php" afterPath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/Exceptions/InvalidDatabaseException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Kernel.php" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Flash/Laracasts/Flash/LaravelSessionStore.php" afterPath="$PROJECT_DIR$/app/Providers/Flash/Laracasts/Flash/LaravelSessionStore.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Lists.php" afterPath="$PROJECT_DIR$/app/Lists.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ListsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ListsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Pos/Employees/EmployeeRegistrar.php" afterPath="$PROJECT_DIR$/app/Pos/Employees/EmployeeRegistrar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/ListsSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/ListsSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/MainNavigationSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/MainNavigationSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Mc.php" afterPath="$PROJECT_DIR$/app/Mc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Membership.php" afterPath="$PROJECT_DIR$/app/Membership.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Message.php" afterPath="$PROJECT_DIR$/app/Message.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/Commands/MigrationsGeneratorCommand.php" afterPath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/Commands/MigrationsGeneratorCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Mip.php" afterPath="$PROJECT_DIR$/app/Mip.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/NewUserFieldsRepo.php" afterPath="$PROJECT_DIR$/app/Repositories/NewUserFieldsRepo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/ObjectClasses.php" afterPath="$PROJECT_DIR$/app/ObjectClasses.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Opc.php" afterPath="$PROJECT_DIR$/app/Opc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Permission.php" afterPath="$PROJECT_DIR$/app/Permission.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/ProfileFieldsListSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/ProfileFieldsListSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/ProfilesSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/ProfilesSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Events/RecordsUserActivity.php" afterPath="$PROJECT_DIR$/app/Events/RecordsUserActivity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Commands/RegisterNewEmployeeCommand.php" afterPath="$PROJECT_DIR$/app/Commands/RegisterNewEmployeeCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Handlers/Commands/RegisterNewEmployeeCommandHandler.php" afterPath="$PROJECT_DIR$/app/Handlers/Commands/RegisterNewEmployeeCommandHandler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/Registrar.php" afterPath="$PROJECT_DIR$/app/Services/Registrar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/RegistrationFieldsListSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/RegistrationFieldsListSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/Repo.php" afterPath="$PROJECT_DIR$/app/Repositories/Repo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Interfaces/RepoInterface.php" afterPath="$PROJECT_DIR$/app/Interfaces/RepoInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/Request.php" afterPath="$PROJECT_DIR$/app/Http/Requests/Request.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Role.php" afterPath="$PROJECT_DIR$/app/Role.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/Commands/SeedGeneratorCommand.php" afterPath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/Commands/SeedGeneratorCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/Server.php" afterPath="$PROJECT_DIR$/app/Providers/Nwidart/DbExporter/Server.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Flash/Laracasts/Flash/SessionStore.php" afterPath="$PROJECT_DIR$/app/Providers/Flash/Laracasts/Flash/SessionStore.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/UpdatedUserSession.php" afterPath="$PROJECT_DIR$/app/Services/UpdatedUserSession.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/UserActivity.php" afterPath="$PROJECT_DIR$/app/UserActivity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Interfaces/UserControlsInterface.php" afterPath="$PROJECT_DIR$/app/Interfaces/UserControlsInterface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Composers/UserDetailsComposer.php" afterPath="$PROJECT_DIR$/app/Http/Composers/UserDetailsComposer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/ValidatesRequests.php" afterPath="$PROJECT_DIR$/app/Services/ValidatesRequests.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/ValidationRules.php" afterPath="$PROJECT_DIR$/app/Services/ValidationRules.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/ViewComposerServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/ViewComposerServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/WizardSteps.php" afterPath="$PROJECT_DIR$/app/Services/WizardSteps.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/app.php" afterPath="$PROJECT_DIR$/bootstrap/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/auth.php" afterPath="$PROJECT_DIR$/config/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/new/employee.blade.php" afterPath="$PROJECT_DIR$/resources/views/new/employee.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/partials/field.blade.php" afterPath="$PROJECT_DIR$/resources/views/partials/field.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/Flash/Laracasts/Flash/functions.php" afterPath="$PROJECT_DIR$/app/Providers/Flash/Laracasts/Flash/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpspec.yml" afterPath="$PROJECT_DIR$/phpspec.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/profile-dropzone.js" afterPath="$PROJECT_DIR$/public/js/profile-dropzone.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/services.php" afterPath="$PROJECT_DIR$/config/services.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bosspos1.5.iws" />
@@ -166,88 +54,7 @@
     <favorites_list name="bosspos1.5" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="EmployeeController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.916667" vertical-offset="812" max-vertical-offset="3720">
-              <caret line="78" column="32" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
-              <folding>
-                <element signature="e#40#85#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeRegistrar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Pos/Employees/EmployeeRegistrar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.375" vertical-offset="120" max-vertical-offset="1155">
-              <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-              <folding>
-                <element signature="e#37#65#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisterNewProfile.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Pos/Profiles/RegisterNewProfile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="1170">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-              <folding>
-                <element signature="e#36#66#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerRegistrar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Pos/Customers/CustomerRegistrar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.625" vertical-offset="60" max-vertical-offset="1230">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding>
-                <element signature="e#38#66#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Registrar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Services/Registrar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="945">
-              <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-              <folding>
-                <element signature="e#32#56#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="employee.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/new/employee.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35124508" vertical-offset="317" max-vertical-offset="2250">
-              <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WizardSteps.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Services/WizardSteps.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="810">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -260,18 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Bosspos/Employees/EmployeeRegistrar.php" />
-        <option value="$PROJECT_DIR$/app/Pos/Employees/Employee.php" />
-        <option value="$PROJECT_DIR$/app/Pos/Employees/EmployeeWasRegistered.php" />
-        <option value="$PROJECT_DIR$/app/Pos/Employees/EmployeeWasRemoved.php" />
-        <option value="$PROJECT_DIR$/app/Pos/Employees/RegisterNewEmployeeValidator.php" />
-        <option value="$PROJECT_DIR$/app/Pos/Employees/RemoveEmployeeCommand.php" />
-        <option value="$PROJECT_DIR$/app/Pos/Employees/RemoveEmployeeCommandHandler.php" />
-        <option value="$PROJECT_DIR$/app/Pos/Profiles/Profile.php" />
-        <option value="$PROJECT_DIR$/app/Pos/Profiles/RegisterNewProfileCommand.php" />
-        <option value="$PROJECT_DIR$/app/Pos/Profiles/RegisterNewProfileCommandHandler.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/config/auth.php" />
         <option value="$PROJECT_DIR$/app/Http/Composers/UserDetailsComposer.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Repo.php" />
         <option value="$PROJECT_DIR$/app/Pos/Customers/Customer.php" />
@@ -288,29 +83,41 @@
         <option value="$PROJECT_DIR$/database/seeds/UserSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/ProfilesSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/MainNavigationSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/ListsSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/FacilitiesSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/EmployeesSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/DashboardMenuSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/CustomersSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/CompaniesSeeder.php" />
         <option value="$PROJECT_DIR$/app/Pos/Users/User.php" />
         <option value="$PROJECT_DIR$/database/seeds/CustomerFieldsListSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/ProfileFieldsListSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/RegistrationFieldsListSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/NewUserFieldsRepo.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/field.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/EmployeeFieldsListSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Services/ValidationRules.php" />
-        <option value="$PROJECT_DIR$/app/Pos/Employees/EmployeeRegistrar.php" />
-        <option value="$PROJECT_DIR$/app/Pos/Customers/CustomerRegistrar.php" />
         <option value="$PROJECT_DIR$/app/Pos/Profiles/RegisterNewProfile.php" />
-        <option value="$PROJECT_DIR$/app/Services/Registrar.php" />
         <option value="$PROJECT_DIR$/app/Services/WizardSteps.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" />
+        <option value="$PROJECT_DIR$/app/Services/RunMultipleValidations.php" />
+        <option value="$PROJECT_DIR$/app/Services/MultipleValidations.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DashboardMenuSeeder.php" />
+        <option value="$PROJECT_DIR$/resources/views/new/register.blade.php" />
+        <option value="$PROJECT_DIR$/database/seeds/ListsSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/new/employee.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/customer-registration.js" />
+        <option value="$PROJECT_DIR$/resources/views/pages/customer/register.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/field.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/employee/register.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/registration.js" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/register.blade.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/NewUserFieldsRepo.php" />
+        <option value="$PROJECT_DIR$/app/Services/Registrar.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php" />
+        <option value="$PROJECT_DIR$/app/Pos/Profiles/ProfileRegistrar.php" />
+        <option value="$PROJECT_DIR$/app/Pos/Customers/CustomerRegistrar.php" />
+        <option value="$PROJECT_DIR$/app/Pos/Employees/EmployeeRegistrar.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/WizardTabOrderRepo.php" />
+        <option value="$PROJECT_DIR$/app/Services/WizardValidations.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" />
       </list>
     </option>
   </component>
@@ -324,9 +131,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="185" />
+    <option name="x" value="175" />
     <option name="y" value="52" />
-    <option name="width" value="1239" />
+    <option name="width" value="1229" />
     <option name="height" value="848" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -373,7 +180,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -466,6 +273,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bosspos1.5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bosspos1.5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="new" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -526,6 +355,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bosspos1.5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bosspos1.5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seeds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bosspos1.5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bosspos1.5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -544,7 +405,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Pos" />
+              <option name="myItemId" value="Services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -562,69 +423,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Pos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Profiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bosspos1.5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bosspos1.5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bosspos1.5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bosspos1.5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Handlers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bosspos1.5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bosspos1.5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Handlers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Commands" />
+              <option name="myItemId" value="Repositories" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -637,7 +436,7 @@
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.File Status" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Pos/Customers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/pages/customer" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
     <property name="FullScreen" value="false" />
     <property name="JavaScriptLanguageLevel" value="JSX" />
@@ -646,18 +445,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/js" />
+      <recent name="$PROJECT_DIR$/resources/views/pages/customer" />
+      <recent name="$PROJECT_DIR$/resources/views/new" />
       <recent name="$PROJECT_DIR$/app/Services" />
       <recent name="$PROJECT_DIR$/app/Handlers/Commands" />
-      <recent name="$PROJECT_DIR$/app/CommandHandlers" />
-      <recent name="$PROJECT_DIR$/app/Commands" />
-      <recent name="$PROJECT_DIR$/app/Providers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/pages" />
+      <recent name="$PROJECT_DIR$/resources/views/pages/employee" />
       <recent name="$PROJECT_DIR$/app/Pos/Customers" />
       <recent name="$PROJECT_DIR$/app/Pos/Profiles" />
       <recent name="$PROJECT_DIR$/app/Pos/Users" />
-      <recent name="$PROJECT_DIR$/app/Bosspos/Employees" />
-      <recent name="$PROJECT_DIR$/app/Commands" />
     </key>
   </component>
   <component name="RunManager">
@@ -675,9 +474,6 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="f797a497-aebc-4dd7-a4c1-8c2d315f10dd" server_name="bp1.5">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -685,6 +481,9 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="f797a497-aebc-4dd7-a4c1-8c2d315f10dd" server_name="bp1.5">
       <method />
     </configuration>
     <list size="0" />
@@ -712,7 +511,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431117244666</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Pipe lined the employee registration through the four register classes.&#10;Changed app name to boss. This still has fixes to be made. Including string replacements and placing my model groups in a pos working directory&#10;Next step is to  make sure I am firing off the command handler and my model is saving properly.&#10;">
+      <created>1431194105243</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1431194105243</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -736,30 +541,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="185" y="52" width="1239" height="848" extended-state="4" />
-    <editor active="true" />
+    <frame x="175" y="52" width="1229" height="848" extended-state="4" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.9576784" sideWeight="0.49954087" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32769045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993513" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32213438" sideWeight="0.50045913" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13557859" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993513" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2276029" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22701383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13557859" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32213438" sideWeight="0.50045913" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32769045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39054054" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -773,16 +578,16 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32213438" sideWeight="0.50045913" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13557859" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2276029" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39054054" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39054054" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -797,13 +602,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Testing php storm inyterface&#10;" />
     <MESSAGE value="Testing php storm interface&#10;" />
     <MESSAGE value="Pipe lined the employee registration through the four register classes.&#10;Changed app name to boss. This still has fixes to be made. Including string replacements and placing my model groups in a pos working directory&#10;Next step is to  make sure I am firing off the command handler and my model is saving properly.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pipe lined the employee registration through the four register classes.&#10;Changed app name to boss. This still has fixes to be made. Including string replacements and placing my model groups in a pos working directory&#10;Next step is to  make sure I am firing off the command handler and my model is saving properly.&#10;" />
+    <MESSAGE value="Moved some files around&#10;added a wizardValidation class to handel the different user validation Process'&#10;Cleaned and commented registration process a bit there is more to do though" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved some files around&#10;added a wizardValidation class to handel the different user validation Process'&#10;Cleaned and commented registration process a bit there is more to do though" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -819,98 +626,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Pos/Customers/Customer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19329897" vertical-offset="0" max-vertical-offset="776">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Pos/Profiles/RegisterNewProfileCommandHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="776">
-          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Pos/Profiles/Profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="776">
-          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2015-05-04.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.059366755" vertical-offset="0" max-vertical-offset="37410">
-          <caret line="3" column="174" selection-start-line="3" selection-start-column="174" selection-end-line="3" selection-end-column="174" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05625" vertical-offset="0" max-vertical-offset="800">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="3390">
-          <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Handlers/Commands/RegisterNewEmployeeCommandHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.583333" vertical-offset="40" max-vertical-offset="840">
-          <caret line="31" column="69" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/CurrentUserSessionControl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.75" vertical-offset="15" max-vertical-offset="870">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-          <folding>
-            <element signature="e#39#51#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5025773" vertical-offset="0" max-vertical-offset="776">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#79#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -926,9 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.038659792" vertical-offset="0" max-vertical-offset="776">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#45#82#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -936,9 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5219072" vertical-offset="0" max-vertical-offset="776">
           <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-          <folding>
-            <element signature="e#39#51#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -946,9 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0012886598" vertical-offset="1" max-vertical-offset="840">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#51#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -964,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3699187" vertical-offset="1393" max-vertical-offset="8520">
           <caret line="105" column="26" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -972,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42682928" vertical-offset="180" max-vertical-offset="3255">
           <caret line="26" column="89" selection-start-line="26" selection-start-column="89" selection-end-line="26" selection-end-column="89" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -980,7 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8910891" vertical-offset="0" max-vertical-offset="600">
           <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -988,7 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11881188" vertical-offset="0" max-vertical-offset="705">
           <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -996,7 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1012,9 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34793815" vertical-offset="0" max-vertical-offset="1005">
           <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#7#31#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1022,19 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11597938" vertical-offset="0" max-vertical-offset="1125">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#37#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/ListsSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33247423" vertical-offset="12" max-vertical-offset="14490">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#22#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1042,9 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.66108245" vertical-offset="783" max-vertical-offset="2355">
           <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding>
-            <element signature="e#7#25#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1052,9 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.6533506" vertical-offset="2179" max-vertical-offset="2955">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#8#33#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1062,15 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21262887" vertical-offset="0" max-vertical-offset="1095">
           <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DashboardMenuSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05897772" vertical-offset="0" max-vertical-offset="2640">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1078,9 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.076030925" vertical-offset="1" max-vertical-offset="1155">
           <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding>
-            <element signature="e#7#39#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1088,7 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="212100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1096,7 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.038659792" vertical-offset="0" max-vertical-offset="776">
           <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1114,7 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.875" vertical-offset="45" max-vertical-offset="1005">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,9 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21262887" vertical-offset="0" max-vertical-offset="2565">
           <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="e#8#33#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1132,10 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6958763" vertical-offset="0" max-vertical-offset="776">
           <caret line="117" column="15" selection-start-line="117" selection-start-column="15" selection-end-line="117" selection-end-column="15" />
-          <folding>
-            <element signature="e#7#32#0#PHP" expanded="false" />
-            <element signature="e#230#2159#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1143,10 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6958763" vertical-offset="0" max-vertical-offset="776">
           <caret line="137" column="15" selection-start-line="137" selection-start-column="15" selection-end-line="137" selection-end-column="15" />
-          <folding>
-            <element signature="e#7#32#0#PHP" expanded="false" />
-            <element signature="e#227#2600#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1154,45 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.28994846" vertical-offset="300" max-vertical-offset="1125">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#39#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/EmployeeFieldsListSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48324743" vertical-offset="225" max-vertical-offset="1800">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-          <folding>
-            <element signature="e#7#32#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/field.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.875" vertical-offset="510" max-vertical-offset="5490">
-          <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/NewUserFieldsRepo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8260309" vertical-offset="919" max-vertical-offset="1695">
-          <caret line="104" column="67" selection-start-line="104" selection-start-column="67" selection-end-line="104" selection-end-column="67" />
-          <folding>
-            <element signature="e#36#61#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.541666" vertical-offset="917" max-vertical-offset="1875">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1200,81 +818,227 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="660">
           <caret line="28" column="68" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Pos/Customers/CustomerRegistrar.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/customer/directory.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.625" vertical-offset="60" max-vertical-offset="1230">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="e#38#66#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/Registrar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="945">
-          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-          <folding>
-            <element signature="e#32#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Pos/Profiles/RegisterNewProfile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="1170">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding>
-            <element signature="e#36#66#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/WizardSteps.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="810">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Pos/Employees/EmployeeRegistrar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.375" vertical-offset="120" max-vertical-offset="1155">
-          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-          <folding>
-            <element signature="e#37#65#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/employee-registration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8576874" vertical-offset="675" max-vertical-offset="3945">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/employee/directory.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.916667" vertical-offset="812" max-vertical-offset="3720">
-          <caret line="78" column="32" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DashboardMenuSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8453473" vertical-offset="495" max-vertical-offset="2640">
+          <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
           <folding>
-            <element signature="e#40#85#0#PHP" expanded="true" />
+            <element signature="e#7#30#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/EmployeeFieldsListSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="14.375" vertical-offset="945" max-vertical-offset="1800">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/ListsSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.208334" vertical-offset="2704" max-vertical-offset="4350">
+          <caret line="284" column="30" selection-start-line="284" selection-start-column="30" selection-end-line="284" selection-end-column="30" />
+          <folding>
+            <element signature="e#7#22#0#PHP" expanded="false" />
+            <element signature="e#3413#4627#0#PHP" expanded="false" />
+            <element signature="e#4904#5180#0#PHP" expanded="false" />
+            <element signature="e#6739#34726#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/new/employee.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35124508" vertical-offset="317" max-vertical-offset="2250">
-          <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+        <state vertical-scroll-proportion="-23.666666" vertical-offset="437" max-vertical-offset="2235">
+          <caret line="67" column="69" selection-start-line="67" selection-start-column="69" selection-end-line="67" selection-end-column="69" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/customer-registration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.4790344" vertical-offset="0" max-vertical-offset="3660">
+          <caret line="235" column="4" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/WizardSteps.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43170103" vertical-offset="10" max-vertical-offset="810">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/customer/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5416665" vertical-offset="707" max-vertical-offset="2235">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/field.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47182176" vertical-offset="555" max-vertical-offset="5490">
+          <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/profile-dropzone.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.291667" vertical-offset="107" max-vertical-offset="1905">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/registration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.96188056" vertical-offset="728" max-vertical-offset="3945">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+          <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+          <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+          <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+          <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+          <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+          <caret line="99" column="8" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/InterfaceObject.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/NewUserFieldsRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6713917" vertical-offset="469" max-vertical-offset="1260">
+          <caret line="111" column="45" selection-start-line="111" selection-start-column="45" selection-end-line="111" selection-end-column="45" />
+          <folding>
+            <element signature="e#36#61#0#PHP" expanded="true" />
+            <element signature="e#1143#3577#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.508519" vertical-offset="497" max-vertical-offset="2235">
+          <caret line="59" column="44" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375" vertical-offset="300" max-vertical-offset="2505">
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+          <folding>
+            <element signature="e#40#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Pos/Profiles/ProfileRegistrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="855">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding>
+            <element signature="e#36#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Pos/Customers/CustomerRegistrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625" vertical-offset="60" max-vertical-offset="855">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#37#71#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Pos/Employees/EmployeeRegistrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23195876" vertical-offset="0" max-vertical-offset="840">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="e#37#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/Registrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17396908" vertical-offset="0" max-vertical-offset="776">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#32#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/WizardTabOrderRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38659793" vertical-offset="0" max-vertical-offset="776">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CustomerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24439919" vertical-offset="15" max-vertical-offset="2130">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/WizardValidations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3968254" vertical-offset="25" max-vertical-offset="825">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#32#73#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
