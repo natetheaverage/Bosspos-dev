@@ -6,9 +6,7 @@ use Boss\Eventing\EventDispatcher;
 class RemoveEmployeeCommandHandler implements CommandHandler {
 
 	protected $employee;
-	/**
-	 * @var
-	 */
+
 	private $dispatcher;
 
 	function __construct(Employee $employee, EventDispatcher $dispatcher)
@@ -27,7 +25,9 @@ class RemoveEmployeeCommandHandler implements CommandHandler {
 	{
 		$employee = $this->employee->findOrFail($command->employeeId);
 
-		$employee->remove();
+
+
+		//$employee->remove();
 
 		$this->dispatcher->dispatch($employee->releaseEvents());
 	}

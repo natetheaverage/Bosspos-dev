@@ -29,8 +29,11 @@ class RegisterNewEmployeeCommandHandler implements CommandHandler{
 	 */
 	public function handle($command)
 	{
+
+
 		$employeeArray = $this->createArrayWithAddedFields($command);
-		$this->employee->create($employeeArray);
+		//dd($employeeArray);
+		dd($this->employee->create($employeeArray));
 		//$this->wizardSteps->update(4);
 		//$this->dispatcher->dispatch($employee);
 

@@ -15,7 +15,7 @@ class ValidationRules {
 		],
 		'profile'  => ['first_name'  => 'required|max:55',
 					   'last_name'   => 'required|max:55',
-					   'phone'       => 'digits:10',
+					   'phone'       => 'max:20',
 					   'address_zip' => 'required|max:5',
 					   'dob'         => 'required|before:-21 years'
 		],
