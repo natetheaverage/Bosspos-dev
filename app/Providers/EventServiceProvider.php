@@ -11,8 +11,8 @@ class EventServiceProvider extends ServiceProvider {
 	 * @var array
 	 */
 	protected $listen = [
-		'Boss.Events.UserWasRegistered' => [
-			'Boss.Listening.FlashNotificationToUser',
+		'Boss.Events.UserWasRegistered2' => [
+			'Boss.Listening.FlashNotificationToUser2',
 		],
 	];
 
