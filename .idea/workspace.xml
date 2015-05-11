@@ -4,19 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c21172f-3f02-491f-8342-87092cb6754d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Listeners/FlashNotificationToUser.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Events/RecordsUserActivity.php" afterPath="$PROJECT_DIR$/app/Pos/Events/RecordsUserActivity.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Pos/Listeners/EmailNotifier.php" afterPath="$PROJECT_DIR$/app/Pos/Listening/EmailNotifier.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Pos/Listeners/ReportListeners.php" afterPath="$PROJECT_DIR$/app/Pos/Listening/ReportListeners.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Pos/Employees/EmployeeRegistrar.php" afterPath="$PROJECT_DIR$/app/Pos/Employees/EmployeeRegistrar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Handlers/Commands/RegisterNewEmployeeCommandHandler.php" afterPath="$PROJECT_DIR$/app/Handlers/Commands/RegisterNewEmployeeCommandHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Pos/Employees/RemoveEmployeeCommandHandler.php" afterPath="$PROJECT_DIR$/app/Pos/Employees/RemoveEmployeeCommandHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/ValidationRules.php" afterPath="$PROJECT_DIR$/app/Services/ValidationRules.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="0c21172f-3f02-491f-8342-87092cb6754d" name="Default" comment="" />
     <ignored path="bosspos1.5.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
