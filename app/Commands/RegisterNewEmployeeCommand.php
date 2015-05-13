@@ -14,18 +14,21 @@ class RegisterNewEmployeeCommand extends Command {
 
 	public $ss;
 
+	public $user_id;
+
 	/**
 	 * Set up Employee Command object
 	 *
 	 * @param $input
 	 */
-	function __construct($input)
+	function __construct($input, $newUser)
 	{
 		$this->title = $this->getNameOfChosenListSelection($input['title']);
 		$this->wage = $input['wage'];
 		$this->badge_number = $input['badge_number'];
 		$this->badge_type = $input['badge_type'];
 		$this->ss = $input['ss'];
+		$this->user_id = $newUser->id;
 	}
 
 	/**
@@ -40,7 +43,8 @@ class RegisterNewEmployeeCommand extends Command {
 			'wage'         => $this->wage,
 			'badge_number' => $this->badge_number,
 			'badge_type'   => $this->badge_type,
-			'ss'           => $this->ss
+			'ss'           => $this->ss,
+			'user_id'      => $this->user_id
 		];
 	}
 

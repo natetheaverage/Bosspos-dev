@@ -1,5 +1,6 @@
 <?php namespace Boss\Handlers\Commands;
 
+use Boss\Events\EmployeeWasRegistered;
 use Boss\Events\Event;
 use Boss\Services\WizardSteps;
 use Boss\Pos\Employees\EmployeeRegistrar;
@@ -30,11 +31,12 @@ class RegisterNewEmployeeCommandHandler implements CommandHandler{
 	 */
 	public function handle($command)
 	{
+
 		$employeeArray = $this->createArrayWithAddedFields($command);
-		//dd($employeeArray);
 		$newEmployee = $this->employee->create($employeeArray);
 		//$this->wizardSteps->update(4);
-		//$this->dispatcher->dispatch($employee);
+		event(new EmployeeWasRegistered($newEmployee));
+		//$this->dispatcher->dispatch($employeeArray);
 
 	}
 
@@ -50,8 +52,8 @@ class RegisterNewEmployeeCommandHandler implements CommandHandler{
 			['created_by'     => Session::get('currentUser')->id,
 			 'facility_id'    => 1,
 			 'preferences_id' => 1,
-			 'role_id'        => 1,
-			 'user_id'        => '']);
+			 'role_id'        => 1
+			]);
 
 		return $registrarArray;
 	}

@@ -45,7 +45,6 @@ class EmployeeRegistrar implements RegistrarContract {
      */
     public function create(array $data)
     {
-		//dd($data);
         return Employee::create($data);
     }
 

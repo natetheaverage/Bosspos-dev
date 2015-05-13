@@ -16,11 +16,11 @@ class EventDispatcher {
 		$this->log = $log;
 	}
 
-	public function dispatch(array $events)
+	public function dispatch($events)
 	{
-
 		foreach($events as $event)
 		{
+//dd($event);
 			$eventName = $this->getEventName($event);
 
 			$this->event->fire($eventName, $event);

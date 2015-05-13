@@ -3,13 +3,16 @@
 use Boss\Http\Requests;
 use Boss\Pos\Users\User;
 use Boss\Repositories\Repo;
-use Boss\Repositories\WizardTabOrderRepo;
-use Boss\Services\WizardValidations;
 use Illuminate\Http\Request;
 use Boss\Services\WizardSteps;
+use Boss\Services\WizardValidations;
 use Illuminate\Support\Facades\Response;
+use Boss\Repositories\WizardTabOrderRepo;
 use Boss\Pos\Employees\EmployeeRegistrar;
+use Boss\Commands\RegisterNewUserCommand;
+use Boss\Commands\RegisterNewProfileCommand;
 use Boss\Commands\RegisterNewEmployeeCommand;
+use Boss\Commands\RegisterNewCustomerCommand;
 use Boss\Pos\Employees\RemoveEmployeeCommand;
 use Boss\Repositories\NewUserFieldsRepo as UserFields;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
@@ -95,7 +98,11 @@ class EmployeeController extends Controller {
 			$this->throwValidationException($input, $validator);
 		}
 
-		$this->dispatch(new RegisterNewEmployeeCommand($input->all()));
+
+		$newUser = $this->dispatch(new RegisterNewUserCommand($input->all()));
+		$this->dispatch(new RegisterNewEmployeeCommand($input->all(), $newUser));
+		$this->dispatch(new RegisterNewProfileCommand($input->all(), $newUser));
+		$this->dispatch(new RegisterNewCustomerCommand($input->all(), $newUser));
 
 		return view('/dashboard');
 
