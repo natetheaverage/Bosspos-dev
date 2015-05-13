@@ -1,6 +1,6 @@
-<?php namespace App\Listeners;
+<?php namespace Boss\Listeners;
 
-use App\Events\SomeEvent;
+use Boss\Events\SomeEvent;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 

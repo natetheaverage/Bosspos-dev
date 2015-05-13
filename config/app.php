@@ -111,10 +111,11 @@ return [
 	'providers' => [
 
 		/*
-		 * Laravel Framework Service Providers...
-		 */
+         * Laravel Framework Service Providers...
+         */
 		'Illuminate\Foundation\Providers\ArtisanServiceProvider',
 		'Illuminate\Auth\AuthServiceProvider',
+		'Illuminate\Broadcasting\BroadcastServiceProvider',
 		'Illuminate\Bus\BusServiceProvider',
 		'Illuminate\Cache\CacheServiceProvider',
 		'Illuminate\Foundation\Providers\ConsoleSupportServiceProvider',
@@ -176,7 +177,7 @@ return [
 
 	'aliases' => [
 
-		'App'       => 'Illuminate\Support\Facades\App',
+		'Boss'       => 'Illuminate\Support\Facades\App',
 		'Artisan'   => 'Illuminate\Support\Facades\Artisan',
 		'Auth'      => 'Illuminate\Support\Facades\Auth',
 		'Blade'     => 'Illuminate\Support\Facades\Blade',

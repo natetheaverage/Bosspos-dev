@@ -145,25 +145,25 @@ class DashboardMenuSeeder extends Seeder {
 	{
 		ObjectClasses::create([
 			'object_id'   => $i,
-			'object_type' => 'App\InterfaceObject',
+			'object_type' => 'Boss\InterfaceObject',
 			'class_id'    => 19,
 			'user_id'     => 1
 		]);
 		ObjectClasses::create([
 			'object_id'   => $i,
-			'object_type' => 'App\InterfaceObject',
+			'object_type' => 'Boss\InterfaceObject',
 			'class_id'    => 22,
 			'user_id'     => 1
 		]);
 		ObjectClasses::create([
 			'object_id'   => $i,
-			'object_type' => 'App\InterfaceObject',
+			'object_type' => 'Boss\InterfaceObject',
 			'class_id'    => 655,
 			'user_id'     => 1
 		]);
 		ObjectClasses::create([
 			'object_id'   => $i,
-			'object_type' => 'App\InterfaceObject',
+			'object_type' => 'Boss\InterfaceObject',
 			'class_id'    => 666,
 			'user_id'     => 1
 		]);

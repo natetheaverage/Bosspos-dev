@@ -1,9 +1,9 @@
-<?php namespace App\Events;
+<?php namespace Boss\Events;
 
-use App\Events\Event;
+use Boss\Events\Event;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
-use App\User;
+use Boss\User;
 
 class SomeEvent extends Event
 {
