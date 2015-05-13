@@ -1,7 +1,12 @@
 {
   "private": true,
   "devDependencies": {
+<<<<<<< HEAD
     "gulp": "^3.8.8",
     "laravel-elixir": "^1.0.0"
+=======
+    "gulp": "^3.8.11",
+    "laravel-elixir": "*"
+>>>>>>> WorkingMaster
   }
 }

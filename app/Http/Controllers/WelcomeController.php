@@ -1,4 +1,7 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Boss\Http\Controllers;
+
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Session;
 
 class WelcomeController extends Controller {
 
@@ -15,12 +18,14 @@ class WelcomeController extends Controller {
 
 	/**
 	 * Create a new controller instance.
+	 * Use repo.user to create a Session object with logged in user stats
 	 *
 	 * @return void
 	 */
 	public function __construct()
 	{
 		$this->middleware('guest');
+		$this->middleware('repo.user');
 	}
 
 	/**
@@ -30,7 +35,8 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('welcome');
+        // Send user to welcome screen which hosts all entry partials
+		return view('auth.login');
 	}
 
 }

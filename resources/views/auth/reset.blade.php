@@ -1,9 +1,9 @@
-@extends('app')
+@extends('welcome')
 
 @section('content')
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
+		<div class="col-md-6 col-md-offset-3">
 			<div class="panel panel-default">
 				<div class="panel-heading">Reset Password</div>
 				<div class="panel-body">
@@ -20,7 +20,7 @@
 
 					<form class="form-horizontal" role="form" method="POST" action="{{ url('/password/reset') }}">
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
-						<input type="hidden" name="token" value="{{ $token }}">
+						<input type="hidden" name="token" value="">
 
 						<div class="form-group">
 							<label class="col-md-4 control-label">E-Mail Address</label>

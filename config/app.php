@@ -111,10 +111,11 @@ return [
 	'providers' => [
 
 		/*
-		 * Laravel Framework Service Providers...
-		 */
+         * Laravel Framework Service Providers...
+         */
 		'Illuminate\Foundation\Providers\ArtisanServiceProvider',
 		'Illuminate\Auth\AuthServiceProvider',
+		'Illuminate\Broadcasting\BroadcastServiceProvider',
 		'Illuminate\Bus\BusServiceProvider',
 		'Illuminate\Cache\CacheServiceProvider',
 		'Illuminate\Foundation\Providers\ConsoleSupportServiceProvider',
@@ -136,14 +137,30 @@ return [
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 
+
 		/*
 		 * Application Service Providers...
 		 */
-		'App\Providers\AppServiceProvider',
-		'App\Providers\BusServiceProvider',
-		'App\Providers\ConfigServiceProvider',
-		'App\Providers\EventServiceProvider',
-		'App\Providers\RouteServiceProvider',
+		'Boss\Providers\AppServiceProvider',
+		'Boss\Providers\BusServiceProvider',
+		'Boss\Providers\ConfigServiceProvider',
+		'Boss\Providers\EventServiceProvider',
+		'Boss\Providers\RouteServiceProvider',
+		'Intervention\Image\ImageServiceProvider',
+
+        /*
+		 *  My Service Providers...
+		 */
+        'Boss\Providers\ViewComposerServiceProvider',
+
+		//'Bosspos\Eventing\EventingServiceProvider',
+
+        /*
+		 * Imported Service Providers...
+		 */
+        'Collective\Html\HtmlServiceProvider',
+        'Boss\Providers\Nwidart\DbExporter\DbExportHandlerServiceProvider',
+		'Boss\Providers\Flash\Laracasts\Flash\FlashServiceProvider'
 
 	],
 
@@ -160,7 +177,7 @@ return [
 
 	'aliases' => [
 
-		'App'       => 'Illuminate\Support\Facades\App',
+		'Boss'       => 'Illuminate\Support\Facades\App',
 		'Artisan'   => 'Illuminate\Support\Facades\Artisan',
 		'Auth'      => 'Illuminate\Support\Facades\Auth',
 		'Blade'     => 'Illuminate\Support\Facades\Blade',
@@ -173,6 +190,7 @@ return [
 		'Eloquent'  => 'Illuminate\Database\Eloquent\Model',
 		'Event'     => 'Illuminate\Support\Facades\Event',
 		'File'      => 'Illuminate\Support\Facades\File',
+        'Flash'     => 'Boss\Providers\Flash\Laracasts\Flash\Flash',
 		'Hash'      => 'Illuminate\Support\Facades\Hash',
 		'Input'     => 'Illuminate\Support\Facades\Input',
 		'Inspiring' => 'Illuminate\Foundation\Inspiring',
@@ -192,6 +210,11 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+
+        'Form'              => 'Collective\Html\FormFacade',
+        'Html'              => 'Collective\Html\HtmlFacade',
+        'DbExportHandler'   => 'Boss\Providers\Nwidart\DbExporter\DbExportHandler',
+		'Image' 			=> 'Intervention\Image\Facades\Image',
 
 	],
 

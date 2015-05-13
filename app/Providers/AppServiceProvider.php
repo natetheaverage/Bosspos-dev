@@ -1,4 +1,5 @@
-<?php namespace App\Providers;
+<?php namespace Boss\Providers;
+
 
 use Illuminate\Support\ServiceProvider;
 
@@ -11,7 +12,7 @@ class AppServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		//
+
 	}
 
 	/**
@@ -19,7 +20,7 @@ class AppServiceProvider extends ServiceProvider {
 	 *
 	 * This service provider is a great spot to register your various container
 	 * bindings with the application. As you can see, we are registering our
-	 * "Registrar" implementation here. You can add your own bindings too!
+	 * "LoginRegistrar" implementation here. You can add your own bindings too!
 	 *
 	 * @return void
 	 */
@@ -27,7 +28,7 @@ class AppServiceProvider extends ServiceProvider {
 	{
 		$this->app->bind(
 			'Illuminate\Contracts\Auth\Registrar',
-			'App\Services\Registrar'
+			'Boss\Services\Registrar'
 		);
 	}
 

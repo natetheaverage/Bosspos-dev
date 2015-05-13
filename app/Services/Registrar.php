@@ -1,10 +1,21 @@
-<?php namespace App\Services;
+<?php namespace Boss\Services;
 
-use App\User;
-use Validator;
+use Boss\Pos\Users\User;
+use Illuminate\Validation\Factory as Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 
 class Registrar implements RegistrarContract {
+
+	private $rules;
+
+	private $validator;
+
+	function __construct(Validator $validator, ValidationRules $rules)
+	{
+		$this->rules = $rules;
+		$this->validator = $validator;
+	}
+
 
 	/**
 	 * Get a validator for an incoming registration request.
@@ -14,11 +25,10 @@ class Registrar implements RegistrarContract {
 	 */
 	public function validator(array $data)
 	{
-		return Validator::make($data, [
-			'name' => 'required|max:255',
-			'email' => 'required|email|max:255|unique:users',
-			'password' => 'required|confirmed|min:6',
-		]);
+		$validator = $this->validator->make($data, $this->rules->get('user'));
+		if ($validator->fails()){return $validator;}
+
+		return $validator;
 	}
 
 	/**
@@ -29,11 +39,7 @@ class Registrar implements RegistrarContract {
 	 */
 	public function create(array $data)
 	{
-		return User::create([
-			'name' => $data['name'],
-			'email' => $data['email'],
-			'password' => bcrypt($data['password']),
-		]);
+		return User::create($data);
 	}
 
 }
