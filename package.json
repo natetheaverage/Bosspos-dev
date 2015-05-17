@@ -1,12 +1,14 @@
 {
+  "name": "bosspos-socket",
+  "version": "0.0.1",
+  "description": "Laravel build accessories socket.io elixer etc...",
+  "dependencies": {
+    "express": "^4.10.2",
+    "socket.io": "^1.3.5"
+  },
   "private": true,
   "devDependencies": {
-<<<<<<< HEAD
-    "gulp": "^3.8.8",
-    "laravel-elixir": "^1.0.0"
-=======
     "gulp": "^3.8.11",
     "laravel-elixir": "*"
->>>>>>> WorkingMaster
   }
 }

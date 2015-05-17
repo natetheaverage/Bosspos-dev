@@ -46,6 +46,20 @@
 	<link href="{!! asset('plugins/pace/pace.min.css') !!}" rel="stylesheet">
 	<script src="{!! asset('plugins/pace/pace.min.js') !!}"></script>
 
+        <script src="{!! asset('socket.io/node_modules/socket.io/socket.io.js') !!}"></script>
+        <script>
+
+
+            var socket = io('http://localhost:3000');
+
+            socket.on('test-channel:EmployeeWasRegistered', function (message) {
+
+                console.log(message);
+                self.users.push(message.employee);
+            });
+
+        </script>
+
 </head>
 <body>
 <div id="container" class="effect mainnav-lg">
@@ -81,6 +95,13 @@
 			<!--Page content-->
 			<!--===================================================-->
 			<div id="page-content">
+
+                <ul v-if="employee.length > 0">
+                    <li v-repeat="employee: employees">
+                        @{{ employee.wage }} - @{{ employee.badge_number }}
+                    </li>
+                </ul>
+
                 <div class="row">
 
 				@section('content')

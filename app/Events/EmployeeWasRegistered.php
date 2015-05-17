@@ -24,6 +24,6 @@ class EmployeeWasRegistered extends Event implements ShouldBroadcast
 	 */
 	public function broadcastOn()
 	{
-		// TODO: Implement broadcastOn() method.
+		return ['test-channel'];
 	}
 }
