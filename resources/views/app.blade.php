@@ -46,6 +46,25 @@
 	<link href="{!! asset('plugins/pace/pace.min.css') !!}" rel="stylesheet">
 	<script src="{!! asset('plugins/pace/pace.min.js') !!}"></script>
 
+
+
+	<!-- react stuff-->
+		<script src="https://fb.me/react-0.13.3.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.1/JSXTransformer.js"></script>
+
+		<!--
+		<script type="text/jsx" src="{!! asset('/js/react/avitar.js')  !!}"></script>
+		<script type="text/jsx;harmony=true" src="{!! asset('/js/react/counter.js')  !!}"></script>
+		<script type="text/jsx;harmony=true" src="{!! asset('/js/react/TaskList.js')  !!}"></script>
+		<script type="text/jsx;harmony=true" src="{!! asset('/js/react/TaskApp.js')  !!}"></script>
+
+		<script type="text/jsx;harmony=true" src="{!! asset('/js/react/Gist.js')  !!}"></script>
+		<script type="text/jsx;harmony=true" src="{!! asset('/js/react/GistAddForm.js')  !!}"></script>
+		<script type="text/jsx;harmony=true" src="{!! asset('/js/react/GistBox.js')  !!}"></script>
+		-->
+
+
+
 </head>
 <body>
 <div id="container" class="effect mainnav-lg">
@@ -81,6 +100,8 @@
 			<!--Page content-->
 			<!--===================================================-->
 			<div id="page-content">
+
+<div id="receive"></div>
                 <div class="row">
 
 				@section('content')
@@ -127,6 +148,8 @@
 <script src="{!! asset('js/jquery-2.1.1.min.js') !!}"></script>
 
 
+
+
 <!--BootstrapJS [ RECOMMENDED ]-->
 <script src="{!! asset('js/bootstrap.min.js') !!}"></script>
 
@@ -170,7 +193,16 @@
 <!--JAVASCRIPT-->
 <!--=================================================-->
 
+
+
+<script src="http://192.168.10.10:3000/socket.io/socket.io.js"></script>
+<script>var socket = io('http://192.168.10.10:3000');</script>
+<script type="text/jsx;harmony=true" src="{!! asset('/js/ReceiveEvent.js')  !!}"></script>
+
+
 <script>
+
+
 	/*
 	 * A Double check modal when destroying an object
 	 */

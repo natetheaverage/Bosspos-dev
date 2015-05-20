@@ -17,9 +17,10 @@ Event::listen('illuminate.query', function($sql)
 });
 
 
+
 Route::any('/', 'WelcomeController@index');
 
-Route::any('dashboard', ['uses' => 'DashboardController@index', 'as' => 'name']);
+Route::any('dashboard', ['uses' => 'DashboardController@index']);
 
 
 Route::resource('interfaceObjects','InterfaceObjectsController');

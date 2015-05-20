@@ -108,6 +108,7 @@
         "command.migrate.make": "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider",
         "seeder": "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider",
         "command.seed": "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider",
+        "command.seeder.make": "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider",
         "composer": "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider",
         "command.queue.table": "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider",
         "command.queue.failed": "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider",

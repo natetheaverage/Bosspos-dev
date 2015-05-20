@@ -1,5 +1,6 @@
 <?php namespace Boss\Handlers\Commands;
 
+use Boss\Events\CustomerWasRegistered;
 use Boss\Pos\Customers\CustomerRegistrar;
 use Boss\Commanding\CommandHandler;
 use Boss\Eventing\EventDispatcher;
@@ -27,7 +28,7 @@ class RegisterNewCustomerCommandHandler implements CommandHandler{
 
 		$customerArray = $this->createArrayWithAddedFields($command);
 		$newCustomer = $this->customer->create($customerArray);
-		event($command);
+		event(new CustomerWasRegistered($newCustomer));
 		//$this->dispatcher->dispatch(['']);
 
 	}

@@ -98,8 +98,9 @@ class EmployeeController extends Controller {
 			$this->throwValidationException($input, $validator);
 		}
 
-
-		$newUser = $this->dispatch(new RegisterNewUserCommand($input->all()));
+		$newUser =  $input;
+		$newUser->id = 5;
+		//$newUser = $this->dispatch(new RegisterNewUserCommand($input->all()));
 		$this->dispatch(new RegisterNewEmployeeCommand($input->all(), $newUser));
 		$this->dispatch(new RegisterNewProfileCommand($input->all(), $newUser));
 		$this->dispatch(new RegisterNewCustomerCommand($input->all(), $newUser));

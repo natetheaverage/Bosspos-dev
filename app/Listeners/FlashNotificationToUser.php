@@ -9,6 +9,7 @@ class FlashNotificationToUser {
 
 	public function handle(Employee $event)
 	{
+
 		flash()->
 		info('Do Something related to reporting in Boss\Listeners\ReportListeners with new: '. $event->employee->title )->
 		timer(5000);

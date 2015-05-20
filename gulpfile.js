@@ -1,4 +1,8 @@
 var elixir = require('laravel-elixir');
+var gulp = require('gulp');
+var browserify = require('browserify');
+var babelify = require('babelify');
+var source = require('vinyl-source-stream');
 
 /*
  |--------------------------------------------------------------------------
@@ -12,21 +16,33 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
+    mix.browserify('app.js');
     mix.less('nifty.less');
     mix.less('app.less');
-
     mix.styles([
-
         'css/nifty.css',
-        'css/app.css',
-
-
-
+        'css/app.css'
     ], 'public/css/final.css', 'public');
 
-    //mix.js([
-       //'js.bosspos.js'
-    //], 'public/js/final.js', 'public' );
-
     mix.version('public/css/final.css')
+
 });
+
+
+
+/*
+gulp.task('browserify', function(){
+    return browserify('./public/js/app.js')
+    .transform(babelify, { stage: 0 })
+    .bundle()
+    .pipe(source('bundle.js'))
+    .pipe(gulp.dest('public/js'));
+
+});
+
+gulp.task('watch', function(){
+    gulp.watch('public/js/*.js', ['browserify']);
+    gulp.watch('public/js/react/*.js', ['browserify']);
+
+});
+*/
