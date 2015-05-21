@@ -151,48 +151,7 @@
 					<!--Second tab (Custom layout)-->
 					<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 					<div class="tab-pane fade" id="demo-asd-tab-2">
-
-						<!--Monthly billing-->
-						<div class="pad-all">
-							<h4 class="text-lg mar-no">Monthly Billing</h4>
-							<p class="text-sm">January 2015</p>
-							<button class="btn btn-block btn-success mar-top">Pay Now</button>
-						</div>
-
-
-						<hr>
-
-						<!--Information-->
-						<div class="text-center clearfix pad-top">
-							<div class="col-xs-6">
-								<span class="h4">4,327</span>
-								<p class="text-muted text-uppercase"><small>Sales</small></p>
-							</div>
-							<div class="col-xs-6">
-								<span class="h4">$ 1,252</span>
-								<p class="text-muted text-uppercase"><small>Earning</small></p>
-							</div>
-						</div>
-
-
-						<hr>
-
-						<!--Simple Menu-->
-						<div class="list-group bg-trans">
-							<a href="#" class="list-group-item"><span class="label label-danger pull-right">Featured</span>Edit Password</a>
-							<a href="#" class="list-group-item">Email</a>
-							<a href="#" class="list-group-item"><span class="label label-success pull-right">New</span>Chat</a>
-							<a href="#" class="list-group-item">Reports</a>
-							<a href="#" class="list-group-item">Transfer Funds</a>
-						</div>
-
-
-						<hr>
-
-						<div class="text-center">Questions?
-							<p class="text-lg text-semibold"> (415) 234-53454 </p>
-							<small><em>We are here 24/7</em></small>
-						</div>
+						<div id="receive"></div>
 					</div>
 					<!--End second tab (Custom layout)-->
 					<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->

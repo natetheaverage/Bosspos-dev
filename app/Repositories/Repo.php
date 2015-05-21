@@ -2,7 +2,7 @@
 
 use Boss\Pos\Users\User;
 use Boss\InterfaceObject;
-use Boss\Interfaces\RepoInterface;
+use Boss\Contracts\RepoInterface;
 use Illuminate\Support\Facades\Session;
 
 /**

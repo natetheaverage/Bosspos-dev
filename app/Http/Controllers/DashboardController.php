@@ -14,7 +14,6 @@ class DashboardController extends Controller {
 	{
 		$this->middleware('auth');
 		$this->middleware('repo.user');
-
 	}
 
     /**
@@ -25,14 +24,14 @@ class DashboardController extends Controller {
     public function index()
     {
 
-
 		//$savedClasses = InterfaceObject::find(3)->objectClasses;
 
         //flash()->error('This is a message!', 'hey!!', 'floating')->timer(5000);
 
-
 		//dd(Session::get('currentUser'));
-        return view ('dashboard');
+
+        return view ('/dashboard');
+
     }
 
 

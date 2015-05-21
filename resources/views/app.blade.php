@@ -101,7 +101,7 @@
 			<!--===================================================-->
 			<div id="page-content">
 
-<div id="receive"></div>
+
                 <div class="row">
 
 				@section('content')
@@ -196,7 +196,7 @@
 
 
 <script src="http://192.168.10.10:3000/socket.io/socket.io.js"></script>
-<script>var socket = io('http://192.168.10.10:3000');</script>
+<script>var socket = io.connect('http://192.168.10.10:3000');</script>
 <script type="text/jsx;harmony=true" src="{!! asset('/js/ReceiveEvent.js')  !!}"></script>
 
 

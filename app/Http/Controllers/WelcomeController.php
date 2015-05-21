@@ -1,8 +1,5 @@
 <?php namespace Boss\Http\Controllers;
 
-use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Session;
-
 class WelcomeController extends Controller {
 
 	/*

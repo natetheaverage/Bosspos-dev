@@ -1,10 +1,6 @@
-<?php
-namespace Boss\Http\Composers;
+<?php namespace Boss\Http\Composers;
 
-use Boss\Events\Event;
-use Boss\User;
 use Boss\Repositories\Repo;
-use Illuminate\Auth\Guard;
 use Illuminate\Contracts\View\View;
 
 class AppDetailsComposer {
@@ -21,8 +17,6 @@ class AppDetailsComposer {
 
 		/*
 		 *  TODO make system wide vars
-		 *
-		 *
 		 */
 
 		$app = ['title' => 'BossPOS'];

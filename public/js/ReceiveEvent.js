@@ -4,6 +4,28 @@ var ReceiveEvent = React.createClass({
 
     getInitialState: function() {
 
+        socket.on('test-channel:Boss\\Events\\CustomerWasRegistered', function (message) {
+            console.log('This is firing in receiveEvent.js :', message);
+            var name = message.customer.identification_number ;
+            this.add();
+            this.setState({ name });
+        }.bind(this))
+        .on('test-channel:Boss\\Events\\EmployeeWasRegistered', function (message) {
+            console.log('This is firing in receiveEvent.js :', message);
+            var name = message.employee.title ;
+            this.add();
+            this.setState({ name });
+        }.bind(this))
+        .on('addIt', function (message) {
+            console.log('This is addIt firing in receiveEvent.js :', message);
+            this.add();
+                $.niftyNoty({
+                    type: 'info',
+                    message: "Your browser's <strong>cookie</strong> functionality is turned off. Some settings won\'t work as expected....",
+                    container: 'floating',
+                    closeBtn: true
+                });
+        }.bind(this));
 
         localStorage.debug = '*';
 
@@ -19,34 +41,22 @@ var ReceiveEvent = React.createClass({
         this.setState({ count });
     },
     sub: function(){
-        console.log('This is sub firing in receiveEvent.js :');
-        socket.emit('test-channel:hi', this.state.count);
+
+            socket.emit('pop', { my: 'data' });
+
     },
 
     connect: function() {
 
-        socket.on('test-channel:Boss\\Events\\CustomerWasRegistered', function (message) {
-            console.log('This is firing in receiveEvent.js :', message);
-            var name = message.customer.identification_number ;
-            this.add();
-            this.setState({ name });
 
-        }.bind(this))
-            .on('test-channel:Boss\\Events\\EmployeeWasRegistered', function (message) {
-            console.log('This is firing in receiveEvent.js :', message);
-            var name = message.employee.title ;
-            this.add();
-            this.setState({ name });
-
-        }.bind(this));
     },
 
     render: function () {
         var display = (event) => <li>{event}</li>;
-        this.connect();
+        //this.connect();
         return (
             <div>
-                <h1>{this.state.name}: {this.state.count}</h1>
+                <h2>{this.state.name}: {this.state.count}</h2>
                 <button onClick={this.sub}>- 1</button>
                 <button onClick={this.add}>+ 1</button>
             </div>
