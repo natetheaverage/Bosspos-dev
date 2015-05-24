@@ -37,7 +37,6 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 *
 	 * @var array
 	 */
-
 	protected $hidden = ['password', 'remember_token'];
 
 
@@ -61,7 +60,6 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 		return $this->hasOne('Boss\Membership');
 	}
 
-
 	public function userInterface()
 	{
 		return $this->hasMany('Boss\UserActivity');
@@ -70,6 +68,21 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	public function interfaceObject()
 	{
 		return $this->hasMany('Boss\InterfaceObject', 'owner_id');
+	}
+
+	public function project()
+	{
+		return $this->hasMany('Boss\Pos\Projects\Project');
+	}
+
+	public function task()
+	{
+		return $this->hasMany('Boss\Pos\Projects\Task');
+	}
+
+	public function conversation()
+	{
+		return $this->hasMany('Boss\Pos\Conversations\Conversation');
 	}
 
 	public function registrationFields()

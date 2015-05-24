@@ -27,7 +27,7 @@ var ReceiveEvent = React.createClass({
                 });
         }.bind(this));
 
-        localStorage.debug = '*';
+        //localStorage.debug = '*';
 
         return {
             event: [],

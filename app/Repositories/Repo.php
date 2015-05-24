@@ -1,5 +1,6 @@
 <?php namespace Boss\Repositories;
 
+use Boss\Pos\Projects\Project;
 use Boss\Pos\Users\User;
 use Boss\InterfaceObject;
 use Boss\Contracts\RepoInterface;
@@ -16,11 +17,11 @@ class Repo implements RepoInterface{
     /**
      * Implements model based method
      *
-     * @param $model
+     * @param $model ('currentUser', 'objectClasses')
      * @param $id
      * @return Mixed Collection
      */
-    public function find($model, $id){
+    public function find($model, $id = null){
 
       return $this->$model($id);
 
@@ -35,7 +36,13 @@ class Repo implements RepoInterface{
      */
     public function currentUser($id)
     {
-		//TODO Interface Object cant be here
+		//TODO Interface Object shouldent be here
+		$currentUserWithRelations = $this->user(\Auth::user()->id);
+
+		return $currentUserWithRelations;
+    }
+	public function user($id)
+	{
 		$userWithRelations = User::find($id)->load
 		(
 			'profile',
@@ -47,7 +54,7 @@ class Repo implements RepoInterface{
 		);
 
 		return $userWithRelations;
-    }
+	}
 
 
 	/**
@@ -63,12 +70,26 @@ class Repo implements RepoInterface{
 		(
 			'objectClasses'
 		);
-
-
 		Session::flash('savedClasses', $savedClasses);
 	}
 
+	/**
+	 * Collects Eloquent Project model and its relationships in one object
+	 * than saves it to a session object as user.
+	 *
+	 * @param $id
+	 * @return $this
+	 */
+	public function projects($id)
+	{
+		$projectsWithRelations = Project::all()->load
+		(
+			'task',
+			'conversation.message'
+		);
 
+		return $projectsWithRelations;
+	}
 
 
 

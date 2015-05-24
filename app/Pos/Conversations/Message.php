@@ -1,4 +1,4 @@
-<?php namespace Boss;
+<?php namespace Boss\Pos\Conversations;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,15 +12,14 @@ class Message extends Model {
 	protected $fillable = [
 		'subject',
 		'body',
-		'location_id',
-		'created_by',
+		'class',
+		'conversation_id',
 		'user_id'
-
 	];
 
 	public function user()
 	{
-		$this->belongsToMany('Boss\User');
+		$this->belongsTo('Boss\Pos\Conversations\Conversation');
 	}
 
 

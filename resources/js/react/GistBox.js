@@ -1,7 +1,6 @@
 import Gist from './Gist';
 import GistAddForm from './GistAddForm';
 
-
 var GistBox = React.createClass({
 
     getInitialState: function() {

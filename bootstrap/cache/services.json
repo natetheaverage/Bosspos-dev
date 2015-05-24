@@ -32,7 +32,8 @@
         "Boss\\Providers\\ViewComposerServiceProvider",
         "Collective\\Html\\HtmlServiceProvider",
         "Boss\\Providers\\Nwidart\\DbExporter\\DbExportHandlerServiceProvider",
-        "Boss\\Providers\\Flash\\Laracasts\\Flash\\FlashServiceProvider"
+        "Boss\\Providers\\Flash\\Laracasts\\Flash\\FlashServiceProvider",
+        "Laracasts\\Utilities\\JavaScript\\JavascriptServiceProvider"
     ],
     "eager": [
         "Illuminate\\Auth\\AuthServiceProvider",
@@ -54,7 +55,8 @@
         "Intervention\\Image\\ImageServiceProvider",
         "Boss\\Providers\\ViewComposerServiceProvider",
         "Boss\\Providers\\Nwidart\\DbExporter\\DbExportHandlerServiceProvider",
-        "Boss\\Providers\\Flash\\Laracasts\\Flash\\FlashServiceProvider"
+        "Boss\\Providers\\Flash\\Laracasts\\Flash\\FlashServiceProvider",
+        "Laracasts\\Utilities\\JavaScript\\JavascriptServiceProvider"
     ],
     "deferred": {
         "command.app.name": "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider",
@@ -144,18 +146,44 @@
         "Collective\\Html\\FormBuilder": "Collective\\Html\\HtmlServiceProvider"
     },
     "when": {
-        "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider": [],
-        "Illuminate\\Broadcasting\\BroadcastServiceProvider": [],
-        "Illuminate\\Bus\\BusServiceProvider": [],
-        "Illuminate\\Cache\\CacheServiceProvider": [],
-        "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider": [],
-        "Illuminate\\Hashing\\HashServiceProvider": [],
-        "Illuminate\\Mail\\MailServiceProvider": [],
-        "Illuminate\\Pipeline\\PipelineServiceProvider": [],
-        "Illuminate\\Queue\\QueueServiceProvider": [],
-        "Illuminate\\Redis\\RedisServiceProvider": [],
-        "Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider": [],
-        "Illuminate\\Translation\\TranslationServiceProvider": [],
-        "Collective\\Html\\HtmlServiceProvider": []
+        "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider": [
+
+        ],
+        "Illuminate\\Broadcasting\\BroadcastServiceProvider": [
+
+        ],
+        "Illuminate\\Bus\\BusServiceProvider": [
+
+        ],
+        "Illuminate\\Cache\\CacheServiceProvider": [
+
+        ],
+        "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider": [
+
+        ],
+        "Illuminate\\Hashing\\HashServiceProvider": [
+
+        ],
+        "Illuminate\\Mail\\MailServiceProvider": [
+
+        ],
+        "Illuminate\\Pipeline\\PipelineServiceProvider": [
+
+        ],
+        "Illuminate\\Queue\\QueueServiceProvider": [
+
+        ],
+        "Illuminate\\Redis\\RedisServiceProvider": [
+
+        ],
+        "Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider": [
+
+        ],
+        "Illuminate\\Translation\\TranslationServiceProvider": [
+
+        ],
+        "Collective\\Html\\HtmlServiceProvider": [
+
+        ]
     }
 }

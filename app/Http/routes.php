@@ -37,6 +37,8 @@ Route::resource('customer', 'CustomerController');
 
 Route::resource('facility', 'FacilityController');
 
+Route::resource('projects', 'ProjectController');
+
 
 Route::get('interfaceObjects/create/{type}/{order}','InterfaceObjectsController@create');
 
@@ -72,6 +74,7 @@ Route::get('close.modal', function()
 {
 	return view('edit.close');
 });
+
 
 Route::get('demo1',  function()
 {

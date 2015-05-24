@@ -16,12 +16,12 @@ class CreateMessagesTable extends Migration {
 		{
 			$table->increments('id');
             $table->string('subject')->index();
-            $table->string('body')->index();
-            $table->integer('location_id')->index();
-            $table->integer('created_by')->index();
-            $table->string('user_id')->index();
-            $table->softDeletes();
-            $table->morphs('taggable');
+            $table->string('body');
+            $table->string('class');
+			$table->string('user_id')->index();
+			$table->integer('conversation_id')->index();
+			$table->integer('tagged_id');
+			$table->softDeletes();
 			$table->timestamps();
 		});
 	}

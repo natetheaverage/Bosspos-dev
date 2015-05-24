@@ -4,7 +4,11 @@
       <w>babelify</w>
       <w>bosspos</w>
       <w>browserify</w>
+      <w>fillable</w>
       <w>ioredis</w>
+      <w>opcs</w>
+      <w>projecter</w>
+      <w>tasker</w>
     </words>
   </dictionary>
 </component>

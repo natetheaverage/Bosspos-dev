@@ -1,6 +1,7 @@
 <?php namespace Boss\Http\Composers;
 
 use Boss\Repositories\Repo;
+use Carbon\Carbon;
 use Illuminate\Contracts\View\View;
 
 class AppDetailsComposer {
@@ -19,7 +20,7 @@ class AppDetailsComposer {
 		 *  TODO make system wide vars
 		 */
 
-		$app = ['title' => 'BossPOS'];
+		$app = ['title' => 'BossPOS', 'date' => new Carbon()];
 
         //$app = $this->repo->find('system', $this->facility->id());;
 		//$objectClasses = $dashboardMenu->objectClasses;

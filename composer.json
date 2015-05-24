@@ -11,7 +11,8 @@
         "fzaninotto/faker": "~1.4",
         "laracasts/flash": "~1.3",
 		"intervention/image": "dev-master",
-		"predis/predis": "~1.0@dev"
+		"predis/predis": "~1.0@dev",
+        "laracasts/utilities": "~2.0"
 
 	},
 	"require-dev": {

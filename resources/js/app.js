@@ -1,6 +1,8 @@
 
-import GistBox from './react/GistBox';
+import TaskSystem from './react/projects/TaskSystem';
+import Projecter from './react/projects/Projecter';
 
 
 
-React.render(<GistBox />, document.querySelector('#app') );
+React.render(<TaskSystem />, document.querySelector('#TaskSystem') );
+React.render(<Projecter />, document.querySelector('#ProjecterDirectory') );

@@ -2,19 +2,27 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
-use Boss\Pos\Customers\Customer;
-use Boss\Pos\Employees\Employee;
-use Boss\Pos\Profiles\Profile;
-use Boss\Pos\Users\User;
-use Boss\InterfaceObject;
-use Boss\Company;
-use Boss\Facility;
-use Boss\Mc;
-use Boss\Mip;
-use Boss\Opc;
-use Boss\Lists;
 
-class DatabaseSeeder extends Seeder {
+class DatabaseSeeder extends Seeder
+{
+
+	protected $toTruncate = [
+		'users',
+		'profiles',
+		'employees',
+		'customers',
+		'interface_objects',
+		'companies',
+		'facilities',
+		'mcs',
+		'mips',
+		'opcs',
+		'lists',
+		'projects',
+		'tasks',
+		'conversations',
+	];
+
 
 	/**
 	 * Run the database seeds.
@@ -25,40 +33,35 @@ class DatabaseSeeder extends Seeder {
 	{
 		Model::unguard();
 
-        User::truncate();
+		foreach($this->toTruncate as $table){
+			DB::table($table)->truncate();
+		}
+
 		$this->call('UserSeeder');
 
-        Profile::truncate();
 		$this->call('ProfilesSeeder');
 
-        Employee::truncate();
 		$this->call('EmployeesSeeder');
 
-        Customer::truncate();
 		$this->call('CustomersSeeder');
+		$this->call('ConversationsSeeder');
 
-        InterfaceObject::truncate();
 		$this->call('DashboardMenuSeeder');
 		$this->call('MainNavigationSeeder');
 		$this->call('RegistrationFieldsListSeeder');
 		$this->call('ProfileFieldsListSeeder');
 		$this->call('EmployeeFieldsListSeeder');
 		$this->call('CustomerFieldsListSeeder');
+		$this->call('MessagesSeeder');
 
-		Company::truncate();
 		$this->call('CompaniesSeeder');
 
-		Facility::truncate();
-		Mc::truncate();
-		Mip::truncate();
-		Opc::truncate();
 		$this->call('FacilitiesSeeder');
 
-        Lists::truncate();
 		$this->call('ListsSeeder');
+		$this->call('ProjectsSeeder');
+		$this->call('TasksSeeder');
 
-        //Saved Seeder
-        //$this->call('bossposTableSeeder');
 
 		Model::reguard();
 

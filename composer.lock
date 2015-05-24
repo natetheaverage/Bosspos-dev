@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "16f6ebc152fcb78576c743d6f146ab12",
+    "hash": "ef4cf8eaae6a7d43443e07ffdabfd1bd",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -602,17 +602,61 @@
             "time": "2015-02-01 20:07:15"
         },
         {
+            "name": "laracasts/utilities",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laracasts/PHP-Vars-To-Js-Transformer.git",
+                "reference": "fb96d2de843086af87b175c890d75561da66d393"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laracasts/PHP-Vars-To-Js-Transformer/zipball/fb96d2de843086af87b175c890d75561da66d393",
+                "reference": "fb96d2de843086af87b175c890d75561da66d393",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laracasts\\Utilities\\JavaScript\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeffrey Way",
+                    "email": "jeffrey@laracasts.com"
+                }
+            ],
+            "description": "Transform your PHP to JavaScript",
+            "keywords": [
+                "javascript",
+                "laravel"
+            ],
+            "time": "2015-02-06 17:35:14"
+        },
+        {
             "name": "laravel/framework",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "6018ebd2078c9d0c11a05543d04828405eca6980"
+                "reference": "89a9cf86f81cf257210623b3ab7115b80aebe6fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/6018ebd2078c9d0c11a05543d04828405eca6980",
-                "reference": "6018ebd2078c9d0c11a05543d04828405eca6980",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/89a9cf86f81cf257210623b3ab7115b80aebe6fd",
+                "reference": "89a9cf86f81cf257210623b3ab7115b80aebe6fd",
                 "shasum": ""
             },
             "require": {
@@ -730,7 +774,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-05-18 18:07:21"
+            "time": "2015-05-22 20:33:40"
         },
         {
             "name": "laravelcollective/html",

@@ -160,7 +160,8 @@ return [
 		 */
         'Collective\Html\HtmlServiceProvider',
         'Boss\Providers\Nwidart\DbExporter\DbExportHandlerServiceProvider',
-		'Boss\Providers\Flash\Laracasts\Flash\FlashServiceProvider'
+		'Boss\Providers\Flash\Laracasts\Flash\FlashServiceProvider',
+		'Laracasts\Utilities\JavaScript\JavascriptServiceProvider'
 
 	],
 
