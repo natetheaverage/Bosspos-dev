@@ -17,8 +17,8 @@ class CreateMessagesTable extends Migration {
 			$table->increments('id');
             $table->string('subject')->index();
             $table->string('body');
-            $table->string('class');
-			$table->string('user_id')->index();
+            $table->string('className');
+			$table->integer('user_id')->index();
 			$table->integer('conversation_id')->index();
 			$table->integer('tagged_id');
 			$table->softDeletes();

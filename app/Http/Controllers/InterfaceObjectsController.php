@@ -6,7 +6,7 @@ use Boss\InterfaceObject;
 use Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Model;
-use Boss\Services\UpdatedUserSession as Update;
+use Boss\Services\Session\CurrentUserSession as Update;
 
 class InterfaceObjectsController extends Controller {
 
@@ -50,7 +50,7 @@ class InterfaceObjectsController extends Controller {
 		}
 		Model::reguard();
 
-		$userSession->loadCurrentUser(Auth::user()->id);
+		$userSession->saveCurrentUser(Auth::user()->id);
 		return redirect()->back();
 	}
 
@@ -80,7 +80,7 @@ class InterfaceObjectsController extends Controller {
 		$this->saveToObjectClasses($object, $input);
 		$this->saveToInterfaceObject($input, $object);
 		Model::reguard();
-		$userSession->loadCurrentUser(Auth::user()->id);
+		$userSession->saveCurrentUser(Auth::user()->id);
         return redirect('close.modal');
     }
 
@@ -91,9 +91,10 @@ class InterfaceObjectsController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function destroy($interfaceObject)
+	public function destroy($interfaceObject, Update $userSession)
 	{
 		InterfaceObject::destroy($interfaceObject);
+		$userSession->saveCurrentUser(Auth::user()->id);
 		return redirect()->back();
 	}
 

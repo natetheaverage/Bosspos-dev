@@ -3,14 +3,17 @@ import Task from './Task';
 var ProjectTasks = React.createClass({
 
     getInitialState: function () {
+        var project = this.props.project[1];
 
         return {
-            tasks: this.props.tasks
+            id: this.props.project[0],
+            tasks: project.task,
+            conversations: project.conversation
         };
     },
     render: function () {
 
-        var tab = `bosspos-projecter-tab-2-${this.props.id}`;
+        var tab = `bosspos-projecter-tab-2-${this.state.id}`;
 
         var newTaskList = function(task) {
 
@@ -23,7 +26,7 @@ var ProjectTasks = React.createClass({
                 dueTime={task.dueTime}
             />
         };
-        //console.log(this.props.tasks);
+        //console.log('This is in ProjectTasks >> >> >>', this.state.tasks);
 
         return (
             <div id={tab} className="tab-pane fade">

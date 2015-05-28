@@ -3,18 +3,19 @@ import ProjectTasks from './ProjectTasks';
 import ProjectConversation from './ProjectConversation';
 
 var ProjectBody = React.createClass({
-
     getInitialState: function () {
-
+        var project = this.props.project[1];
         return {
-            classVars: []
+            id: this.props.project[0],
+            tasks: project.task,
+            conversations: project.conversation
         };
     },
     render: function () {
-        var componentName = `collapse-${this.props.id}`;
-        var tab1 = `#bosspos-projecter-tab-1-${this.props.id}`;
-        var tab2 = `#bosspos-projecter-tab-2-${this.props.id}`;
-        var tab3 = `#bosspos-projecter-tab-3-${this.props.id}`;
+        var componentName = `collapse-${this.state.id}`;
+        var tab1 = `#bosspos-projecter-tab-1-${this.state.id}`;
+        var tab2 = `#bosspos-projecter-tab-2-${this.state.id}`;
+        var tab3 = `#bosspos-projecter-tab-3-${this.state.id}`;
 
         //console.log('this is how the props come through to ProjectBody.js ', this.props);
 
@@ -34,29 +35,15 @@ var ProjectBody = React.createClass({
                             </li>
                         </ul>
                         <div className="tab-content bg-gray-dark">
-                            <ProjectDetails
-                                id={this.props.id}
-                                description={this.props.description}
-                                dueDate={this.props.dueDate}
-                                dueTime={this.props.dueTime}
-                            />
-                            <ProjectTasks
-                                id={this.props.id}
-                                tasks={this.props.tasks}
-                            />
-                            <ProjectConversation
-                                id={this.props.id}
-                                conversations={this.props.conversations}
-                            />
+                            <ProjectDetails project={this.props.project} />
+                            <ProjectTasks project={this.props.project} tasks={this.state.tasks} />
+                            <ProjectConversation project={this.props.project} conversations={this.state.conversations} />
 
                         </div>
                     </div>
                 </div>
             </div>
-
         );
     }
-
 });
-
 export default ProjectBody;

@@ -40,17 +40,20 @@ io.on('connection', function(socket){
     // Events being emited from Projects class to the server to handel
     socket
         .on('project:message', function(msg){
-
             io.emit('newProjectMessage', msg);
+            io.emit('newMessage');
     })
+        .on('project:message:change', function(id, msg){
+            socket.broadcast.to(id).emit('projectMessageChange', msg);
+            io.emit('projectMessageChange', msg);
+        })
         .on('project:conversation', function(msg){
-
             io.emit('newProjectConversation', msg);
     })
         .on('project:task', function(msg){
-
             io.emit('newProjectTask', msg);
     });
+
 });
 
 

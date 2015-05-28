@@ -2,7 +2,9 @@
 
 use Boss\Http\Requests;
 use Boss\Http\Controllers\Controller;
+use Boss\Pos\Conversations\Message;
 use Boss\Pos\Projects\Project;
+use Boss\Pos\Projects\Task;
 use Boss\Pos\Users\User;
 use Boss\Repositories\Repo;
 use Illuminate\Http\Request;
@@ -15,12 +17,12 @@ class ProjectController extends Controller
      *
      * @return Response
      */
-    public function index(Project $project, Repo $repo)
+    public function index(Repo $repo)
     {
 		\JavaScript::put([
-			'projects' => $repo->find('projects'),
-			'project' => $project->all()->toArray(),
-			'currentUser' => $repo->find('user', 1)
+			'projects' => $repo->projects(1),
+			'usersBasic' => $repo->find('usersBasic'),
+			'messageCounter' => Message::all()->count()
 		]);
 		return view('.pages.project.directory');
     }

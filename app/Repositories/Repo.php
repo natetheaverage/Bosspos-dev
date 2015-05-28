@@ -1,6 +1,7 @@
 <?php namespace Boss\Repositories;
 
 use Boss\Pos\Projects\Project;
+use Boss\Pos\Projects\Task;
 use Boss\Pos\Users\User;
 use Boss\InterfaceObject;
 use Boss\Contracts\RepoInterface;
@@ -36,11 +37,9 @@ class Repo implements RepoInterface{
      */
     public function currentUser($id)
     {
-		//TODO Interface Object shouldent be here
-		$currentUserWithRelations = $this->user(\Auth::user()->id);
-
-		return $currentUserWithRelations;
+		return $this->user(\Auth::user()->id);
     }
+
 	public function user($id)
 	{
 		$userWithRelations = User::find($id)->load
@@ -56,6 +55,10 @@ class Repo implements RepoInterface{
 		return $userWithRelations;
 	}
 
+	public function usersBasic()
+	{
+		return User::all()->load('profile')->get('id' ,['id','first_name','last_name','profile_pic']);
+	}
 
 	/**
 	 * Collects list of classes for use in field lists
@@ -66,10 +69,7 @@ class Repo implements RepoInterface{
 	 */
 	public function objectClasses($id)
 	{
-		$savedClasses = InterfaceObject::find($id)->load
-		(
-			'objectClasses'
-		);
+		$savedClasses = InterfaceObject::find($id)->load('objectClasses');
 		Session::flash('savedClasses', $savedClasses);
 	}
 
@@ -82,15 +82,7 @@ class Repo implements RepoInterface{
 	 */
 	public function projects($id)
 	{
-		$projectsWithRelations = Project::all()->load
-		(
-			'task',
-			'conversation.message'
-		);
-
-		return $projectsWithRelations;
+		return Project::all()->load('task','conversation.message');
 	}
-
-
 
 }

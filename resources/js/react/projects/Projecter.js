@@ -1,143 +1,63 @@
 import Tasker from './Tasker';
 import ProjectTitle from './ProjectTitle';
+import ProjectCommand from './ProjectCommand';
+import ObjectToArray from './ObjectToArray';
 
 
 var Projecter = React.createClass({
 
-    getInitialState: function() {
-        var projects = $(bosspos.projects);
-        var project = $(bosspos.project);
-        var projectCollection = [];
-        var taskCollection = [];
-        var conversationCollection = [];
-        var messageCollection = [];
+    getInitialState: function () {
+        var projectCollections = new ProjectCommand();
 
-        console.log('THIS IS IN PROJECTER>JS ', project);
-
-        for(var i=0; i < project.length; i++){
-            var objectLabel = 'project_'+(project[i].id);
-            projectCollection.push( {objectLabel: project[i] ] );
-
-        console.log('THIS IS IN PROJECTER>> >> >> ', projectCollection);
-
-
-
-            // set task array for sorting
-            var task = projects[i].task;
-            //for task loop
-            for(var j=0; j < task.length; j++) {
-                taskCollection.push(['task_' +task[j].id (), {
-                    id: task[i].id,
-                    title: task[i].title,
-                    description: task[i].description,
-                    className: task[i].class,
-                    dueDate: task[i].due_date,
-                    dueTime: task[i].due_time,
-                    creator_id: task[i].creator_id,
-                    owner_id: task[i].owner_id,
-                    project_id: task[i].project_id,
-                    conversation_id: task[i].conversation_id,
-                    facility_id: task[i].facility_id,
-                    created_at: task[i].created_at,
-                    updated_at: task[i].updated_at,
-                    deleted_at: task[i].deleted_at
-                }])
-            }// end for task
-
-            // set task array for sorting
-            var task = projects[i].task;
-            //for task loop
-            for(var j=0; j < task.length; j++) {
-                taskCollection.push(['task_' +task[j].id (), {
-                    id: task[i].id,
-                    title: task[i].title,
-                    description: task[i].description,
-                    className: task[i].class,
-                    dueDate: task[i].due_date,
-                    dueTime: task[i].due_time,
-                    creator_id: task[i].creator_id,
-                    owner_id: task[i].owner_id,
-                    project_id: task[i].project_id,
-                    conversation_id: task[i].conversation_id,
-                    facility_id: task[i].facility_id,
-                    created_at: task[i].created_at,
-                    updated_at: task[i].updated_at,
-                    deleted_at: task[i].deleted_at
-                }])
-            }// end for task
-
-        }// end for project
-
-
-        // LISTENING Project
+        // LISTENING to Project Events
         socket.on(['newProjectMessage'], function (message) {
-            console.log('This is newProjectMessage firing in Conversation.js :', message);
+            //console.log('This is newProjectMessage caught by socket in Projecter.js  :', message[1][1]);
             this.addMessage(message);
-            $.niftyNoty({type: 'info', message: message.message, container: 'floating', closeBtn: true, timer: 4000});
+            $.niftyNoty({type: 'info', message: message[1][1], container: 'floating', closeBtn: true, timer: 4000});
+        }.bind(this))
+        .on(['projectMessageChange'], function (message) {
+            this.updateMessage({ message });
         }.bind(this));
 
-
-
-
-
-        this.findMessageLocation(projectCollection);
-
+        var projectArray = new ObjectToArray(projectCollections.projects);
+        //console.log('THIS IS IN PROJECTER >> >> >> ',   projects);
 
         return {
-            projects: projectCollection
+            projectArray:  projectArray,
+            users: projectCollections.users,
+            projects:  projectCollections.projects,
+            conversations: projectCollections.conversations
         };
     },
-    makeMessage : function(){
-
-        return newMessage = {
-            id:41,
-            subject:'New Message',
-            body: (this.state.bodyText),
-            conversation_id: this.props.id,
-            user: 1,
-            className: 'info'
-        };
-
+    updateMessage: function (message)
+    {
+        //console.log('THIS IS IN PROJECTER>> >> >> ', message.message);
+        message = message.message;
+        var project_id = this.state.conversations[message[1].conversation_id].owner_id;
+        var insertProject = this.state.projects[project_id].conversations[message[1].conversation_id].messages[message[1].id] = message[1];// = message[1];
+        var projects = this.state.projects;
+        this.setState({ projects });
     },
-    findMessageLocation : function(projects){
-        var owningProject = projects.lastIndexOf("info");
-        console.log('this is the owning project found in findMessageLocation ', owningProject);
+    addMessage: function (message)
+    {
+        var project_id = this.state.conversations[message[1].conversation_id].owner_id;
+        var insertProject = this.state.projects[project_id].conversations[message[1].conversation_id].messages[message[1].id] = message[1];
+        var projectArray = new ObjectToArray(this.state.projects);
+        var projects = this.state.projects;
+        this.setState({ projectArray, projects });
+        //console.log('THIS IS IN PROJECTER>> >> >> ', this.state.projects);
     },
     render: function () {
 
-        var newProjectTitle = function(project){
-            return <ProjectTitle
-                id={project[1].id}
-                title={project[1].title}
-                description={project[1].description}
-                className={project[1].className}
-                dueDate={project[1].dueDate}
-                dueTime={project[1].dueTime}
-                tasks={project[1].tasks}
-                conversations={project[1].conversations}
-                task_id={project[1].task_id}
-                conversation_id={project[1].conversation_id}
-                deligated_id={project[1].deligated_id}
-                creator_id={project[1].creator_id}
-                owner_id={project[1].owner_id}
-                facility_id={project[1].facility_id}
-                created_at={project[1].created_at}
-                updated_at={project[1].updated_at}
-                deleted_at={project[1].deleted_at}
-                user_id={project[1].user_id}
-            />
-        };
-
+        var newProjectTitle = (project) => <ProjectTitle project={project} title={project[1].title} />;
 
         return (
             <div className="panel-group accordion" id="accordion">
-
-                    {this.state.projects.map(newProjectTitle)}
-
+                {this.state.projectArray.map(newProjectTitle)}
+                <div  ></div>
             </div>
         );
     }
 
 });
-
 export default Projecter;

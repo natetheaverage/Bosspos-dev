@@ -74,7 +74,7 @@ $factory->define('Boss\Pos\Conversations\Message', function ($faker) {
 	return [
 		'subject' => $faker->sentence,
 		'body' => $faker->paragraph,
-		'class' => 'info',
+		'className' => 'info',
 		'conversation_id' => rand(1,10),
 		'user_id' => rand(1,10),
 		'tagged_id' => 1,

@@ -92,6 +92,8 @@
 <!--Bosspos  [ Local editing scripts ]-->
 <script src="{!! asset('js/bosspos.js') !!}"></script>
 
+<script src="{!! asset('js/autosize.min.js') !!}"></script>
+
 
 <!-- React [React imports] -->
 <script src="https://fb.me/react-with-addons-0.13.3.js"></script>
@@ -100,7 +102,14 @@
 
 <!--Socket.io  [ Broadcasting server ]-->
 <script src="http://192.168.10.10:3000/socket.io/socket.io.js"></script>
-<script>var socket = io.connect('http://192.168.10.10:3000');</script>
+<script>
+	var socket = io.connect('http://192.168.10.10:3000');
+	var messageCounter = socket.on('newMessage', function(){
+		$(bosspos.messageCounter++);
+	})
+
+
+</script>
 
 
 <!--React  [ React components compiled ]-->
