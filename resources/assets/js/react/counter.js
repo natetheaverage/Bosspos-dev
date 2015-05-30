@@ -21,4 +21,4 @@ var Counter = React.createClass({
         );
     }
 });
-React.render(<Counter />, document.body)
+React.render(<Counter />, document.body);

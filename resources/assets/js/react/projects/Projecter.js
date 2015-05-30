@@ -10,7 +10,12 @@ var Projecter = React.createClass({
         var projectCollections = new ProjectCommand();
 
         // LISTENING to Project Events
-        socket.on(['newProjectMessage'], function (message) {
+        socket.on(['newProjectConverstion'], function (message) {
+            console.log('This is newProjectConversation caught by socket in Projecter.js  :', message[1][1]);
+            this.addConversation(message);
+            $.niftyNoty({type: 'info', message: message[1][1], container: 'floating', closeBtn: true, timer: 4000});
+        }.bind(this))
+            .on(['newProjectMessage'], function (message) {
             //console.log('This is newProjectMessage caught by socket in Projecter.js  :', message[1][1]);
             this.addMessage(message);
             $.niftyNoty({type: 'info', message: message[1][1], container: 'floating', closeBtn: true, timer: 4000});
@@ -28,6 +33,15 @@ var Projecter = React.createClass({
             projects:  projectCollections.projects,
             conversations: projectCollections.conversations
         };
+    },
+    addConversation: function (project)
+    {
+        var project_id = this.state.conversations[message[1].conversation_id].owner_id;
+        var insertProject = this.state.projects[project_id].conversations[message[1].conversation_id].messages[message[1].id] = message[1];
+        var projectArray = new ObjectToArray(this.state.projects);
+        var projects = this.state.projects;
+        this.setState({ projectArray, projects });
+        //console.log('THIS IS IN PROJECTER>> >> >> ', this.state.projects);
     },
     updateMessage: function (message)
     {

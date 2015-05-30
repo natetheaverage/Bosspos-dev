@@ -9,7 +9,6 @@ var Conversation = React.createClass({
             messages.push([i, this.props.messages[i]]);
             //console.log('THIS IS IN Conversation >> >> >> ', this.props.messages);
         }
-        ;
         return {
             id: this.props.id,
             messages: this.props.messages,

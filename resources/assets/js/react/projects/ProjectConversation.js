@@ -10,10 +10,38 @@ var ProjectConversation = React.createClass({
         return {
             id: this.props.project[0],
             tasks: project.task,
-            conversations: conversations
+            conversations: conversations,
+            conversation: {},
+            newConversationBodyText: '',
+            newConversationId: $(bosspos.messageCounter)[0]
         };
     },
-    render: function () {
+    broadcast: function (newConversation) {
+        socket.emit('project:conversation', newConversation);
+    },
+    createNewConversation: function (e) {
+        e.preventDefault();
+        var newConversationBodyText = this.state.newMessageBodyText;
+        var newConversationId = $(bosspos.messageCounter)[0] + 1;
+        var newConversation = ['message',
+            {
+                body: newConversationBodyText,
+                className: "info",
+                conversation_id: this.props.id,
+                created_at: 'time',
+                deleted_at: null,
+                id: newConversationId,
+                subject: "The teleporter resists.",
+                tagged_id: 1,
+                updated_at: 'time',
+                user_id: 1
+            }];
+        //console.log(newConversation);
+        newConversationBodyText = '';
+        this.setState({newConversationBodyText});
+        this.broadcast(newConversation)
+    },
+    render: function() {
 
         var tab = `bosspos-projecter-tab-3-${this.state.id}`;
 
@@ -46,7 +74,7 @@ var ProjectConversation = React.createClass({
                 <div className="list-group ">
                     <div className="row mar-btm">
                         <div className="col-md-12 mar-btm">
-                            <button className="btn btn-primary btn-block"><span className="fa fa-plus"></span> New Note</button>
+                            <button className="btn btn-primary btn-block" onClick={this.createNewConversation} ><span className="fa fa-plus"></span> Create A New Note</button>
                         </div>
                         {this.state.conversations.map(newConversationList)}
                     </div>

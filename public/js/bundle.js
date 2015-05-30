@@ -1,31 +1,31 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
-var _interopRequireWildcard = function (obj) { return obj && obj.__esModule ? obj : { 'default': obj }; };
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _TaskSystem = require('./react/projects/TaskSystem');
+var _reactProjectsTaskSystem = require('./react/projects/TaskSystem');
 
-var _TaskSystem2 = _interopRequireWildcard(_TaskSystem);
+var _reactProjectsTaskSystem2 = _interopRequireDefault(_reactProjectsTaskSystem);
 
-var _Projecter = require('./react/projects/Projecter');
+var _reactProjectsProjecter = require('./react/projects/Projecter');
 
-var _Projecter2 = _interopRequireWildcard(_Projecter);
+var _reactProjectsProjecter2 = _interopRequireDefault(_reactProjectsProjecter);
 
-React.render(React.createElement(_TaskSystem2['default'], null), document.querySelector('#TaskSystem'));
-React.render(React.createElement(_Projecter2['default'], null), document.querySelector('#ProjecterDirectory'));
+React.render(React.createElement(_reactProjectsTaskSystem2['default'], null), document.querySelector('#TaskSystem'));
+React.render(React.createElement(_reactProjectsProjecter2['default'], null), document.querySelector('#ProjecterDirectory'));
 
 },{"./react/projects/Projecter":11,"./react/projects/TaskSystem":14}],2:[function(require,module,exports){
 'use strict';
-
-var _interopRequireWildcard = function (obj) { return obj && obj.__esModule ? obj : { 'default': obj }; };
 
 Object.defineProperty(exports, '__esModule', {
     value: true
 });
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
 var _Message = require('./Message');
 
-var _Message2 = _interopRequireWildcard(_Message);
+var _Message2 = _interopRequireDefault(_Message);
 
 var Conversation = React.createClass({
     displayName: 'Conversation',
@@ -37,7 +37,6 @@ var Conversation = React.createClass({
             messages.push([i, this.props.messages[i]]);
             //console.log('THIS IS IN Conversation >> >> >> ', this.props.messages);
         }
-        ;
         return {
             id: this.props.id,
             messages: this.props.messages,
@@ -154,14 +153,14 @@ exports['default'] = Conversation;
 module.exports = exports['default'];
 
 },{"./Message":3}],3:[function(require,module,exports){
+//require('babel/polyfill');
+//var TextareaAutosize = require('react-textarea-autosize');
+
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
     value: true
 });
-//require('babel/polyfill');
-//var TextareaAutosize = require('react-textarea-autosize');
-
 var Message = React.createClass({
     displayName: 'Message',
 
@@ -276,12 +275,12 @@ exports['default'] = Message;
 module.exports = exports['default'];
 
 },{}],4:[function(require,module,exports){
+// Push projects to array for mapping
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
     value: true
 });
-// Push projects to array for mapping
 var ObjectToArray = function ObjectToArray() {
     var obj = arguments[0] === undefined ? { you: 'fuck', now: 'off' } : arguments[0];
 
@@ -289,7 +288,7 @@ var ObjectToArray = function ObjectToArray() {
     for (var i in obj) {
         toReturn.push([i, obj[i]]);
         //console.log('THIS IS OTA in command find the keys>> >> >> ', obj);
-    };
+    }
     return toReturn;
 };
 
@@ -301,7 +300,7 @@ function findAndReplace(object, value, replacevalue) {
             findAndReplace(object[x], value, replacevalue);
         }
         if (object[x] == value) {
-            object.name = replacevalue;
+            object['name'] = replacevalue;
             // break; // uncomment to stop after first replacement
         }
     }
@@ -315,23 +314,23 @@ module.exports = exports['default'];
 },{}],5:[function(require,module,exports){
 'use strict';
 
-var _interopRequireWildcard = function (obj) { return obj && obj.__esModule ? obj : { 'default': obj }; };
-
 Object.defineProperty(exports, '__esModule', {
     value: true
 });
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
 var _ProjectDetails = require('./ProjectDetails');
 
-var _ProjectDetails2 = _interopRequireWildcard(_ProjectDetails);
+var _ProjectDetails2 = _interopRequireDefault(_ProjectDetails);
 
 var _ProjectTasks = require('./ProjectTasks');
 
-var _ProjectTasks2 = _interopRequireWildcard(_ProjectTasks);
+var _ProjectTasks2 = _interopRequireDefault(_ProjectTasks);
 
 var _ProjectConversation = require('./ProjectConversation');
 
-var _ProjectConversation2 = _interopRequireWildcard(_ProjectConversation);
+var _ProjectConversation2 = _interopRequireDefault(_ProjectConversation);
 
 var ProjectBody = React.createClass({
     displayName: 'ProjectBody',
@@ -408,13 +407,13 @@ exports['default'] = ProjectBody;
 module.exports = exports['default'];
 
 },{"./ProjectConversation":7,"./ProjectDetails":8,"./ProjectTasks":9}],6:[function(require,module,exports){
+//import SubClass from './SubClass';
+
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
     value: true
 });
-//import SubClass from './SubClass';
-
 function ProjectCommand(newParts) {
     //alert(newParts);
     var users = $(bosspos.usersBasic);
@@ -485,14 +484,14 @@ function ProjectCommand(newParts) {
             } // end for messages
 
             // Each loop insert the newly labeled object Save and clear the collector
-            conversationCollection[conversationLabel].messages = messageCollection;
+            conversationCollection[conversationLabel]['messages'] = messageCollection;
             conversationCollection = save(conversationCollection);
             messageCollection = {};
         } // end for Conversation
 
         // Each loop insert the newly labeled object Save and clear the collector
-        projectCollection[projectLabel].tasks = taskCollection;
-        projectCollection[projectLabel].conversations = conversationCollection;
+        projectCollection[projectLabel]['tasks'] = taskCollection;
+        projectCollection[projectLabel]['conversations'] = conversationCollection;
         projectCollection = save(projectCollection);
         taskCollection = {};
         conversationCollection = {};
@@ -510,8 +509,7 @@ function ProjectCommand(newParts) {
         conversations: conversationContainer
         //messages: messageContainer
     };
-};
-
+}
 // Push projects to array for mapping
 var ObjectToArray = function ObjectToArray() {
     var obj = arguments[0] === undefined ? { you: 'fuck', now: 'off' } : arguments[0];
@@ -520,7 +518,7 @@ var ObjectToArray = function ObjectToArray() {
     for (var i in obj) {
         toReturn.push([i, obj[i]]);
         console.log('THIS IS OTA in command find the keys>> >> >> ', obj);
-    };
+    }
     return toReturn;
 };
 
@@ -530,19 +528,19 @@ module.exports = exports['default'];
 },{}],7:[function(require,module,exports){
 'use strict';
 
-var _interopRequireWildcard = function (obj) { return obj && obj.__esModule ? obj : { 'default': obj }; };
-
 Object.defineProperty(exports, '__esModule', {
     value: true
 });
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
 var _Conversation = require('./Conversation');
 
-var _Conversation2 = _interopRequireWildcard(_Conversation);
+var _Conversation2 = _interopRequireDefault(_Conversation);
 
 var _ObjectToArray = require('./ObjectToArray');
 
-var _ObjectToArray2 = _interopRequireWildcard(_ObjectToArray);
+var _ObjectToArray2 = _interopRequireDefault(_ObjectToArray);
 
 var ProjectConversation = React.createClass({
     displayName: 'ProjectConversation',
@@ -554,8 +552,35 @@ var ProjectConversation = React.createClass({
         return {
             id: this.props.project[0],
             tasks: project.task,
-            conversations: conversations
+            conversations: conversations,
+            conversation: {},
+            newConversationBodyText: '',
+            newConversationId: $(bosspos.messageCounter)[0]
         };
+    },
+    broadcast: function broadcast(newConversation) {
+        socket.emit('project:conversation', newConversation);
+    },
+    createNewConversation: function createNewConversation(e) {
+        e.preventDefault();
+        var newConversationBodyText = this.state.newMessageBodyText;
+        var newConversationId = $(bosspos.messageCounter)[0] + 1;
+        var newConversation = ['message', {
+            body: newConversationBodyText,
+            className: 'info',
+            conversation_id: this.props.id,
+            created_at: 'time',
+            deleted_at: null,
+            id: newConversationId,
+            subject: 'The teleporter resists.',
+            tagged_id: 1,
+            updated_at: 'time',
+            user_id: 1
+        }];
+        console.log(newConversation);
+        newConversationBodyText = '';
+        this.setState({ newConversationBodyText: newConversationBodyText });
+        this.broadcast(newConversation);
     },
     render: function render() {
 
@@ -598,9 +623,9 @@ var ProjectConversation = React.createClass({
                         { className: 'col-md-12 mar-btm' },
                         React.createElement(
                             'button',
-                            { className: 'btn btn-primary btn-block' },
+                            { className: 'btn btn-primary btn-block', onClick: this.createNewConversation },
                             React.createElement('span', { className: 'fa fa-plus' }),
-                            ' New Note'
+                            ' Create A New Note'
                         )
                     ),
                     this.state.conversations.map(newConversationList)
@@ -615,13 +640,13 @@ exports['default'] = ProjectConversation;
 module.exports = exports['default'];
 
 },{"./Conversation":2,"./ObjectToArray":4}],8:[function(require,module,exports){
+//import SubClass from './SubClass';
+
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-//import SubClass from './SubClass';
-
 var ProjectDetails = React.createClass({
     displayName: "ProjectDetails",
 
@@ -665,15 +690,15 @@ module.exports = exports["default"];
 },{}],9:[function(require,module,exports){
 "use strict";
 
-var _interopRequireWildcard = function (obj) { return obj && obj.__esModule ? obj : { "default": obj }; };
-
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
 var _Task = require("./Task");
 
-var _Task2 = _interopRequireWildcard(_Task);
+var _Task2 = _interopRequireDefault(_Task);
 
 var ProjectTasks = React.createClass({
     displayName: "ProjectTasks",
@@ -723,15 +748,15 @@ module.exports = exports["default"];
 },{"./Task":12}],10:[function(require,module,exports){
 "use strict";
 
-var _interopRequireWildcard = function (obj) { return obj && obj.__esModule ? obj : { "default": obj }; };
-
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
 var _ProjectBody = require("./ProjectBody");
 
-var _ProjectBody2 = _interopRequireWildcard(_ProjectBody);
+var _ProjectBody2 = _interopRequireDefault(_ProjectBody);
 
 var ProjectTitle = React.createClass({
     displayName: "ProjectTitle",
@@ -774,27 +799,27 @@ module.exports = exports["default"];
 },{"./ProjectBody":5}],11:[function(require,module,exports){
 'use strict';
 
-var _interopRequireWildcard = function (obj) { return obj && obj.__esModule ? obj : { 'default': obj }; };
-
 Object.defineProperty(exports, '__esModule', {
     value: true
 });
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
 var _Tasker = require('./Tasker');
 
-var _Tasker2 = _interopRequireWildcard(_Tasker);
+var _Tasker2 = _interopRequireDefault(_Tasker);
 
 var _ProjectTitle = require('./ProjectTitle');
 
-var _ProjectTitle2 = _interopRequireWildcard(_ProjectTitle);
+var _ProjectTitle2 = _interopRequireDefault(_ProjectTitle);
 
 var _ProjectCommand = require('./ProjectCommand');
 
-var _ProjectCommand2 = _interopRequireWildcard(_ProjectCommand);
+var _ProjectCommand2 = _interopRequireDefault(_ProjectCommand);
 
 var _ObjectToArray = require('./ObjectToArray');
 
-var _ObjectToArray2 = _interopRequireWildcard(_ObjectToArray);
+var _ObjectToArray2 = _interopRequireDefault(_ObjectToArray);
 
 var Projecter = React.createClass({
     displayName: 'Projecter',
@@ -803,7 +828,11 @@ var Projecter = React.createClass({
         var projectCollections = new _ProjectCommand2['default']();
 
         // LISTENING to Project Events
-        socket.on(['newProjectMessage'], (function (message) {
+        socket.on(['newProjectConverstion'], (function (message) {
+            //console.log('This is newProjectMessage caught by socket in Projecter.js  :', message[1][1]);
+            this.addConversation(message);
+            $.niftyNoty({ type: 'info', message: message[1][1], container: 'floating', closeBtn: true, timer: 4000 });
+        }).bind(this)).on(['newProjectMessage'], (function (message) {
             //console.log('This is newProjectMessage caught by socket in Projecter.js  :', message[1][1]);
             this.addMessage(message);
             $.niftyNoty({ type: 'info', message: message[1][1], container: 'floating', closeBtn: true, timer: 4000 });
@@ -820,6 +849,14 @@ var Projecter = React.createClass({
             projects: projectCollections.projects,
             conversations: projectCollections.conversations
         };
+    },
+    addConversation: function addConversation(project) {
+        var project_id = this.state.conversations[message[1].conversation_id].owner_id;
+        var insertProject = this.state.projects[project_id].conversations[message[1].conversation_id].messages[message[1].id] = message[1];
+        var projectArray = new _ObjectToArray2['default'](this.state.projects);
+        var projects = this.state.projects;
+        this.setState({ projectArray: projectArray, projects: projects });
+        //console.log('THIS IS IN PROJECTER>> >> >> ', this.state.projects);
     },
     updateMessage: function updateMessage(message) {
         //console.log('THIS IS IN PROJECTER>> >> >> ', message.message);
@@ -856,13 +893,13 @@ exports['default'] = Projecter;
 module.exports = exports['default'];
 
 },{"./ObjectToArray":4,"./ProjectCommand":6,"./ProjectTitle":10,"./Tasker":15}],12:[function(require,module,exports){
+//import SubClass from './SubClass';
+
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-//import SubClass from './SubClass';
-
 var Task = React.createClass({
     displayName: "Task",
 
@@ -977,15 +1014,15 @@ module.exports = exports["default"];
 },{}],14:[function(require,module,exports){
 'use strict';
 
-var _interopRequireWildcard = function (obj) { return obj && obj.__esModule ? obj : { 'default': obj }; };
-
 Object.defineProperty(exports, '__esModule', {
     value: true
 });
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
 var _TaskList = require('./TaskList');
 
-var _TaskList2 = _interopRequireWildcard(_TaskList);
+var _TaskList2 = _interopRequireDefault(_TaskList);
 
 var TaskSystem = React.createClass({
     displayName: 'TaskSystem',
@@ -1135,15 +1172,15 @@ module.exports = exports['default'];
 },{"./TaskList":13}],15:[function(require,module,exports){
 'use strict';
 
-var _interopRequireWildcard = function (obj) { return obj && obj.__esModule ? obj : { 'default': obj }; };
-
 Object.defineProperty(exports, '__esModule', {
     value: true
 });
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
 var _TaskList = require('./TaskList');
 
-var _TaskList2 = _interopRequireWildcard(_TaskList);
+var _TaskList2 = _interopRequireDefault(_TaskList);
 
 var Tasker = React.createClass({
     displayName: 'Tasker',

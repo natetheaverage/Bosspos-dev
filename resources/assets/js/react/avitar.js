@@ -19,5 +19,5 @@ var ClassName = React.createClass({
     }
 });
 
-React.render(<ClassName />, document.body)
+React.render(<ClassName />, document.body);
 

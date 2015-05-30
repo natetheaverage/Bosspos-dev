@@ -101,8 +101,7 @@ function save(jsonObj){
     };
 
 
-};
-
+}
 // Push projects to array for mapping
 var ObjectToArray = function(obj = {you:'fuck',now:'off'}) {
 
@@ -110,7 +109,7 @@ var ObjectToArray = function(obj = {you:'fuck',now:'off'}) {
     for (var i in obj) {
         toReturn.push([i, obj[i]]);
         console.log('THIS IS OTA in command find the keys>> >> >> ', obj);
-    };
+    }
     return toReturn;
 };
 
