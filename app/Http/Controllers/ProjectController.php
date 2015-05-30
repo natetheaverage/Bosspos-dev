@@ -2,6 +2,7 @@
 
 use Boss\Http\Requests;
 use Boss\Http\Controllers\Controller;
+use Boss\Pos\Conversations\Conversation;
 use Boss\Pos\Conversations\Message;
 use Boss\Pos\Projects\Project;
 use Boss\Pos\Projects\Task;
@@ -22,7 +23,8 @@ class ProjectController extends Controller
 		\JavaScript::put([
 			'projects' => $repo->projects(1),
 			'usersBasic' => $repo->find('usersBasic'),
-			'messageCounter' => Message::all()->count()
+			'messageCounter' => Message::all()->count(),
+			'conversationCounter' => Conversation::all()->count()
 		]);
 		return view('.pages.project.directory');
     }

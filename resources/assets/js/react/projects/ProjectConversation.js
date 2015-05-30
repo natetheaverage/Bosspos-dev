@@ -17,21 +17,23 @@ var ProjectConversation = React.createClass({
         };
     },
     broadcast: function (newConversation) {
+        console.log(newConversation);
         socket.emit('project:conversation', newConversation);
     },
     createNewConversation: function (e) {
         e.preventDefault();
-        var newConversationBodyText = this.state.newMessageBodyText;
-        var newConversationId = $(bosspos.messageCounter)[0] + 1;
+        var newConversationBodyText = this.state.newConversationBodyText;
+        var newConversationId = $(bosspos.conversationCounter)[0] + 1;
+        console.log(this.props);
         var newConversation = ['message',
             {
                 body: newConversationBodyText,
                 className: "info",
-                conversation_id: this.props.id,
+                project_id: this.props['project'][1]['id'],
                 created_at: 'time',
                 deleted_at: null,
                 id: newConversationId,
-                subject: "The teleporter resists.",
+                subject: "The teleprinter resists.",
                 tagged_id: 1,
                 updated_at: 'time',
                 user_id: 1

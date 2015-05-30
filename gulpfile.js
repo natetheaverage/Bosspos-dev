@@ -16,7 +16,7 @@ var browserify = require('browserify');
  */
 
 elixir(function(mix) {
-    mix.browserify('app.js');
+    mix.browserify('app.js', '', 'resources/assets/js');
     mix.less('nifty.less');
     mix.less('app.less');
     mix.styles([
