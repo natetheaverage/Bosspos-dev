@@ -11,10 +11,10 @@ var ObjectToArray = function(obj = {you:'fuck',now:'off'}) {
 
 // Finds entire object based on value  and replaces the "name" variable
 // Fix this to change any variable you choose
-function findAndReplace(object, value, replacevalue){
+function findAndReplace(object, value, replaceValue){
     for(var x in object){
         if(typeof object[x] == typeof {}){
-            findAndReplace(object[x], value, replacevalue);
+            findAndReplace(object[x], value, replaceValue);
         }
         if(object[x] == value){
             object["name"] = replacevalue;

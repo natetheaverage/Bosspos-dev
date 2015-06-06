@@ -1,6 +1,7 @@
 import ProjectDetails from './ProjectDetails';
 import ProjectTasks from './ProjectTasks';
 import ProjectConversation from './ProjectConversation';
+import ObjectToArray from './ObjectToArray';
 
 var ProjectBody = React.createClass({
     getInitialState: function () {
@@ -8,7 +9,7 @@ var ProjectBody = React.createClass({
         return {
             id: this.props.project[0],
             tasks: project.task,
-            conversations: project.conversation
+            conversations: project.conversations
         };
     },
     render: function () {
@@ -16,8 +17,8 @@ var ProjectBody = React.createClass({
         var tab1 = `#bosspos-projecter-tab-1-${this.state.id}`;
         var tab2 = `#bosspos-projecter-tab-2-${this.state.id}`;
         var tab3 = `#bosspos-projecter-tab-3-${this.state.id}`;
-
-        //console.log('this is how the props come through to ProjectBody.js ', this.props);
+        var conversations = new ObjectToArray(this.props.project[1].conversations);
+        console.log('ProjectBody.js -> render this.props.project ', this.props.project[1]);
 
         return (
             <div className="panel-collapse collapse" id={componentName} aria-expanded="false" style={{height: '0px'}}>
@@ -37,7 +38,7 @@ var ProjectBody = React.createClass({
                         <div className="tab-content bg-gray-dark">
                             <ProjectDetails project={this.props.project} />
                             <ProjectTasks project={this.props.project} tasks={this.state.tasks} />
-                            <ProjectConversation project={this.props.project} conversations={this.state.conversations} />
+                            <ProjectConversation project={this.props.project} conversations={conversations} />
 
                         </div>
                     </div>

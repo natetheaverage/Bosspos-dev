@@ -5,26 +5,26 @@ var ProjectConversation = React.createClass({
 
     getInitialState: function () {
         var project = this.props.project[1];
-        var conversations = new ObjectToArray(project.conversations);
-        //console.log("ProjectConversation ----------  ",conversations);
+        var conversations = new ObjectToArray(this.props.conversations);
+        console.log("ProjectConversation ----------  ", this.props.conversations);
         return {
             id: this.props.project[0],
             tasks: project.task,
-            conversations: conversations,
+            conversations: this.props.project.conversations,
             conversation: {},
             newConversationBodyText: '',
             newConversationId: $(bosspos.messageCounter)[0]
         };
     },
     broadcast: function (newConversation) {
-        console.log(newConversation);
+        console.log('projectConversation -> broadcast', newConversation);
         socket.emit('project:conversation', newConversation);
     },
     createNewConversation: function (e) {
         e.preventDefault();
         var newConversationBodyText = this.state.newConversationBodyText;
         var newConversationId = $(bosspos.conversationCounter)[0] + 1;
-        console.log(this.props);
+        console.log('projectConversation -> createNewConversation', this.props);
         var newConversation = ['message',
             {
                 body: newConversationBodyText,
@@ -48,8 +48,8 @@ var ProjectConversation = React.createClass({
         var tab = `bosspos-projecter-tab-3-${this.state.id}`;
 
         var newConversationList = function(conversation) {
-            conversation = conversation[1];
-            //console.log("-> ProjectConversation -> ", conversation.messages);
+            //conversation = conversation;
+            console.log("ProjectConversation -> render this.props.conversations", this.props.conversations);
 
             var messages = new ObjectToArray(conversation.messages);
 
@@ -78,7 +78,7 @@ var ProjectConversation = React.createClass({
                         <div className="col-md-12 mar-btm">
                             <button className="btn btn-primary btn-block" onClick={this.createNewConversation} ><span className="fa fa-plus"></span> Create A New Note</button>
                         </div>
-                        {this.state.conversations.map(newConversationList)}
+                        {this.props.conversations.map(newConversationList)}
                     </div>
                 </div>
             </div>
