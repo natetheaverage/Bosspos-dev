@@ -41,7 +41,7 @@ var Conversation = React.createClass({
                 updated_at: 'time',
                 user_id: 1
             }];
-        //console.log('Conversation.js@newMessage generated : ', $(bosspos.messageCounter)[0]);
+        console.log('Conversation.js@newMessage generated : ', newMessage);
         newMessageBodyText = '';
         this.setState({newMessageBodyText});
         this.broadcast(newMessage)

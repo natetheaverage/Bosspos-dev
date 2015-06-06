@@ -16,9 +16,9 @@ var Projecter = React.createClass({
             $.niftyNoty({type: 'info', message: message[1]['id'], container: 'floating', closeBtn: true, timer: 4000});
         }.bind(this))
             .on(['newProjectMessage'], function (message) {
-            console.log('This is newProjectMessage caught by socket in Projecter.js  :', message[1][1]);
+            console.log('This is newProjectMessage caught by socket in Projecter.js  :', message);
             this.addMessage(message);
-            $.niftyNoty({type: 'info', message: message[1][1], container: 'floating', closeBtn: true, timer: 4000});
+            $.niftyNoty({type: 'info', message: message[1]['id'], container: 'floating', closeBtn: true, timer: 4000});
         }.bind(this))
         .on(['projectMessageChange'], function (message) {
             this.updateMessage({ message });
@@ -55,7 +55,7 @@ var Projecter = React.createClass({
     },
     addMessage: function (message)
 {
-        console.log('Projector.js -> addMessage message[1].conversation_id ', message);
+        console.log('Projector.js -> addMessage message[1].conversation_id ', this.state.conversations[message[1].conversation_id].owner_id);
         var project_id = this.state.conversations[message[1].conversation_id].owner_id;
         var insert = this.state.projects[project_id].conversations[message[1].conversation_id].messages[message[1].id] = message[1];
         var projectArray = new ObjectToArray(this.state.projects);

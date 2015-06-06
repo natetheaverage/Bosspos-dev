@@ -18,7 +18,7 @@ var ProjectBody = React.createClass({
         var tab2 = `#bosspos-projecter-tab-2-${this.state.id}`;
         var tab3 = `#bosspos-projecter-tab-3-${this.state.id}`;
         var conversations = new ObjectToArray(this.props.project[1].conversations);
-        console.log('ProjectBody.js -> render this.props.project ', this.props.project[1]);
+        //console.log('ProjectBody.js -> render this.props.project ', this.props.project[1]);
 
         return (
             <div className="panel-collapse collapse" id={componentName} aria-expanded="false" style={{height: '0px'}}>

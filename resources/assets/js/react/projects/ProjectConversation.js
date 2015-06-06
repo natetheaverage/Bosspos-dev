@@ -6,7 +6,7 @@ var ProjectConversation = React.createClass({
     getInitialState: function () {
         var project = this.props.project[1];
         var conversations = new ObjectToArray(this.props.conversations);
-        console.log("ProjectConversation ----------  ", this.props.conversations);
+        //console.log("ProjectConversation ----------  ", this.props.conversations);
         return {
             id: this.props.project[0],
             tasks: project.task,
@@ -24,7 +24,7 @@ var ProjectConversation = React.createClass({
         e.preventDefault();
         var newConversationBodyText = this.state.newConversationBodyText;
         var newConversationId = $(bosspos.conversationCounter)[0] + 1;
-        console.log('projectConversation -> createNewConversation', this.props);
+        //console.log('projectConversation -> createNewConversation', this.props);
         var newConversation = ['message',
             {
                 body: newConversationBodyText,
@@ -49,12 +49,12 @@ var ProjectConversation = React.createClass({
 
         var newConversationList = function(conversation) {
             //conversation = conversation;
-            console.log("ProjectConversation -> render this.props.conversations", this.props.conversations);
+            //console.log("ProjectConversation -> render this.props.conversations", conversation);
 
             var messages = new ObjectToArray(conversation.messages);
 
             return <Conversation
-                id={conversation.id}
+                id={conversation[0]}
                 project={this.props.project}
                 title={conversation.title}
                 description={conversation.description}
