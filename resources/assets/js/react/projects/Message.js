@@ -14,8 +14,8 @@ var Message = React.createClass({
             conversation_id: this.props.conversation_id
         };
     },
-    broadcast: function(newMessage){
-        socket.emit('project:message:change', 1, newMessage);
+    broadcast: function(msg){
+        socket.emit(msg.channel,  msg.content, message.content.user_id);
     },
     useTextAreaResize: function(e)
     {
@@ -29,7 +29,9 @@ var Message = React.createClass({
     },
    updateMessage : function(messageBodyText){
         //var messageBodyText = this.state.messageBodyText;
-        var Message = ['message',
+        var Message = {
+            channel: '',
+            content:
             {
                 body: messageBodyText,
                 className: "info",
@@ -41,7 +43,7 @@ var Message = React.createClass({
                 tagged_id: 1,
                 updated_at: 'time',
                 user_id: 1
-            }];
+            }};
         //console.log('Message.js@updateMessage generated : ', this.props.conversation_id);
         //messageBodyText = '';
         //this.setState({ messageBodyText });

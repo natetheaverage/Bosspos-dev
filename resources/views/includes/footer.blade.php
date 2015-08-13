@@ -104,9 +104,12 @@
 <script src="http://192.168.10.10:3000/socket.io/socket.io.js"></script>
 <script>
 	var socket = io.connect('http://192.168.10.10:3000');
-	var messageCounter = socket.on('newMessage', function(){
+	var counter = socket.on('newMessage', function(){
 		$(bosspos.messageCounter++);
-	})
+	}).on('newConversation', function(){
+        $(bosspos.conversationCounter++);
+
+    })
 
 
 </script>

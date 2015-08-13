@@ -43,13 +43,19 @@ io.on('connection', function(socket){
             io.emit('newProjectMessage', msg);
             io.emit('newMessage');
     })
-        .on('project:message:change', function(id, msg){
+        .on('project:message:change', function(msg, id){
             socket.broadcast.to(id).emit('projectMessageChange', msg);
             io.emit('projectMessageChange', msg);
         })
         .on('project:conversation', function(msg){
+            console.log('new conversation');
             io.emit('newProjectConversation', msg);
+            io.emit('newConversation');
     })
+        .on('project:conversation:change', function(msg, id){
+            socket.broadcast.to(id).emit('projectConversationChange', msg);
+            io.emit('projectConversationChange', msg);
+        })
         .on('project:task', function(msg){
             io.emit('newProjectTask', msg);
     });

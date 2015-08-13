@@ -158,6 +158,7 @@ return [
         /*
 		 * Imported Service Providers...
 		 */
+        
         'Collective\Html\HtmlServiceProvider',
         'Boss\Providers\Nwidart\DbExporter\DbExportHandlerServiceProvider',
 		'Boss\Providers\Flash\Laracasts\Flash\FlashServiceProvider',
