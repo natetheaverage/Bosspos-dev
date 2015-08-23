@@ -132,3 +132,43 @@ Route::get('wizards', ['as' => '/', function()
 {
     return view('.partials.wizards.wizards');
 }]);
+
+// API Routes
+// Conversations
+get('api/conversations', function(){
+	return Boss\Pos\Conversations\Conversation::all();
+});
+post('api/conversations', function(){
+	return Boss\Pos\Conversations\Conversation::create(Request::all());
+});
+// Messages
+get('api/messages', function(){
+	return Boss\Pos\Conversations\Message::all();
+});
+post('api/messages', function(){
+	return Boss\Pos\Conversations\Message::create(Request::all());
+});
+// Projects
+get('api/projects', function(){
+	return Boss\Pos\Projects\Project::all();
+});
+post('api/projects', function(){
+
+	$newProject = Request::all();
+
+	$database = DB::table('projects');
+
+	if($database->find($newProject['id'])){
+		return $database->where('id', $newProject['id'])
+			->update($newProject);
+	};
+	return Boss\Pos\Projects\Project::create($newProject);
+
+});
+// Tasks
+get('api/tasks', function(){
+	return Boss\Pos\Projects\Task::all();
+});
+post('api/tasks', function(){
+	return Boss\Pos\Projects\Task::create(Request::all());
+});

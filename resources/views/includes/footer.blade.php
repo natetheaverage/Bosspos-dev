@@ -92,23 +92,35 @@
 <!--Bosspos  [ Local editing scripts ]-->
 <script src="{!! asset('js/bosspos.js') !!}"></script>
 
+
+
+
+<!-- Input Auto Size [auto size for text input boxes ]-->
 <script src="{!! asset('js/autosize.min.js') !!}"></script>
 
 
-<!-- React [React imports] -->
+<!-- Vendors Compiled -->
+<script src="{!! asset('js/vendor.js') !!}"></script>
+
+
+<!--BP Compiled scripts  [ Local js scripts ]-->
+<script src="js/bp-compiled.js"></script>
+
+<!-- React [React imports]
 <script src="https://fb.me/react-with-addons-0.13.3.js"></script>
 <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
-
+-->
 
 <!--Socket.io  [ Broadcasting server ]-->
 <script src="http://192.168.10.10:3000/socket.io/socket.io.js"></script>
 <script>
 	var socket = io.connect('http://192.168.10.10:3000');
-	var messageCounter = socket.on('newMessage', function(){
+	var counter = socket.on('newMessage', function(){
 		$(bosspos.messageCounter++);
-	})
+	}).on('newConversation', function(){
+        $(bosspos.conversationCounter++);
 
-
+    })
 </script>
 
 
@@ -120,8 +132,11 @@
 <!--JAVASCRIPT-->
 <!--=================================================-->
 <script>
-	var $i = $(bosspos.projects);
-	console.log($i);
+	// What the heck is this nathan??? todo
+	//var $i = $(bosspos.projects);
+	//console.log($i);
+	//?????????????????
+
 	/*
 	 * A Double check modal when destroying an object
 	 */

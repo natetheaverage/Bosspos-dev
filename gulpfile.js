@@ -16,7 +16,12 @@ var browserify = require('browserify');
  */
 
 elixir(function(mix) {
-    mix.browserify('app.js', '', 'resources/assets/js');
+    mix.browserify('app.js', 'public/js/bp-compiled.js', 'resources/assets/js' );
+    mix.scripts([
+        'vendor/vue.dev.0.12.10.js',
+        'vendor/vue-resource.js'
+    ], 'public/js/vendor.js', 'resources/assets/js');
+
     mix.less('nifty.less');
     mix.less('app.less');
     mix.styles([

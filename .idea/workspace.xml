@@ -5,6 +5,536 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c21172f-3f02-491f-8342-87092cb6754d" name="Default" comment="">
+<<<<<<< HEAD
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jsx-transformer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/react-v0.13.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\.idea\dictionaries\natetheaverage.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\public\build\css\final-bbbf5b65.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\00-RELEASENOTES" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\BUGS" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\CONTRIBUTING" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\COPYING" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\INSTALL" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\MANIFESTO" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\README" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\COPYING" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\adapters\ae.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\adapters\libev.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\adapters\libevent.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\adapters\libuv.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\async.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\async.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\dict.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\dict.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\examples\example-ae.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\examples\example-libev.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\examples\example-libevent.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\examples\example-libuv.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\examples\example.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\fmacros.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\hiredis.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\hiredis.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\net.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\net.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\sds.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\sds.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\test.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\hiredis\zmalloc.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\COPYING" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\ChangeLog" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\INSTALL" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\Makefile.in" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\README" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\autogen.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\bin\jemalloc.sh.in" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\bin\pprof" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\config.guess" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\config.stamp.in" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\config.sub" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\configure.ac" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\coverage.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\doc\html.xsl.in" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\doc\jemalloc.xml.in" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\doc\manpages.xsl.in" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\doc\stylesheet.xsl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\arena.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\atomic.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\base.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\bitmap.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\chunk.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\chunk_dss.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\chunk_mmap.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\ckh.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\ctl.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\extent.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\hash.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\huge.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\jemalloc_internal.h.in" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\jemalloc_internal_defs.h.in" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\jemalloc_internal_macros.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\mb.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\mutex.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\private_namespace.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\private_symbols.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\private_unnamespace.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\prng.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\prof.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\public_namespace.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\public_unnamespace.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\ql.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\qr.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\quarantine.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\rb.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\rtree.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\size_classes.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\stats.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\tcache.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\tsd.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\internal\util.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\jemalloc.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\jemalloc_defs.h.in" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\jemalloc_macros.h.in" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\jemalloc_mangle.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\jemalloc_protos.h.in" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\jemalloc\jemalloc_rename.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\msvc_compat\inttypes.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\msvc_compat\stdbool.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\msvc_compat\stdint.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\include\msvc_compat\strings.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\install-sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\arena.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\atomic.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\base.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\bitmap.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\chunk.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\chunk_dss.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\chunk_mmap.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\ckh.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\ctl.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\extent.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\hash.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\huge.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\jemalloc.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\mb.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\mutex.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\prof.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\quarantine.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\rtree.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\stats.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\tcache.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\tsd.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\util.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\src\zone.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\SFMT-alti.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\SFMT-params.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\SFMT-params11213.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\SFMT-params1279.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\SFMT-params132049.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\SFMT-params19937.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\SFMT-params216091.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\SFMT-params2281.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\SFMT-params4253.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\SFMT-params44497.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\SFMT-params607.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\SFMT-params86243.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\SFMT-sse2.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\SFMT.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\jemalloc_test.h.in" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\jemalloc_test_defs.h.in" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\math.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\mq.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\mtx.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\test.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\include\test\thd.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\integration\MALLOCX_ARENA.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\integration\aligned_alloc.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\integration\allocated.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\integration\allocm.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\integration\mallocx.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\integration\mremap.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\integration\posix_memalign.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\integration\rallocm.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\integration\rallocx.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\integration\thread_arena.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\integration\thread_tcache_enabled.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\integration\xallocx.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\src\SFMT.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\src\math.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\src\mtx.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\src\test.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\src\thd.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\test.sh.in" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\SFMT.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\bitmap.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\ckh.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\hash.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\junk.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\mallctl.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\math.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\mq.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\mtx.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\prof_accum.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\prof_accum.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\prof_accum_a.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\prof_accum_b.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\prof_gdump.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\prof_idump.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\ql.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\qr.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\quarantine.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\rb.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\rtree.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\stats.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\tsd.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\util.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\jemalloc\test\unit\zero.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\linenoise\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\linenoise\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\linenoise\README.markdown" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\linenoise\example.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\linenoise\linenoise.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\linenoise\linenoise.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\COPYRIGHT" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\HISTORY" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\INSTALL" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\README" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\doc\contents.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\doc\cover.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\doc\logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\doc\lua.1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\doc\lua.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\doc\lua.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\doc\luac.1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\doc\luac.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\doc\manual.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\doc\manual.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\doc\readme.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\etc\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\etc\README" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\etc\all.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\etc\lua.hpp" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\etc\lua.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\etc\lua.pc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\etc\luavs.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\etc\min.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\etc\noparser.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\etc\strict.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\fpconv.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\fpconv.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lapi.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lapi.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lauxlib.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lauxlib.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lbaselib.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lcode.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lcode.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\ldblib.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\ldebug.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\ldebug.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\ldo.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\ldo.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\ldump.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lfunc.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lfunc.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lgc.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lgc.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\linit.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\liolib.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\llex.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\llex.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\llimits.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lmathlib.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lmem.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lmem.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\loadlib.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lobject.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lobject.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lopcodes.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lopcodes.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\loslib.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lparser.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lparser.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lstate.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lstate.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lstring.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lstring.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lstrlib.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\ltable.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\ltable.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\ltablib.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\ltm.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\ltm.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lua.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lua.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lua_bit.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lua_cjson.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lua_cmsgpack.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lua_struct.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\luac.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\luaconf.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lualib.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lundump.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lundump.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lvm.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lvm.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lzio.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\lzio.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\print.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\strbuf.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\src\strbuf.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\README" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\bisect.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\cf.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\echo.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\env.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\factorial.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\fib.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\fibfor.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\globals.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\hello.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\life.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\luac.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\printf.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\readonly.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\sieve.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\sort.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\table.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\trace-calls.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\trace-globals.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\lua\test\xd.lua" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\deps\update-jemalloc.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\redis.conf" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\runtest" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\runtest-cluster" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\runtest-sentinel" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\sentinel.conf" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\Makefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\Makefile.dep" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\adlist.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\adlist.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\ae.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\ae.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\ae_epoll.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\ae_evport.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\ae_kqueue.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\ae_select.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\anet.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\anet.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\aof.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\asciilogo.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\bio.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\bio.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\bitops.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\blocked.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\cluster.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\cluster.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\config.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\config.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\crc16.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\crc64.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\crc64.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\db.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\debug.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\dict.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\dict.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\endianconv.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\endianconv.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\fmacros.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\help.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\hyperloglog.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\intset.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\intset.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\latency.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\latency.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\lzf.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\lzfP.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\lzf_c.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\lzf_d.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\memtest.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\mkreleasehdr.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\multi.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\networking.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\notify.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\object.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\pqsort.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\pqsort.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\pubsub.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\rand.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\rand.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\rdb.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\rdb.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\redis-benchmark.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\redis-check-aof.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\redis-check-dump.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\redis-cli.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\redis-trib.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\redis.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\redis.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\redisassert.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\release.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\replication.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\rio.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\rio.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\scripting.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\sds.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\sds.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\sentinel.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\setproctitle.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\sha1.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\sha1.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\slowlog.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\slowlog.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\solarisfixes.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\sort.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\sparkline.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\sparkline.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\syncio.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\t_hash.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\t_list.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\t_set.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\t_string.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\t_zset.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\testhelp.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\util.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\util.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\valgrind.sup" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\version.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\ziplist.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\ziplist.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\zipmap.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\zipmap.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\zmalloc.c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\src\zmalloc.h" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\assets\default.conf" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\assets\encodings.rdb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\assets\hash-zipmap.rdb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\cluster\cluster.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\cluster\run.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\cluster\tests\00-base.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\cluster\tests\01-faildet.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\cluster\tests\02-failover.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\cluster\tests\03-failover-loop.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\cluster\tests\04-resharding.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\cluster\tests\05-slave-selection.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\cluster\tests\06-slave-stop-cond.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\cluster\tests\07-replica-migration.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\cluster\tests\08-update-msg.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\cluster\tests\09-pubsub.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\cluster\tests\10-manual-failover.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\cluster\tests\11-manual-takeover.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\cluster\tests\helpers\onlydots.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\cluster\tests\includes\init-tests.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\cluster\tmp\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\helpers\bg_complex_data.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\helpers\gen_write_load.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\instances.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\integration\aof-race.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\integration\aof.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\integration\convert-zipmap-hash-on-load.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\integration\logging.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\integration\rdb.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\integration\redis-cli.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\integration\replication-2.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\integration\replication-3.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\integration\replication-4.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\integration\replication-psync.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\integration\replication.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\sentinel\run.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\sentinel\tests\00-base.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\sentinel\tests\01-conf-update.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\sentinel\tests\02-slaves-reconf.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\sentinel\tests\03-runtime-reconf.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\sentinel\tests\04-slave-selection.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\sentinel\tests\05-manual.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\sentinel\tests\includes\init-tests.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\sentinel\tmp\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\support\cluster.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\support\redis.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\support\server.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\support\test.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\support\tmpfile.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\support\util.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\test_helper.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\aofrw.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\auth.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\basic.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\bitops.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\dump.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\expire.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\hyperloglog.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\introspection.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\latency-monitor.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\limits.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\maxmemory.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\memefficiency.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\multi.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\obuf-limits.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\other.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\printver.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\protocol.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\pubsub.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\quit.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\scan.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\scripting.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\slowlog.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\sort.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\type\hash.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\type\list-2.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\type\list-3.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\type\list-common.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\type\list.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\type\set.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\tests\unit\type\zset.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\build-static-symbols.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\cluster_fail_time.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\create-cluster\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\create-cluster\README" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\create-cluster\create-cluster" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\generate-command-help.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\hyperloglog\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\hyperloglog\hll-err.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\hyperloglog\hll-gnuplot-graph.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\install_server.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\lru\README" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\lru\test-lru.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\mkrelease.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\redis-copy.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\redis-sha1.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\redis_init_script" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\redis_init_script.tpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\speed-regression.tcl" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Bosspos-dev\redis-3.0.1\utils\whatisdoing.sh" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/react/projects/Conversation.js" afterPath="$PROJECT_DIR$/resources/assets/js/react/projects/Conversation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/react/projects/Message.js" afterPath="$PROJECT_DIR$/resources/assets/js/react/projects/Message.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/react/projects/ProjectConversation.js" afterPath="$PROJECT_DIR$/resources/assets/js/react/projects/ProjectConversation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/react/projects/Projecter.js" afterPath="$PROJECT_DIR$/resources/assets/js/react/projects/Projecter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css.map" afterPath="$PROJECT_DIR$/public/css/app.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/app.less" afterPath="$PROJECT_DIR$/resources/assets/less/app.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bundle.js" afterPath="$PROJECT_DIR$/public/js/bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/css/final.css.map" afterPath="$PROJECT_DIR$/public/build/css/final.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/final.css.map" afterPath="$PROJECT_DIR$/public/css/final.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/final.css" afterPath="$PROJECT_DIR$/public/css/final.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/includes/footer.blade.php" afterPath="$PROJECT_DIR$/resources/views/includes/footer.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/nifty.css.map" afterPath="$PROJECT_DIR$/public/css/nifty.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/rev-manifest.json" afterPath="$PROJECT_DIR$/public/build/rev-manifest.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/socket.js" afterPath="$PROJECT_DIR$/socket.js" />
+>>>>>>> pb/Master
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bosspos1.5.iws" />
@@ -36,41 +566,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Projecter.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/Projecter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="925" max-vertical-offset="2125">
-              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="socket.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/socket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1000" max-vertical-offset="1675">
-              <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1106" max-vertical-offset="1825">
+              <caret line="55" column="75" selection-start-line="55" selection-start-column="75" selection-end-line="55" selection-end-column="75" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectConversation.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/ProjectConversation.js">
+      <file leaf-file-name="Projecter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/Projecter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.52693206" vertical-offset="900" max-vertical-offset="2375">
-              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProjectBody.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/ProjectBody.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="1400">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+<<<<<<< HEAD
+            <state vertical-scroll-proportion="0.0" vertical-offset="925" max-vertical-offset="2125">
+              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="1081" max-vertical-offset="2450">
+              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+>>>>>>> pb/Master
               <folding />
             </state>
           </provider>
@@ -79,8 +594,78 @@
       <file leaf-file-name="Conversation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/Conversation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="2550">
-              <caret line="21" column="6" selection-start-line="19" selection-start-column="3" selection-end-line="21" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2400" max-vertical-offset="3400">
+              <caret line="106" column="41" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="react-v0.13.3.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/react-v0.13.3.js">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state vertical-scroll-proportion="-0.52693206" vertical-offset="900" max-vertical-offset="2375">
+              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+=======
+            <state vertical-scroll-proportion="0.0" vertical-offset="9275" max-vertical-offset="541175">
+              <caret line="381" column="31" selection-start-line="381" selection-start-column="31" selection-end-line="381" selection-end-column="31" />
+>>>>>>> pb/Master
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="1400">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+=======
+            <state vertical-scroll-proportion="1.5" vertical-offset="36" max-vertical-offset="600">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> pb/Master
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.9583334" vertical-offset="47" max-vertical-offset="1575">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.65822786" vertical-offset="3740" max-vertical-offset="5725">
+              <caret line="160" column="8" selection-start-line="160" selection-start-column="8" selection-end-line="160" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kernel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.125" vertical-offset="505" max-vertical-offset="1000">
+              <caret line="28" column="45" selection-start-line="23" selection-start-column="6" selection-end-line="28" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jsx-transformer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/jsx-transformer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="817476" max-vertical-offset="1591950">
+              <caret line="32703" column="0" selection-start-line="32703" selection-start-column="0" selection-end-line="32703" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,21 +674,11 @@
       <file leaf-file-name="Message.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/Message.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="2100">
-              <caret line="51" column="25" selection-start-line="58" selection-start-column="72" selection-end-line="58" selection-end-column="73" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1575" max-vertical-offset="2150">
+              <caret line="71" column="97" selection-start-line="71" selection-start-column="80" selection-end-line="71" selection-end-column="100" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/less/app.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1625" max-vertical-offset="1925">
-              <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -126,17 +701,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Composers/AppDetailsComposer.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/project/manager.blade.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/app/Pos/Users/User.php" />
-        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
-        <option value="$PROJECT_DIR$/config/javascript.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2015_05_22_192853_CreateProjectsTable.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2015_05_22_193047_create_tasks_table.php" />
-        <option value="$PROJECT_DIR$/app/Pos/Projects/Task.php" />
-        <option value="$PROJECT_DIR$/database/seeds/TasksSeeder.php" />
         <option value="$PROJECT_DIR$/resources/js/react/projects/Tasker.js" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/resources/views/pages/project/directory.blade.php" />
@@ -165,18 +729,29 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/js/react/projects/ProjectTitle.js" />
         <option value="$PROJECT_DIR$/resources/js/react/projects/ProjectBody.js" />
-        <option value="$PROJECT_DIR$/socket.js" />
         <option value="$PROJECT_DIR$/node_modules/autosize/src/autosize.js" />
-        <option value="$PROJECT_DIR$/resources/views/includes/footer.blade.php" />
-        <option value="$PROJECT_DIR$/resources/assets/less/app.less" />
         <option value="$PROJECT_DIR$/resources/js/react/projects/Message.js" />
         <option value="$PROJECT_DIR$/resources/js/react/projects/Conversation.js" />
         <option value="$PROJECT_DIR$/resources/js/react/projects/ProjectConversation.js" />
         <option value="$PROJECT_DIR$/resources/js/react/projects/Projecter.js" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" />
-        <option value="$PROJECT_DIR$/resources/assets/js/react/projects/Projecter.js" />
+        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/includes/header.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/js/react/projects/ObjectToArray.js" />
+        <option value="$PROJECT_DIR$/resources/assets/js/react/projects/ProjectBody.js" />
         <option value="$PROJECT_DIR$/resources/assets/js/react/projects/ProjectConversation.js" />
+        <option value="$PROJECT_DIR$/resources/assets/less/app.less" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/includes/footer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/js/react/projects/Message.js" />
+        <option value="$PROJECT_DIR$/public/plugins/bootstrap-validator/bootstrapValidator.js" />
+        <option value="$PROJECT_DIR$/socket.js" />
+        <option value="$PROJECT_DIR$/resources/assets/js/react/projects/Projecter.js" />
+        <option value="$PROJECT_DIR$/resources/assets/js/react/projects/Conversation.js" />
+        <option value="$PROJECT_DIR$/public/jsx-transformer.js" />
+        <option value="$PROJECT_DIR$/public/js/react-v0.13.3.js" />
+        <option value="$PROJECT_DIR$/config/app.php" />
       </list>
     </option>
   </component>
@@ -194,10 +769,16 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="247" />
     <option name="y" value="123" />
     <option name="width" value="1079" />
     <option name="height" value="744" />
+=======
+    <option name="y" value="6" />
+    <option name="width" value="1092" />
+    <option name="height" value="668" />
+>>>>>>> pb/Master
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -265,8 +846,14 @@
       <sortByType />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scope">
         <subPane subId="Project Files">
+=======
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+>>>>>>> pb/Master
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
               <option name="myItemId" value="" />
@@ -284,9 +871,15 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
             <PATH_ELEMENT USER_OBJECT="bosspos1.5">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
+=======
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bosspos-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+>>>>>>> pb/Master
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -301,11 +894,19 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="bosspos1.5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bosspos1.5" />
+=======
+              <option name="myItemId" value="Bosspos-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+>>>>>>> pb/Master
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -315,7 +916,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bosspos1.5" />
+              <option name="myItemId" value="Bosspos-dev" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -329,7 +930,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bosspos1.5" />
+              <option name="myItemId" value="Bosspos-dev" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -343,7 +944,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bosspos1.5" />
+              <option name="myItemId" value="Bosspos-dev" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -354,6 +955,13 @@
               <option name="myItemId" value="Http" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
+=======
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+>>>>>>> pb/Master
           </PATH>
         </subPane>
       </pane>
@@ -361,7 +969,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
@@ -374,11 +982,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\Bosspos-dev\config" />
       <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/resources/js/react/projects" />
       <recent name="$PROJECT_DIR$/app/Events" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/resources/views/pages/customer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp\www\Bosspos-dev\resources\assets" />
@@ -476,7 +1084,19 @@
       <option name="project" value="LOCAL" />
       <updated>1432124596618</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="still working on projects.js&#10;">
+      <created>1433561829592</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1433561829592</updated>
+    </task>
+    <task id="LOCAL-00010" summary="still working on projects.js&#10;">
+      <created>1433704120698</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1433704120698</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -500,27 +1120,51 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="247" y="123" width="1079" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3266187" sideWeight="0.49954087" order="7" side_tool="false" content_ui="tabs" />
+=======
+    <frame x="0" y="6" width="1092" height="668" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24092409" sideWeight="0.49954087" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> pb/Master
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993513" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27618164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13557859" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32213438" sideWeight="0.50045913" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32805756" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30111524" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13557859" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32213438" sideWeight="0.50045913" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281787" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> pb/Master
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32769045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+>>>>>>> pb/Master
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39054054" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -571,7 +1215,8 @@
     <MESSAGE value="Moved some files around&#10;added a wizardValidation class to handel the different user validation Process'&#10;Cleaned and commented registration process a bit there is more to do though" />
     <MESSAGE value="gogogo" />
     <MESSAGE value="react socket working&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="react socket working&#10;" />
+    <MESSAGE value="still working on projects.js&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="still working on projects.js&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -592,115 +1237,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/Message.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1344">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/less/app.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1040" max-vertical-offset="1232">
-          <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/react/GistAddForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/react/Gist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38767394" vertical-offset="0" max-vertical-offset="503">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/nifty.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="20850">
-          <caret line="17" column="75" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/Tasker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35785288" vertical-offset="0" max-vertical-offset="503">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_05_22_193047_create_tasks_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32985386" vertical-offset="187" max-vertical-offset="690">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_05_22_194558_create_conversations_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="90" max-vertical-offset="660">
-          <caret line="23" column="41" selection-start-line="16" selection-start-column="12" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/ConversationsSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/ProjectsSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="330">
-          <caret line="13" column="59" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/MessagesSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4697286" vertical-offset="0" max-vertical-offset="479">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5407098" vertical-offset="551" max-vertical-offset="1125">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Pos/Conversations/Message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43841335" vertical-offset="0" max-vertical-offset="495">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Pos/Conversations/Conversation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.333333" vertical-offset="286" max-vertical-offset="765">
-          <caret line="42" column="59" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Pos/Projects/Project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70563674" vertical-offset="352" max-vertical-offset="900">
-          <caret line="46" column="61" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/Task.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
@@ -747,20 +1283,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
           <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/ObjectToArray.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32188842" vertical-offset="585" max-vertical-offset="2130">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -848,13 +1370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/ProjectTitle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5576208" vertical-offset="0" max-vertical-offset="800">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/TaskSystem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1440">
@@ -869,58 +1384,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/includes/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2475" max-vertical-offset="3850">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/less/app.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1447" max-vertical-offset="1925">
-          <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.homestead/Homestead.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7534626" vertical-offset="0" max-vertical-offset="624">
           <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/Message.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="764" max-vertical-offset="1344">
-          <caret line="51" column="25" selection-start-line="58" selection-start-column="72" selection-end-line="58" selection-end-column="73" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/Conversation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="3264">
-          <caret line="21" column="6" selection-start-line="19" selection-start-column="3" selection-end-line="21" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="416">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/ProjectBody.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="1400">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -931,21 +1398,224 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/includes/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53457445" vertical-offset="249" max-vertical-offset="1025">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/ProjectTitle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.19" vertical-offset="376" max-vertical-offset="800">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/ProjectBody.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="325" max-vertical-offset="1400">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/less/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7429378" vertical-offset="971" max-vertical-offset="9500">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/less/nifty.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/less/app.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.872449" vertical-offset="1508" max-vertical-offset="2050">
+          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Lists.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="650">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dashboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30314234" vertical-offset="36" max-vertical-offset="1325">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.632911" vertical-offset="0" max-vertical-offset="3275">
+          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/ObjectToArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2893518" vertical-offset="93" max-vertical-offset="825">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Listeners/EventListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/react/counter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="725">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="325">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="74.166664" vertical-offset="2105" max-vertical-offset="2500">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProjectController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6610577" vertical-offset="150" max-vertical-offset="2300">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="32" />
+        <state vertical-scroll-proportion="-13.541667" vertical-offset="150" max-vertical-offset="2300">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/ProjectConversation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1606" max-vertical-offset="2400">
+          <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/includes/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2525" max-vertical-offset="3925">
+          <caret line="111" column="6" selection-start-line="111" selection-start-column="6" selection-end-line="111" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/plugins/bootstrap-validator/bootstrapValidator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.2840095" vertical-offset="1711" max-vertical-offset="198850">
+          <caret line="165" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1106" max-vertical-offset="1825">
+          <caret line="55" column="75" selection-start-line="55" selection-start-column="75" selection-end-line="55" selection-end-column="75" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/Projecter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="825" max-vertical-offset="2075">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1081" max-vertical-offset="2450">
+          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/Message.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1575" max-vertical-offset="2150">
+          <caret line="71" column="97" selection-start-line="71" selection-start-column="80" selection-end-line="71" selection-end-column="100" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/react/projects/Conversation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2400" max-vertical-offset="3400">
+          <caret line="106" column="41" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/jsx-transformer.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="1400">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="817476" max-vertical-offset="1591950">
+          <caret line="32703" column="0" selection-start-line="32703" selection-start-column="0" selection-end-line="32703" selection-end-column="0" />
+>>>>>>> pb/Master
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/react-v0.13.3.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.2840909" vertical-offset="300" max-vertical-offset="1350">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="9275" max-vertical-offset="541175">
+          <caret line="381" column="31" selection-start-line="381" selection-start-column="31" selection-end-line="381" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.5" vertical-offset="36" max-vertical-offset="600">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+>>>>>>> pb/Master
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.6610577" vertical-offset="150" max-vertical-offset="2300">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="32" />
+=======
+        <state vertical-scroll-proportion="-8.125" vertical-offset="505" max-vertical-offset="1000">
+          <caret line="28" column="45" selection-start-line="23" selection-start-column="6" selection-end-line="28" selection-end-column="45" />
+          <folding />
+>>>>>>> pb/Master
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9583334" vertical-offset="47" max-vertical-offset="1575">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/socket.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1000" max-vertical-offset="1675">
@@ -958,6 +1628,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.52693206" vertical-offset="900" max-vertical-offset="2375">
           <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+=======
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65822786" vertical-offset="3740" max-vertical-offset="5725">
+          <caret line="160" column="8" selection-start-line="160" selection-start-column="8" selection-end-line="160" selection-end-column="8" />
+>>>>>>> pb/Master
           <folding />
         </state>
       </provider>

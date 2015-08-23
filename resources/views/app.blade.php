@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+	<meta id="token" name="token" value="{!! csrf_token() !!}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{!! $app['title'] !!} | @section('title') @show</title>
@@ -26,7 +27,7 @@
 			<!--Page Title-->
 			<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 			<div id="page-title">
-				<h1 class="page-header text-overflow"> @section('title') @show </h1>
+				<h1 class="page-header text-overflow">@section('title') @show </h1>
 
 				<!--Searchbox-->
 				<div class="searchbox">

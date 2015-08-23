@@ -1068,7 +1068,6 @@ h6,
 @media (min-width: 768px) {
   #dropdown-user > .dropdown-toggle img {
     -webkit-transform: translateY(9px);
-    -ms-transform: translateY(9px);
     transform: translateY(9px);
   }
   #navbar {
@@ -1215,12 +1214,10 @@ h6,
   top: 0;
   width: 0.4em;
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 #mainnav li.active > a > .arrow:before {
   -webkit-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
   transform: rotate(135deg);
 }
 #mainnav li .arrow:before {
@@ -1465,8 +1462,7 @@ h6,
     height: 40px;
     margin: 0 5px;
     -webkit-transform: translateY(5px);
-        -ms-transform: translateY(5px);
-            transform: translateY(5px);
+    transform: translateY(5px);
   }
   #container.mainnav-sm .shortcut-grid:hover {
     box-shadow: inset 4px 0 0 0 #2e3539;
@@ -3991,7 +3987,6 @@ fieldset:not([disabled]) .form-checkbox.form-normal.active:after,
   top: 50%;
   margin-top: -5px;
   -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   border-bottom: 2.5px solid #515151;
   border-left: 2.5px solid #515151;
@@ -5140,14 +5135,12 @@ a.list-group-item-dark:focus {
 .modal.fade:not(.animated) .modal-dialog {
   opacity: 0;
   -webkit-transform: translateY(-150%);
-  -ms-transform: translateY(-150%);
   transform: translateY(-150%);
   transition: all .5s linear .5s;
 }
 .modal.fade.in:not(.animated) .modal-dialog {
   opacity: 1;
   -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
   transform: translateY(0%);
   transition: all .5s;
 }
@@ -6967,14 +6960,19 @@ a.list-group-item:focus {
 a.list-group-item:hover {
   background-color: #f5f5f5;
 }
+.list-group-item-heading {
+  font-size: 2em;
+  font-weight: 400;
+}
 .project-message-body {
   background-color: transparent;
   border: none;
   resize: none;
   overflow: hidden;
-  width: 100%;
+  width: 80%;
   height: 100%;
   margin: 0;
+  display: block;
 }
 .panel .timeline {
   background: transparent;
@@ -6990,6 +6988,11 @@ a.list-group-item:hover {
 }
 .timeline-entry {
   margin-bottom: 15px;
+}
+.timeline-label a.btn-link,
+.timeline-label a.btn-link:active {
+  color: #337ab7;
+  text-decoration: none;
 }
 input:focus,
 textarea:focus {

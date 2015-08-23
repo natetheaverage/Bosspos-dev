@@ -26,7 +26,7 @@ class ProjectController extends Controller
 			'messageCounter' => Message::all()->count(),
 			'conversationCounter' => Conversation::all()->count()
 		]);
-		return view('.pages.project.directory');
+		return view('.pages.project.vueDirectory');
     }
 
     /**

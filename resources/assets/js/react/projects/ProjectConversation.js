@@ -27,13 +27,14 @@ var ProjectConversation = React.createClass({
         //console.log('projectConversation -> createNewConversation', this.props);
         var newConversation = ['message',
             {
-                body: newConversationBodyText,
+                body: 'Content here...',
                 className: "info",
-                project_id: this.props['project'][1]['id'],
+                owner_id: this.props['project'][1]['id'],
                 created_at: 'time',
                 deleted_at: null,
                 id: newConversationId,
-                subject: "The teleprinter resists.",
+                title: "New Note",
+                messages: {},
                 tagged_id: 1,
                 updated_at: 'time',
                 user_id: 1
@@ -48,13 +49,13 @@ var ProjectConversation = React.createClass({
         var tab = `bosspos-projecter-tab-3-${this.state.id}`;
 
         var newConversationList = function(conversation) {
-            //conversation = conversation;
-            //console.log("ProjectConversation -> render this.props.conversations", conversation);
+            conversation = conversation[1];
+            console.log("ProjectConversation -> render this.props.conversations", conversation);
 
             var messages = new ObjectToArray(conversation.messages);
 
             return <Conversation
-                id={conversation[0]}
+                id={conversation.id}
                 project={this.props.project}
                 title={conversation.title}
                 description={conversation.description}
